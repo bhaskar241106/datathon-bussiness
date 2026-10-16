@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THE MONEY LEAK | Business Decision-Support System</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            neo: {
+              black: '#121212',
+              yellow: '#FEF08A',
+              yellowDark: '#FDE047',
+              green: '#86EFAC',
+              greenDark: '#4ADE80',
+              pink: '#FDA4AF',
+              pinkDark: '#FB7185',
+              blue: '#BAE6FD',
+              blueDark: '#38BDF8',
+              purple: '#E9D5FF',
+              purpleDark: '#C084FC',
+              orange: '#FED7AA',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Neo-Brutalist Stylesheet -->
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body class="min-h-screen flex flex-col font-sans">
+
+  <!-- TOP NEO-BRUTALIST TICKER BANNER -->
+  <div class="bg-neo-black text-white px-4 py-2 text-xs font-bold font-mono flex items-center justify-between border-b-4 border-neo-black overflow-x-auto whitespace-nowrap">
+    <div class="flex items-center space-x-3">
+      <span class="bg-neo-pink text-neo-black px-2 py-0.5 rounded font-black uppercase text-[10px] border-2 border-white">🚨 EMERGENCY AUDIT</span>
+      <span>COMPANY REVENUE: $10.16M &bull; ACTUAL CASH PROFIT: -$2.89M &bull; MONEY LEAKING EVERY SECOND!</span>
+    </div>
+    <div class="hidden md:flex items-center space-x-4">
+      <span class="text-neo-yellow font-bold">5 CRITICAL LEAKS DETECTED</span>
+      <span>&bull;</span>
+      <span class="text-neo-green font-bold">RECOVERABLE: +$2.23M</span>
+    </div>
+  </div>
+
+  <!-- NEO-BRUTALIST NAVIGATION HEADER -->
+  <header class="bg-white border-b-4 border-neo-black px-6 py-4 sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center space-x-3.5">
+        <div class="w-12 h-12 rounded-xl bg-neo-yellow border-3 border-neo-black shadow-[3px_3px_0px_0px_#121212] flex items-center justify-center font-black text-2xl">
+          💸
+        </div>
+        <div>
+          <div class="flex items-center space-x-2">
+            <h1 class="text-2xl font-black tracking-tight text-neo-black">THE MONEY LEAK</h1>
+            <span class="neo-badge bg-neo-pink text-neo-black font-black text-[11px]">CRITICAL LOSS</span>
+          </div>
+          <p class="text-xs font-bold text-slate-600">The "Explain-It-Like-I'm-10" Business Doctor & Profit Recovery Cockpit</p>
+        </div>
+      </div>
+
+      <!-- Quick Action Buttons -->
+      <div class="flex items-center space-x-3">
+        <button onclick="switchTab('simulator')" class="neo-btn neo-btn-success px-4 py-2 text-xs font-black uppercase tracking-wider flex items-center gap-2">
+          <span>🎮 Fix The Money Leaks</span>
+          <i data-lucide="sparkles" class="w-4 h-4"></i>
+        </button>
+
+        <button onclick="downloadExecutiveReport()" class="neo-btn neo-btn-dark px-4 py-2 text-xs font-black uppercase tracking-wider flex items-center gap-2">
+          <span>📥 Download Report</span>
+          <i data-lucide="download" class="w-4 h-4"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN BODY CONTAINER -->
+  <div class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 py-6 space-y-6">
+
+    <!-- NEO-BRUTALIST TAB NAVIGATION -->
+    <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-2">
+      <button onclick="switchTab('overview')" id="tab-btn-overview" class="neo-btn bg-neo-yellow text-neo-black px-2.5 py-2 text-xs font-black text-center flex items-center justify-center gap-1 shadow-[3px_3px_0px_0px_#121212]">
+        <span>🏁 The Big Picture</span>
+      </button>
+      <button onclick="switchTab('margins')" id="tab-btn-margins" class="neo-btn bg-white text-neo-black px-2.5 py-2 text-xs font-black text-center flex items-center justify-center gap-1">
+        <span>🤦‍♂️ 1. Backwards Prices</span>
+      </button>
+      <button onclick="switchTab('marketing')" id="tab-btn-marketing" class="neo-btn bg-white text-neo-black px-2.5 py-2 text-xs font-black text-center flex items-center justify-center gap-1">
+        <span>📢 2. Wasted Ads</span>
+      </button>
+      <button onclick="switchTab('returns')" id="tab-btn-returns" class="neo-btn bg-white text-neo-black px-2.5 py-2 text-xs font-black text-center flex items-center justify-center gap-1">
+        <span>↩️ 3. Returns Drag</span>
+      </button>
+      <button onclick="switchTab('inventory')" id="tab-btn-inventory" class="neo-btn bg-white text-neo-black px-2.5 py-2 text-xs font-black text-center flex items-center justify-center gap-1">
+        <span>🚫 4. Empty Shelves</span>
+      </button>
+      <button onclick="switchTab('customers')" id="tab-btn-customers" class="neo-btn bg-white text-neo-black px-2.5 py-2 text-xs font-black text-center flex items-center justify-center gap-1">
+        <span>👥 5. Customer Types</span>
+      </button>
+      <button onclick="switchTab('simulator')" id="tab-btn-simulator" class="neo-btn bg-neo-green text-neo-black px-2.5 py-2 text-xs font-black text-center flex items-center justify-center gap-1">
+        <span>🎮 6. Turnaround Game</span>
+      </button>
+      <button onclick="switchTab('ai-ml')" id="tab-btn-ai-ml" class="neo-btn bg-white text-neo-black px-2.5 py-2 text-xs font-black text-center flex items-center justify-center gap-1">
+        <span>🤖 7. AI & ML Lab</span>
+      </button>
+    </div>
+
+    <!-- ======================================================================= -->
+    <!-- TAB 1: THE BIG PICTURE (START HERE) -->
+    <!-- ======================================================================= -->
+    <div id="view-overview" class="tab-view space-y-6 animate-pop">
+
+      <!-- THE 60-SECOND SIMPLE STORY HERO CARD -->
+      <div class="neo-box bg-neo-yellow p-6 border-4 border-neo-black shadow-[6px_6px_0px_0px_#121212]">
+        <div class="flex items-start justify-between flex-wrap gap-4">
+          <div class="max-w-3xl">
+            <div class="neo-badge bg-neo-black text-white font-black text-xs mb-2">💡 EXPLAIN LIKE I'M 10 YEARS OLD</div>
+            <h2 class="text-2xl sm:text-3xl font-black text-neo-black uppercase tracking-tight">
+              How a Company Sells $10 Million But Still Goes Broke!
+            </h2>
+            <p class="text-sm sm:text-base font-bold text-slate-800 mt-2 leading-relaxed">
+              Imagine running a lemonade stand where you sell <strong>$10,164,223</strong> of lemonade. You feel rich! 
+              <strong>BUT:</strong>
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4 text-xs font-bold">
+              <div class="bg-white p-3 rounded-lg border-2 border-neo-black shadow-[2px_2px_0px_0px_#121212]">
+                🤦‍♂️ <strong>1. Selling at a Loss:</strong> 30% of your drinks cost <strong>$88 to make</strong>, but you sold them for <strong>$43</strong>! You lost <strong>$1.21 Million</strong> doing that!
+              </div>
+              <div class="bg-white p-3 rounded-lg border-2 border-neo-black shadow-[2px_2px_0px_0px_#121212]">
+                📢 <strong>2. Crazy Ad Spend:</strong> You paid <strong>$4.8 Million in ads</strong>. On some campaigns, you spent <strong>$1,979 in ads</strong> just to get ONE $100 order!
+              </div>
+              <div class="bg-white p-3 rounded-lg border-2 border-neo-black shadow-[2px_2px_0px_0px_#121212]">
+                🏷️ <strong>3. Free Money Discounts:</strong> You handed out <strong>$773,000</strong> in coupon discounts on items that were already losing money!
+              </div>
+              <div class="bg-white p-3 rounded-lg border-2 border-neo-black shadow-[2px_2px_0px_0px_#121212]">
+                ↩️ <strong>4. Broken Drinks & Returns:</strong> Customers sent back <strong>$1.62 Million</strong> worth of orders because of defects or wrong items!
+              </div>
+            </div>
+            <p class="text-sm font-black text-rose-700 mt-4 bg-white px-3 py-2 rounded-lg border-2 border-neo-black inline-block">
+              🚨 Bottom Line: After paying costs and ads, you ENDED UP WITH -$2,887,700 (IN DEBT)!
+            </p>
+          </div>
+
+          <div class="flex flex-col items-center justify-center bg-white p-4 rounded-xl border-3 border-neo-black shadow-[4px_4px_0px_0px_#121212] min-w-[220px]">
+            <span class="text-xs font-black uppercase text-slate-500">YOUR TOTAL PROFIT</span>
+            <span class="text-3xl font-black text-rose-600 mt-1">-$2.89M</span>
+            <span class="neo-badge bg-rose-200 text-rose-800 text-[10px] mt-1 font-black">MASSIVE DEFICIT</span>
+            
+            <div class="w-full border-t-2 border-dashed border-slate-300 my-3"></div>
+
+            <span class="text-xs font-black uppercase text-slate-500">MONEY WE CAN RECLAIM</span>
+            <span class="text-2xl font-black text-emerald-600 mt-1">+$2.23M</span>
+            <button onclick="switchTab('simulator')" class="neo-btn neo-btn-success text-xs font-black px-3 py-1.5 mt-2 w-full">
+              Let's Fix It Now! &rarr;
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 SIMPLE SUMMARY SCORECARDS -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+        
+        <!-- Scorecard 1 -->
+        <div class="neo-box p-4 bg-white neo-box-hover">
+          <div class="flex items-center justify-between">
+            <span class="neo-badge bg-neo-yellow text-neo-black font-black">STEP 1: SALES</span>
+            <span class="text-lg">🛒</span>
+          </div>
+          <div class="text-xs font-bold text-slate-500 uppercase mt-2">Cash Collected at Register</div>
+          <div class="text-xl font-black text-neo-black mt-0.5">$10,164,223</div>
+          <p class="text-[11px] font-bold text-slate-600 mt-1">Total revenue from 18,000 customer orders.</p>
+        </div>
+
+        <!-- Scorecard 2 -->
+        <div class="neo-box p-4 bg-white neo-box-hover">
+          <div class="flex items-center justify-between">
+            <span class="neo-badge bg-neo-pink text-neo-black font-black">STEP 2: FRICTION</span>
+            <span class="text-lg">💔</span>
+          </div>
+          <div class="text-xs font-bold text-slate-500 uppercase mt-2">Cancels & Returns Lost</div>
+          <div class="text-xl font-black text-rose-600 mt-0.5">-$1,622,172</div>
+          <p class="text-[11px] font-bold text-slate-600 mt-1">Orders that were cancelled or sent back for refund.</p>
+        </div>
+
+        <!-- Scorecard 3 -->
+        <div class="neo-box p-4 bg-white neo-box-hover">
+          <div class="flex items-center justify-between">
+            <span class="neo-badge bg-neo-blue text-neo-black font-black">STEP 3: COSTS</span>
+            <span class="text-lg">📦</span>
+          </div>
+          <div class="text-xs font-bold text-slate-500 uppercase mt-2">Cost to Buy the Goods</div>
+          <div class="text-xl font-black text-slate-900 mt-0.5">-$5,332,710</div>
+          <p class="text-[11px] font-bold text-slate-600 mt-1">What we paid suppliers to stock our shelves.</p>
+        </div>
+
+        <!-- Scorecard 4 -->
+        <div class="neo-box p-4 bg-white neo-box-hover">
+          <div class="flex items-center justify-between">
+            <span class="neo-badge bg-neo-orange text-neo-black font-black">STEP 4: ADS</span>
+            <span class="text-lg">📢</span>
+          </div>
+          <div class="text-xs font-bold text-slate-500 uppercase mt-2">Money Burned on Ads</div>
+          <div class="text-xl font-black text-rose-600 mt-0.5">-$4,805,016</div>
+          <p class="text-[11px] font-bold text-slate-600 mt-1">Paid to social media and search engines for ads.</p>
+        </div>
+
+        <!-- Scorecard 5 -->
+        <div class="neo-box p-4 bg-neo-pink text-neo-black neo-box-hover border-3 border-neo-black shadow-[4px_4px_0px_0px_#121212]">
+          <div class="flex items-center justify-between">
+            <span class="neo-badge bg-neo-black text-white font-black">STEP 5: RESULT</span>
+            <span class="text-lg">💀</span>
+          </div>
+          <div class="text-xs font-black uppercase mt-2">What is Left in the Bank</div>
+          <div class="text-xl font-black text-rose-900 mt-0.5">-$2,887,700</div>
+          <p class="text-[11px] font-bold text-rose-950 mt-1">We are losing millions! We must fix it!</p>
+        </div>
+
+      </div>
+
+      <!-- THE VISUAL MONEY WATERFALL -->
+      <div class="neo-box bg-white p-6">
+        <div class="flex items-start justify-between flex-wrap gap-2 mb-4">
+          <div>
+            <div class="neo-badge bg-neo-yellow text-neo-black font-black text-[11px] mb-1">VISUAL WATERFALL</div>
+            <h3 class="text-lg font-black text-neo-black uppercase">Where Did All Our Cash Go?</h3>
+            <p class="text-xs font-bold text-slate-600">Follow the path from green (money in) to red (money out) to see the crash into the negative zone.</p>
+          </div>
+          <span class="text-xs font-bold font-mono bg-slate-100 px-3 py-1 rounded border-2 border-neo-black">Green = Inflow | Red = Leaks</span>
+        </div>
+        <div class="relative h-80 w-full">
+          <canvas id="waterfallChart"></canvas>
+        </div>
+      </div>
+
+      <!-- THE 5 LEAKS BREAKDOWN CARDS -->
+      <div>
+        <div class="flex items-center space-x-2 mb-3">
+          <span class="text-lg">🔍</span>
+          <h3 class="text-base font-black text-neo-black uppercase tracking-wider">The 5 Leaks You Must Fix Immediately</h3>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+          <!-- Leak 1 Card -->
+          <div class="neo-box p-5 bg-white neo-box-hover border-3 border-neo-black">
+            <div class="flex items-center justify-between mb-2">
+              <span class="neo-badge bg-neo-pink text-neo-black font-black">LEAK #1: CRITICAL</span>
+              <span class="text-xs font-black font-mono text-rose-600">-$1,214,115</span>
+            </div>
+            <h4 class="text-base font-black text-neo-black flex items-center gap-1.5">
+              <span>🤦‍♂️ Backwards Pricing</span>
+            </h4>
+            <p class="text-xs font-bold text-slate-700 mt-2 leading-relaxed">
+              <strong>76 products</strong> cost more to buy than you sell them for! E.g. PR0004 costs \$88.98, but list price is \$43.10. <strong>Every sale is guaranteed to lose cash!</strong>
+            </p>
+            <div class="mt-4 pt-3 border-t-2 border-slate-100 flex items-center justify-between">
+              <span class="text-xs font-bold text-slate-500">30.4% of Catalog</span>
+              <button onclick="switchTab('margins')" class="neo-btn neo-btn-primary px-3 py-1 text-xs font-black">Fix Prices &rarr;</button>
+            </div>
+          </div>
+
+          <!-- Leak 2 Card -->
+          <div class="neo-box p-5 bg-white neo-box-hover border-3 border-neo-black">
+            <div class="flex items-center justify-between mb-2">
+              <span class="neo-badge bg-neo-pink text-neo-black font-black">LEAK #2: CRITICAL</span>
+              <span class="text-xs font-black font-mono text-rose-600">-$4,805,016</span>
+            </div>
+            <h4 class="text-base font-black text-neo-black flex items-center gap-1.5">
+              <span>📢 Burning Ad Money</span>
+            </h4>
+            <p class="text-xs font-bold text-slate-700 mt-2 leading-relaxed">
+              You spent \$4.8M on ads! 56 campaigns spent over \$50 per order, with worst ads paying <strong>\$1,979 in ad spend</strong> for a single order! That's lighting money on fire!
+            </p>
+            <div class="mt-4 pt-3 border-t-2 border-slate-100 flex items-center justify-between">
+              <span class="text-xs font-bold text-slate-500">2.44x of Profit</span>
+              <button onclick="switchTab('marketing')" class="neo-btn neo-btn-primary px-3 py-1 text-xs font-black">Cut Bad Ads &rarr;</button>
+            </div>
+          </div>
+
+          <!-- Leak 3 Card -->
+          <div class="neo-box p-5 bg-white neo-box-hover border-3 border-neo-black">
+            <div class="flex items-center justify-between mb-2">
+              <span class="neo-badge bg-neo-orange text-neo-black font-black">LEAK #3: HIGH</span>
+              <span class="text-xs font-black font-mono text-amber-600">-$773,421</span>
+            </div>
+            <h4 class="text-base font-black text-neo-black flex items-center gap-1.5">
+              <span>🏷️ Crazy Discounts</span>
+            </h4>
+            <p class="text-xs font-bold text-slate-700 mt-2 leading-relaxed">
+              Customers got up to <strong>25% off coupon codes</strong> even on items that were already losing money! Nobody stopped discounts on products with zero profit margin!
+            </p>
+            <div class="mt-4 pt-3 border-t-2 border-slate-100 flex items-center justify-between">
+              <span class="text-xs font-bold text-slate-500">4,500+ Discount Sales</span>
+              <button onclick="switchTab('margins')" class="neo-btn neo-btn-primary px-3 py-1 text-xs font-black">Cap Promos &rarr;</button>
+            </div>
+          </div>
+
+          <!-- Leak 4 Card -->
+          <div class="neo-box p-5 bg-white neo-box-hover border-3 border-neo-black">
+            <div class="flex items-center justify-between mb-2">
+              <span class="neo-badge bg-neo-orange text-neo-black font-black">LEAK #4: HIGH</span>
+              <span class="text-xs font-black font-mono text-amber-600">-$1,622,172</span>
+            </div>
+            <h4 class="text-base font-black text-neo-black flex items-center gap-1.5">
+              <span>↩️ Returns & Cancels</span>
+            </h4>
+            <p class="text-xs font-bold text-slate-700 mt-2 leading-relaxed">
+              3,120 orders never stayed sold! 19 specific items have a crazy <strong>16% return rate</strong> (broken zippers, wrong sizes, damaged boxes), costing \$51K in return shipping!
+            </p>
+            <div class="mt-4 pt-3 border-t-2 border-slate-100 flex items-center justify-between">
+              <span class="text-xs font-bold text-slate-500">19 Outlier SKUs</span>
+              <button onclick="switchTab('returns')" class="neo-btn neo-btn-primary px-3 py-1 text-xs font-black">Fix Returns &rarr;</button>
+            </div>
+          </div>
+
+          <!-- Leak 5 Card -->
+          <div class="neo-box p-5 bg-white neo-box-hover border-3 border-neo-black">
+            <div class="flex items-center justify-between mb-2">
+              <span class="neo-badge bg-neo-blue text-neo-black font-black">LEAK #5: MEDIUM</span>
+              <span class="text-xs font-black font-mono text-blue-600">-$508,202</span>
+            </div>
+            <h4 class="text-base font-black text-neo-black flex items-center gap-1.5">
+              <span>🚫 Empty Shelves (Stockouts)</span>
+            </h4>
+            <p class="text-xs font-bold text-slate-700 mt-2 leading-relaxed">
+              760 times, customers showed up to buy our most popular items, but we had <strong>0 in stock</strong>! And while shelves were empty, marketing kept spending ad money on them!
+            </p>
+            <div class="mt-4 pt-3 border-t-2 border-slate-100 flex items-center justify-between">
+              <span class="text-xs font-bold text-slate-500">760 Stockout Days</span>
+              <button onclick="switchTab('inventory')" class="neo-btn neo-btn-primary px-3 py-1 text-xs font-black">Fix Stock &rarr;</button>
+            </div>
+          </div>
+
+          <!-- Card 6: The Game CTA -->
+          <div class="neo-box p-5 bg-neo-green text-neo-black neo-box-hover border-4 border-neo-black flex flex-col justify-between">
+            <div>
+              <span class="neo-badge bg-neo-black text-white font-black">THE RECOVERY PLAN</span>
+              <h4 class="text-xl font-black mt-2">Can We Save The Business?</h4>
+              <p class="text-xs font-bold mt-2 leading-relaxed">
+                YES! By turning on 5 simple common-sense rules, we can recover <strong>+$2,238,400</strong> in profit and stop the bleeding!
+              </p>
+            </div>
+            <button onclick="switchTab('simulator')" class="neo-btn neo-btn-dark px-4 py-3 text-xs font-black uppercase mt-4 w-full">
+              Launch Turnaround Game &rarr;
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ======================================================================= -->
+    <!-- TAB 2: BACKWARDS PRICES (NEGATIVE MARGINS) -->
+    <!-- ======================================================================= -->
+    <div id="view-margins" class="tab-view space-y-6 hidden animate-pop">
+      
+      <!-- Explainer Header -->
+      <div class="neo-box bg-neo-pink p-5 border-3 border-neo-black">
+        <div class="neo-badge bg-neo-black text-white font-black text-xs mb-1">🤦‍♂️ PROBLEM #1: BACKWARDS PRICING</div>
+        <h2 class="text-xl sm:text-2xl font-black uppercase">Selling Products for Less than They Cost to Buy!</h2>
+        <p class="text-xs sm:text-sm font-bold text-slate-800 mt-1">
+          In any store, Rule #1 is: <em>Sell it for more than you bought it for!</em> But in this catalog, <strong>76 out of 250 items cost more than their price tag!</strong> Selling these items guaranteed a loss of <strong>$1,214,115.50</strong> on completed sales!
+        </p>
+      </div>
+
+      <!-- Scatter Chart: Unit Cost vs List Price -->
+      <div class="neo-box bg-white p-6">
+        <div class="flex items-center justify-between flex-wrap gap-2 mb-4">
+          <div>
+            <h3 class="text-base font-black uppercase">The "Am I Making Money?" Chart</h3>
+            <p class="text-xs font-bold text-slate-600">Every dot is a product. Anything in <strong>RED</strong> is losing money every time someone buys it!</p>
+          </div>
+          <div class="flex items-center space-x-3 text-xs font-black">
+            <span class="bg-neo-green px-2 py-1 rounded border-2 border-neo-black">🟢 Normal Items (174)</span>
+            <span class="bg-neo-pink px-2 py-1 rounded border-2 border-neo-black">🔴 Loss-Making Items (76)</span>
+          </div>
+        </div>
+        <div class="relative h-80 w-full">
+          <canvas id="marginScatterChart"></canvas>
+        </div>
+      </div>
+
+      <!-- Top Loss-Making Table -->
+      <div class="neo-box bg-white p-6">
+        <div class="flex items-center justify-between flex-wrap gap-2 mb-4">
+          <div>
+            <h3 class="text-base font-black uppercase">The 25 Worst Loss-Making Products</h3>
+            <p class="text-xs font-bold text-slate-600">Click on any product to see its file and how much money to raise the price by!</p>
+          </div>
+          <input type="text" id="margin-search" placeholder="🔍 Search SKU or Category..." onkeyup="filterMarginTable()" class="px-3 py-1.5 text-xs font-bold rounded-lg border-2 border-neo-black focus:outline-none focus:bg-neo-yellow w-60">
+        </div>
+
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs font-mono" id="margin-table">
+            <thead class="bg-neo-yellow text-neo-black font-black uppercase border-b-2 border-neo-black">
+              <tr>
+                <th class="p-3">Product ID</th>
+                <th class="p-3">Category</th>
+                <th class="p-3 text-right">Cost We Pay</th>
+                <th class="p-3 text-right">Price Tag</th>
+                <th class="p-3 text-right">Units Sold</th>
+                <th class="p-3 text-right font-black text-rose-700">Total Money Lost</th>
+                <th class="p-3 text-right font-black text-emerald-700">New Price Needed</th>
+                <th class="p-3 text-right">Price Increase</th>
+                <th class="p-3 text-center">Action</th>
+              </tr>
+            </thead>
+            <tbody id="margin-table-body" class="divide-y divide-slate-200">
+              <!-- Dynamically populated -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ======================================================================= -->
+    <!-- TAB 3: WASTED AD SPEND -->
+    <!-- ======================================================================= -->
+    <div id="view-marketing" class="tab-view space-y-6 hidden animate-pop">
+
+      <!-- Explainer Header -->
+      <div class="neo-box bg-neo-orange p-5 border-3 border-neo-black">
+        <div class="neo-badge bg-neo-black text-white font-black text-xs mb-1">📢 PROBLEM #2: WASTED AD MONEY</div>
+        <h2 class="text-xl sm:text-2xl font-black uppercase">Spending $1,979 on Ads to Sell a $100 Order!</h2>
+        <p class="text-xs sm:text-sm font-bold text-slate-800 mt-1">
+          Marketing spend reached <strong>$4,805,016</strong>, which was <strong>2.44 times all the gross profit</strong> the store generated! On 56 ad campaigns, we spent over \$50 per sale, and on some we spent <strong>thousands of dollars</strong> for single digit conversions!
+        </p>
+      </div>
+
+      <!-- Category P&L Table -->
+      <div class="neo-box bg-white p-6">
+        <h3 class="text-base font-black uppercase mb-1">Category Profit vs Ad Spend Breakdown</h3>
+        <p class="text-xs font-bold text-slate-600 mb-4">Every category spent more on ads than it made in gross profit! Beauty lost -$803,334 alone!</p>
+
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs font-mono">
+            <thead class="bg-neo-yellow text-neo-black font-black uppercase border-b-2 border-neo-black">
+              <tr>
+                <th class="p-3">Product Category</th>
+                <th class="p-3 text-right">Sales Made</th>
+                <th class="p-3 text-right">Profit Before Ads</th>
+                <th class="p-3 text-right text-rose-700 font-black">Money Spent on Ads</th>
+                <th class="p-3 text-right text-rose-700 font-black">Final Cash (Loss)</th>
+                <th class="p-3 text-right">Ad Return (ROAS)</th>
+              </tr>
+            </thead>
+            <tbody id="category-pnl-body" class="divide-y divide-slate-200">
+              <!-- Dynamically populated -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- CPA Simulator Slider & Table -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        
+        <!-- Slider Box -->
+        <div class="neo-box bg-neo-yellow p-6 border-3 border-neo-black flex flex-col justify-between">
+          <div>
+            <div class="neo-badge bg-neo-black text-white font-black text-[10px] mb-2">✂️ THE AD KILL-SWITCH</div>
+            <h4 class="text-lg font-black uppercase">Stop The Worst Ads</h4>
+            <p class="text-xs font-bold text-slate-700 mt-1 mb-4">
+              Drag the slider to set a rule: <em>"Never spend more than $X on ads to get 1 order!"</em>
+            </p>
+
+            <div class="space-y-4">
+              <div>
+                <div class="flex justify-between text-xs font-black mb-1">
+                  <span>Maximum Allowed Ad Cost Per Order:</span>
+                  <span id="cpa-slider-val" class="text-base font-black bg-white px-2 py-0.5 rounded border border-neo-black">$40</span>
+                </div>
+                <input type="range" id="cpa-slider" min="15" max="80" value="40" step="5" class="w-full accent-neo-black" oninput="updateCpaSimulation(this.value)">
+              </div>
+
+              <div class="bg-white p-4 rounded-xl border-2 border-neo-black shadow-[3px_3px_0px_0px_#121212]">
+                <span class="text-xs font-black uppercase text-slate-500">Immediate Ad Cash Saved:</span>
+                <div class="text-2xl font-black text-emerald-600 mt-1" id="cpa-saved-spend">$297,245</div>
+                <p class="text-xs font-bold text-slate-600 mt-1" id="cpa-lost-convs">Forfeiting only 2,953 low-margin sales.</p>
+              </div>
+            </div>
+          </div>
+
+          <button onclick="switchTab('simulator')" class="neo-btn neo-btn-dark px-4 py-2.5 text-xs font-black uppercase mt-4 w-full">
+            Apply Ad Rule in Simulator &rarr;
+          </button>
+        </div>
+
+        <!-- Bleeding Campaigns Table -->
+        <div class="neo-box bg-white p-6 lg:col-span-2">
+          <div class="flex items-center justify-between mb-3">
+            <div>
+              <h4 class="text-base font-black uppercase">Worst 15 Ad Campaigns on Record</h4>
+              <p class="text-xs font-bold text-slate-600">These campaigns burned thousands of dollars for almost nothing in return.</p>
+            </div>
+          </div>
+
+          <div class="overflow-x-auto max-h-72">
+            <table class="w-full text-left text-xs font-mono">
+              <thead class="bg-neo-pink text-neo-black font-black uppercase border-b-2 border-neo-black sticky top-0">
+                <tr>
+                  <th class="p-2">Campaign ID</th>
+                  <th class="p-2">Channel</th>
+                  <th class="p-2">Category</th>
+                  <th class="p-2 text-right">Spend</th>
+                  <th class="p-2 text-right">Orders Got</th>
+                  <th class="p-2 text-right font-black">Cost Per Order</th>
+                </tr>
+              </thead>
+              <tbody id="bleeding-camps-body" class="divide-y divide-slate-200">
+                <!-- Dynamically populated -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ======================================================================= -->
+    <!-- TAB 4: RETURNS & CANCELLATIONS -->
+    <!-- ======================================================================= -->
+    <div id="view-returns" class="tab-view space-y-6 hidden animate-pop">
+
+      <!-- Explainer Header -->
+      <div class="neo-box bg-neo-purple p-5 border-3 border-neo-black">
+        <div class="neo-badge bg-neo-black text-white font-black text-xs mb-1">↩️ PROBLEM #3: CUSTOMER FRICTION</div>
+        <h2 class="text-xl sm:text-2xl font-black uppercase">3,120 Orders Cancelled or Returned by Customers!</h2>
+        <p class="text-xs sm:text-sm font-bold text-slate-800 mt-1">
+          When a customer returns an item, you lose the sale <strong>plus you pay $12 in return shipping/handling!</strong> 
+          19 specific items have a return rate of <strong>14% to 16%</strong> (double the normal store rate). That tells us the product is either broken, wrong size, or badly packaged!
+        </p>
+      </div>
+
+      <!-- 4 Stat Cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-4 gap-4">
+        <div class="neo-box p-4 bg-white">
+          <div class="text-xs font-black text-slate-500 uppercase">Cancelled Orders</div>
+          <div class="text-xl font-black text-neo-black mt-1">1,689 orders</div>
+          <p class="text-xs font-bold text-rose-600 mt-0.5">-$861,850 lost sales</p>
+        </div>
+        <div class="neo-box p-4 bg-white">
+          <div class="text-xs font-black text-slate-500 uppercase">Returned Orders</div>
+          <div class="text-xl font-black text-neo-black mt-1">1,431 orders</div>
+          <p class="text-xs font-bold text-rose-600 mt-0.5">-$760,322 lost sales</p>
+        </div>
+        <div class="neo-box p-4 bg-white">
+          <div class="text-xs font-black text-slate-500 uppercase">Return Shipping Fees</div>
+          <div class="text-xl font-black text-neo-black mt-1">$51,516</div>
+          <p class="text-xs font-bold text-slate-600 mt-0.5">Direct freight waste</p>
+        </div>
+        <div class="neo-box p-4 bg-neo-pink text-neo-black">
+          <div class="text-xs font-black uppercase">Problem SKUs</div>
+          <div class="text-xl font-black mt-1">19 Items</div>
+          <p class="text-xs font-bold mt-0.5">Return rate over 12%</p>
+        </div>
+      </div>
+
+      <!-- Charts -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div class="neo-box bg-white p-6">
+          <h4 class="text-base font-black uppercase mb-3">Cancels & Returns by Category</h4>
+          <div class="relative h-64 w-full">
+            <canvas id="returnsCategoryChart"></canvas>
+          </div>
+        </div>
+        <div class="neo-box bg-white p-6">
+          <h4 class="text-base font-black uppercase mb-3">Cancels & Returns by Channel</h4>
+          <div class="relative h-64 w-full">
+            <canvas id="returnsChannelChart"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <!-- Outlier High-Return SKUs Table -->
+      <div class="neo-box bg-white p-6">
+        <h4 class="text-base font-black uppercase mb-1">Top 19 High-Return SKUs (The "Defective / Misaligned" List)</h4>
+        <p class="text-xs font-bold text-slate-600 mb-4">These items get sent back constantly. Inspecting packaging and fixing sizing charts will save \$150,000+!</p>
+
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs font-mono">
+            <thead class="bg-neo-yellow text-neo-black font-black uppercase border-b-2 border-neo-black">
+              <tr>
+                <th class="p-3">Product ID</th>
+                <th class="p-3">Category</th>
+                <th class="p-3 text-right">Orders Made</th>
+                <th class="p-3 text-right font-black text-rose-700">Orders Returned</th>
+                <th class="p-3 text-right font-black text-rose-700">Return Rate %</th>
+                <th class="p-3 text-right">Z-Score (Oddity)</th>
+                <th class="p-3 text-right">Lost Sales Value</th>
+                <th class="p-3 text-center">Action</th>
+              </tr>
+            </thead>
+            <tbody id="high-returns-body" class="divide-y divide-slate-200">
+              <!-- Dynamically populated -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ======================================================================= -->
+    <!-- TAB 5: EMPTY SHELVES (STOCKOUTS) -->
+    <!-- ======================================================================= -->
+    <div id="view-inventory" class="tab-view space-y-6 hidden animate-pop">
+
+      <!-- Explainer Header -->
+      <div class="neo-box bg-neo-blue p-5 border-3 border-neo-black">
+        <div class="neo-badge bg-neo-black text-white font-black text-xs mb-1">🚫 PROBLEM #4: GHOST DEMAND & EMPTY SHELVES</div>
+        <h2 class="text-xl sm:text-2xl font-black uppercase">760 Times a Customer Wanted to Buy, But We Were Out of Stock!</h2>
+        <p class="text-xs sm:text-sm font-bold text-slate-800 mt-1">
+          When an item is out of stock, customers don't wait — they go to a competitor! Worse: <strong>suppliers are delayed by an extra 9.6 days</strong>, and our reorder thresholds were set way too low. Total lost sales: <strong>$508,202</strong>!
+        </p>
+      </div>
+
+      <!-- Top Stockouts Table -->
+      <div class="neo-box bg-white p-6">
+        <h4 class="text-base font-black uppercase mb-1">Top 20 Items With Empty Shelves</h4>
+        <p class="text-xs font-bold text-slate-600 mb-4">Notice the "Shortfall" column — our reorder alarms were set 30 to 50 units too low!</p>
+
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs font-mono">
+            <thead class="bg-neo-yellow text-neo-black font-black uppercase border-b-2 border-neo-black">
+              <tr>
+                <th class="p-3">Product ID</th>
+                <th class="p-3">Category</th>
+                <th class="p-3 text-right font-black text-rose-700">Days Out of Stock</th>
+                <th class="p-3 text-right">% of Days Lost</th>
+                <th class="p-3 text-right">Current Alarm</th>
+                <th class="p-3 text-right font-black text-emerald-700">Better Alarm Level</th>
+                <th class="p-3 text-right font-black text-rose-700">Shortfall</th>
+                <th class="p-3 text-right">Lost Sales</th>
+                <th class="p-3 text-right font-black text-emerald-700">Lost Profit</th>
+              </tr>
+            </thead>
+            <tbody id="inventory-table-body" class="divide-y divide-slate-200">
+              <!-- Dynamically populated -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ======================================================================= -->
+    <!-- TAB 6: CUSTOMER TYPES (RFM-M) -->
+    <!-- ======================================================================= -->
+    <div id="view-customers" class="tab-view space-y-6 hidden animate-pop">
+
+      <!-- Explainer Header -->
+      <div class="neo-box bg-neo-yellow p-5 border-3 border-neo-black">
+        <div class="neo-badge bg-neo-black text-white font-black text-xs mb-1">👥 PROBLEM #5: CUSTOMER SEGMENTS</div>
+        <h2 class="text-xl sm:text-2xl font-black uppercase">Not All Customers Are Good for Business!</h2>
+        <p class="text-xs sm:text-sm font-bold text-slate-800 mt-1">
+          Some customers buy full price and keep the items (<strong>Profitable Champions</strong>). But <strong>705 "Margin Drainer" customers</strong> only buy items when we lose money on them and stack discount codes!
+        </p>
+      </div>
+
+      <!-- Charts -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div class="neo-box bg-white p-6">
+          <h4 class="text-base font-black uppercase mb-3">Customer Count by Profile</h4>
+          <div class="relative h-64 w-full">
+            <canvas id="customerTierPieChart"></canvas>
+          </div>
+        </div>
+        <div class="neo-box bg-white p-6">
+          <h4 class="text-base font-black uppercase mb-3">Actual Profit Brought by Each Customer Group</h4>
+          <div class="relative h-64 w-full">
+            <canvas id="customerTierBarChart"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <!-- Action Box -->
+      <div class="neo-box bg-white p-6 border-3 border-neo-black">
+        <h4 class="text-base font-black uppercase mb-2">What Should We Do With Customer Accounts?</h4>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs font-bold">
+          <div class="bg-emerald-50 p-3 rounded-lg border-2 border-emerald-400">
+            🟢 <strong>Champions (917 people):</strong> Give them VIP free shipping and sneak-peek product launches. They generate \$543K+ in pure profit!
+          </div>
+          <div class="bg-rose-50 p-3 rounded-lg border-2 border-rose-400">
+            🔴 <strong>Margin Drainers (705 people):</strong> Stop emailing them 25% discount codes! Only allow them to buy positive margin products!
+          </div>
+          <div class="bg-amber-50 p-3 rounded-lg border-2 border-amber-400">
+            🟡 <strong>Discount Seekers (298 people):</strong> Cap their coupons to 10% maximum so every order makes at least a little bit of money!
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ======================================================================= -->
+    <!-- TAB 7: THE TURNAROUND GAME (SIMULATOR) -->
+    <!-- ======================================================================= -->
+    <div id="view-simulator" class="tab-view space-y-6 hidden animate-pop">
+
+      <!-- Hero Header -->
+      <div class="neo-box bg-neo-green p-6 border-4 border-neo-black shadow-[6px_6px_0px_0px_#121212]">
+        <div class="neo-badge bg-neo-black text-white font-black text-xs mb-1">🎮 THE TURNAROUND GAME</div>
+        <h2 class="text-2xl sm:text-3xl font-black uppercase">Flip The 6 Switches to Save the Company!</h2>
+        <p class="text-xs sm:text-sm font-bold text-slate-800 mt-1">
+          Turn each switch ON and watch the cash return in real time. Can you turn the -\$2.89M deficit into a healthy company?
+        </p>
+
+        <!-- Big Scorecard Ribbon -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6">
+          <div class="bg-white p-4 rounded-xl border-3 border-neo-black shadow-[3px_3px_0px_0px_#121212]">
+            <span class="text-xs font-black uppercase text-slate-500">STARTING CASH LOSS:</span>
+            <div class="text-2xl sm:text-3xl font-black text-rose-600 mt-1" id="sim-baseline-val">-$2,887,700</div>
+            <p class="text-xs font-bold text-slate-600 mt-1">Where the business is today</p>
+          </div>
+
+          <div class="bg-white p-4 rounded-xl border-3 border-neo-black shadow-[3px_3px_0px_0px_#121212]">
+            <span class="text-xs font-black uppercase text-slate-500">CASH YOU RECLAIMED:</span>
+            <div class="text-2xl sm:text-3xl font-black text-emerald-600 mt-1" id="sim-recovered-val">+$2,238,400</div>
+            <p class="text-xs font-bold text-emerald-700 mt-1">From the 6 switches below</p>
+          </div>
+
+          <div class="bg-neo-yellow p-4 rounded-xl border-3 border-neo-black shadow-[3px_3px_0px_0px_#121212]">
+            <span class="text-xs font-black uppercase text-neo-black">NEW BUSINESS POSITION:</span>
+            <div class="text-2xl sm:text-3xl font-black text-neo-black mt-1" id="sim-projected-val">-$649,300</div>
+            <p class="text-xs font-bold text-slate-800 mt-1 font-mono">77% of Deficit Eradicated!</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6 Interactive Switches -->
+      <div class="neo-box bg-white p-6">
+        <h3 class="text-base font-black uppercase mb-4">Toggle Your Management Actions:</h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+          <!-- Switch 1 -->
+          <div class="p-4 rounded-xl border-3 border-neo-black bg-neo-yellow/30 flex items-start justify-between shadow-[2px_2px_0px_0px_#121212]">
+            <div>
+              <span class="text-xs font-black uppercase text-neo-black block">1. Fix Backwards Prices</span>
+              <span class="text-xs font-bold text-slate-600 block mt-1">Set price tag to Cost + 25% profit.</span>
+              <span class="text-xs font-black text-emerald-700 block mt-2">+$1,170,000 Cash Back</span>
+            </div>
+            <label class="neo-switch">
+              <input type="checkbox" id="lever-reprice" checked onchange="runSimulation()">
+              <span class="neo-slider"></span>
+            </label>
+          </div>
+
+          <!-- Switch 2 -->
+          <div class="p-4 rounded-xl border-3 border-neo-black bg-neo-green/30 flex items-start justify-between shadow-[2px_2px_0px_0px_#121212]">
+            <div>
+              <span class="text-xs font-black uppercase text-neo-black block">2. Cap Discounts at 10%</span>
+              <span class="text-xs font-bold text-slate-600 block mt-1">Stop handing out crazy 25% coupons.</span>
+              <span class="text-xs font-black text-emerald-700 block mt-2">+$250,000 Cash Back</span>
+            </div>
+            <label class="neo-switch">
+              <input type="checkbox" id="lever-cap-disc" checked onchange="runSimulation()">
+              <span class="neo-slider"></span>
+            </label>
+          </div>
+
+          <!-- Switch 3 -->
+          <div class="p-4 rounded-xl border-3 border-neo-black bg-neo-blue/30 flex items-start justify-between shadow-[2px_2px_0px_0px_#121212]">
+            <div>
+              <span class="text-xs font-black uppercase text-neo-black block">3. Zero Discounts on Low Margin</span>
+              <span class="text-xs font-bold text-slate-600 block mt-1">No coupons if profit is under 20%.</span>
+              <span class="text-xs font-black text-emerald-700 block mt-2">+$180,000 Cash Back</span>
+            </div>
+            <label class="neo-switch">
+              <input type="checkbox" id="lever-forbid-disc" checked onchange="runSimulation()">
+              <span class="neo-slider"></span>
+            </label>
+          </div>
+
+          <!-- Switch 4 -->
+          <div class="p-4 rounded-xl border-3 border-neo-black bg-neo-orange/30 flex items-start justify-between shadow-[2px_2px_0px_0px_#121212]">
+            <div>
+              <span class="text-xs font-black uppercase text-neo-black block">4. Turn Off Wasted Ads (> $40 CPA)</span>
+              <span class="text-xs font-bold text-slate-600 block mt-1">Kill ads that cost more than the order.</span>
+              <span class="text-xs font-black text-emerald-700 block mt-2">+$297,000 Saved Ad Money</span>
+            </div>
+            <label class="neo-switch">
+              <input type="checkbox" id="lever-pause-ads" checked onchange="runSimulation()">
+              <span class="neo-slider"></span>
+            </label>
+          </div>
+
+          <!-- Switch 5 -->
+          <div class="p-4 rounded-xl border-3 border-neo-black bg-neo-purple/30 flex items-start justify-between shadow-[2px_2px_0px_0px_#121212]">
+            <div>
+              <span class="text-xs font-black uppercase text-neo-black block">5. Keep Top 20 Items in Stock</span>
+              <span class="text-xs font-bold text-slate-600 block mt-1">Reorder earlier so shelves never empty.</span>
+              <span class="text-xs font-black text-emerald-700 block mt-2">+$180,000 Sales Captured</span>
+            </div>
+            <label class="neo-switch">
+              <input type="checkbox" id="lever-fix-stockouts" checked onchange="runSimulation()">
+              <span class="neo-slider"></span>
+            </label>
+          </div>
+
+          <!-- Switch 6 -->
+          <div class="p-4 rounded-xl border-3 border-neo-black bg-neo-pink/30 flex items-start justify-between shadow-[2px_2px_0px_0px_#121212]">
+            <div>
+              <span class="text-xs font-black uppercase text-neo-black block">6. Fix Packaging on 19 Return SKUs</span>
+              <span class="text-xs font-bold text-slate-600 block mt-1">Cut return rates by 35% on defect items.</span>
+              <span class="text-xs font-black text-emerald-700 block mt-2">+$150,000 Saved Return Freight</span>
+            </div>
+            <label class="neo-switch">
+              <input type="checkbox" id="lever-reduce-returns" checked onchange="runSimulation()">
+              <span class="neo-slider"></span>
+            </label>
+          </div>
+
+        </div>
+
+        <!-- Profit Recovery Chart -->
+        <div class="mt-6 pt-6 border-t-2 border-slate-200">
+          <h4 class="text-base font-black uppercase mb-3">Where Does the Recovered Cash Come From?</h4>
+          <div class="relative h-60 w-full">
+            <canvas id="simulationBarChart"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <!-- Prescriptive Action Playbook Cards -->
+      <div>
+        <h3 class="text-base font-black uppercase mb-3">The Manager's Monday Morning Action Cards</h3>
+        <div class="space-y-4" id="action-cards-container">
+          <!-- Dynamically populated -->
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ======================================================================= -->
+    <!-- TAB 8: AI & ML INTELLIGENCE LAB -->
+    <!-- ======================================================================= -->
+    <div id="view-ai-ml" class="tab-view space-y-6 hidden animate-pop">
+
+      <!-- Explainer Header -->
+      <div class="neo-box bg-neo-purple p-6 border-4 border-neo-black shadow-[6px_6px_0px_0px_#121212]">
+        <div class="neo-badge bg-neo-black text-white font-black text-xs mb-1">🤖 AI & MACHINE LEARNING LAB</div>
+        <h2 class="text-2xl sm:text-3xl font-black uppercase">Live Predictive Intelligence & Anomaly Radar</h2>
+        <p class="text-xs sm:text-sm font-bold text-slate-800 mt-1">
+          Trained on <strong>18,000 transactions</strong> and <strong>5,000 inventory logs</strong>. Predict customer friction before fulfillment, forecast exact stockout probabilities, and catch rogue orders with unsupervised anomaly detection.
+        </p>
+      </div>
+
+      <!-- Live Order Risk Predictor -->
+      <div class="neo-box bg-white p-6 border-3 border-neo-black">
+        <div class="flex items-start justify-between flex-wrap gap-2 mb-4">
+          <div>
+            <div class="neo-badge bg-neo-yellow text-neo-black font-black text-[10px] mb-1">RANDOM FOREST CLASSIFIER</div>
+            <h3 class="text-lg font-black uppercase">Live Checkout Friction Risk Predictor</h3>
+            <p class="text-xs font-bold text-slate-600">Simulate any checkout scenario to predict the probability of a return or cancellation in real-time.</p>
+          </div>
+          <span class="text-xs font-black font-mono bg-neo-green px-3 py-1 rounded border-2 border-neo-black">120-Tree Ensemble</span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          
+          <!-- Input Controls (2 cols) -->
+          <div class="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-bold">
+            
+            <div>
+              <label class="block text-slate-700 uppercase mb-1">Product Category</label>
+              <select id="ml-category" class="w-full p-2.5 rounded-lg border-2 border-neo-black font-mono font-bold bg-slate-50 focus:bg-neo-yellow">
+                <option value="Electronics" selected>Electronics</option>
+                <option value="Beauty">Beauty</option>
+                <option value="Fashion">Fashion</option>
+                <option value="Grocery">Grocery</option>
+                <option value="Home">Home</option>
+                <option value="Sports">Sports</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-slate-700 uppercase mb-1">Sales Channel</label>
+              <select id="ml-channel" class="w-full p-2.5 rounded-lg border-2 border-neo-black font-mono font-bold bg-slate-50 focus:bg-neo-yellow">
+                <option value="Web" selected>Web</option>
+                <option value="App">App</option>
+                <option value="Store">Store</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-slate-700 uppercase mb-1">Payment Method</label>
+              <select id="ml-payment" class="w-full p-2.5 rounded-lg border-2 border-neo-black font-mono font-bold bg-slate-50 focus:bg-neo-yellow">
+                <option value="Card" selected>Credit/Debit Card</option>
+                <option value="Cash">Cash on Delivery</option>
+                <option value="Wallet">Digital Wallet</option>
+                <option value="NetBanking">Net Banking</option>
+                <option value="UPI">UPI</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-slate-700 uppercase mb-1">Customer Region</label>
+              <select id="ml-region" class="w-full p-2.5 rounded-lg border-2 border-neo-black font-mono font-bold bg-slate-50 focus:bg-neo-yellow">
+                <option value="West" selected>West</option>
+                <option value="East">East</option>
+                <option value="North">North</option>
+                <option value="South">South</option>
+                <option value="Central">Central</option>
+              </select>
+            </div>
+
+            <div>
+              <div class="flex justify-between mb-1">
+                <label class="text-slate-700 uppercase">Unit Price ($)</label>
+                <span id="ml-price-val" class="font-mono font-black">$180</span>
+              </div>
+              <input type="range" id="ml-price" min="10" max="400" value="180" step="10" class="w-full accent-neo-black" oninput="document.getElementById('ml-price-val').innerText = '$' + this.value">
+            </div>
+
+            <div>
+              <div class="flex justify-between mb-1">
+                <label class="text-slate-700 uppercase">Discount Percentage (%)</label>
+                <span id="ml-discount-val" class="font-mono font-black">15%</span>
+              </div>
+              <input type="range" id="ml-discount" min="0" max="25" value="15" step="5" class="w-full accent-neo-black" oninput="document.getElementById('ml-discount-val').innerText = this.value + '%'">
+            </div>
+
+            <div>
+              <div class="flex justify-between mb-1">
+                <label class="text-slate-700 uppercase">Quantity (Items in Cart)</label>
+                <span id="ml-qty-val" class="font-mono font-black">2</span>
+              </div>
+              <input type="range" id="ml-qty" min="1" max="5" value="2" step="1" class="w-full accent-neo-black" oninput="document.getElementById('ml-qty-val').innerText = this.value">
+            </div>
+
+            <div>
+              <div class="flex justify-between mb-1">
+                <label class="text-slate-700 uppercase">Delivery Lead Days</label>
+                <span id="ml-lead-val" class="font-mono font-black">14 days</span>
+              </div>
+              <input type="range" id="ml-lead" min="2" max="30" value="14" step="1" class="w-full accent-neo-black" oninput="document.getElementById('ml-lead-val').innerText = this.value + ' days'">
+            </div>
+
+            <div class="sm:col-span-2 pt-2">
+              <button onclick="runOrderPrediction()" class="neo-btn neo-btn-primary w-full py-3 text-xs font-black uppercase tracking-wider flex items-center justify-center gap-2">
+                <span>⚡ Run AI Friction Prediction</span>
+                <i data-lucide="zap" class="w-4 h-4"></i>
+              </button>
+            </div>
+
+          </div>
+
+          <!-- Live Model Output Card -->
+          <div class="bg-neo-yellow/30 p-5 rounded-xl border-3 border-neo-black flex flex-col justify-between">
+            <div>
+              <span class="text-xs font-black uppercase text-slate-500">ML Model Assessment:</span>
+              <div class="mt-2 flex items-baseline gap-2">
+                <span class="text-4xl font-black text-neo-black" id="ml-pred-prob">49.2%</span>
+                <span class="neo-badge bg-neo-orange text-neo-black text-xs font-black" id="ml-pred-badge">MEDIUM RISK</span>
+              </div>
+              
+              <div class="mt-4 pt-3 border-t-2 border-neo-black/20">
+                <span class="text-xs font-black uppercase text-slate-700 block mb-1">Key AI Risk Drivers:</span>
+                <ul class="text-xs font-bold text-slate-700 space-y-1 list-disc list-inside" id="ml-pred-drivers">
+                  <li>Web + Card checkout cohort shows higher return propensity</li>
+                  <li>Delivery lead time (14 days) allows buyer remorse</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="mt-4 pt-3 border-t-2 border-neo-black/20">
+              <span class="text-xs font-black uppercase text-slate-700 block mb-1">Recommended Manager Action:</span>
+              <p class="text-xs font-bold text-slate-800 bg-white p-2.5 rounded-lg border-2 border-neo-black" id="ml-pred-action">
+                Standard automated processing with post-purchase setup instructions.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Feature Importance Chart & Stockout Risk Table -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        
+        <!-- Global Feature Importance -->
+        <div class="neo-box bg-white p-6 border-3 border-neo-black">
+          <div class="neo-badge bg-neo-yellow text-neo-black font-black text-[10px] mb-1">MODEL EXPLAINABILITY</div>
+          <h4 class="text-base font-black uppercase mb-1">What Drives Returns & Cancellations Most?</h4>
+          <p class="text-xs font-bold text-slate-600 mb-4">Random Forest feature importance ranking across all 18,000 transactions.</p>
+          <div class="relative h-64 w-full">
+            <canvas id="featureImportanceChart"></canvas>
+          </div>
+        </div>
+
+        <!-- Probabilistic Stockout Risk Forecasts -->
+        <div class="neo-box bg-white p-6 border-3 border-neo-black">
+          <div class="neo-badge bg-neo-blue text-neo-black font-black text-[10px] mb-1">PROBABILISTIC DEMAND MODEL</div>
+          <h4 class="text-base font-black uppercase mb-1">Forecasted Stockout Probabilities</h4>
+          <p class="text-xs font-bold text-slate-600 mb-4">Gaussian lead-time demand simulation: P(Demand > Current Stock).</p>
+          
+          <div class="overflow-x-auto max-h-64">
+            <table class="w-full text-left text-xs font-mono font-bold">
+              <thead class="bg-neo-blue text-neo-black uppercase border-b-2 border-neo-black sticky top-0">
+                <tr>
+                  <th class="p-2">SKU ID</th>
+                  <th class="p-2">Category</th>
+                  <th class="p-2 text-right">Current Stock</th>
+                  <th class="p-2 text-right">Expected Demand</th>
+                  <th class="p-2 text-right font-black">Stockout Probability</th>
+                </tr>
+              </thead>
+              <tbody id="stockout-risks-body" class="divide-y divide-slate-200">
+                <!-- Dynamically populated -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Isolation Forest Anomaly Radar -->
+      <div class="neo-box bg-white p-6 border-3 border-neo-black">
+        <div class="neo-badge bg-neo-pink text-neo-black font-black text-[10px] mb-1">UNSUPERVISED ANOMALY DETECTION</div>
+        <h4 class="text-base font-black uppercase mb-1">Isolation Forest: Rogue Loss Transactions</h4>
+        <p class="text-xs font-bold text-slate-600 mb-4">Scans multi-dimensional feature space to uncover anomalous loss transactions where high quantity, heavy discount, and negative margin collided.</p>
+
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs font-mono font-bold">
+            <thead class="bg-neo-pink text-neo-black uppercase border-b-2 border-neo-black">
+              <tr>
+                <th class="p-2.5">Transaction ID</th>
+                <th class="p-2.5">SKU ID</th>
+                <th class="p-2.5">Category</th>
+                <th class="p-2.5 text-right">Quantity</th>
+                <th class="p-2.5 text-right">Unit Price</th>
+                <th class="p-2.5 text-right">Discount</th>
+                <th class="p-2.5 text-right font-black text-rose-700">Gross Loss</th>
+                <th class="p-2.5">Anomaly Forensic Reason</th>
+              </tr>
+            </thead>
+            <tbody id="anomalies-table-body" class="divide-y divide-slate-200">
+              <!-- Dynamically populated -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- SKU INVESTIGATION DOSSIER SLIDE-OVER DRAWER (NEO-BRUTALIST) -->
+  <div id="sku-drawer-backdrop" class="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm hidden" onclick="closeSkuDrawer()"></div>
+  <div id="sku-drawer" class="fixed inset-y-0 right-0 z-50 w-full max-w-md bg-white border-l-4 border-neo-black shadow-[-8px_0px_0px_0px_#121212] p-6 overflow-y-auto transform translate-x-full transition-transform duration-200 ease-in-out">
+    <div class="flex items-center justify-between pb-4 border-b-3 border-neo-black">
+      <div>
+        <span class="neo-badge bg-neo-yellow text-neo-black font-black text-xs" id="drawer-category">CATEGORY</span>
+        <h3 class="text-2xl font-black text-neo-black mt-1" id="drawer-sku-id">PR0000</h3>
+      </div>
+      <button onclick="closeSkuDrawer()" class="neo-btn bg-neo-pink text-neo-black p-1.5">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+    </div>
+
+    <!-- Drawer Content -->
+    <div class="mt-6 space-y-6">
+      
+      <!-- Unit Economics Box -->
+      <div class="neo-box bg-slate-50 p-4 border-3 border-neo-black space-y-2 font-mono text-xs">
+        <div class="flex justify-between font-bold">
+          <span class="text-slate-500 font-sans">What It Costs Us to Buy:</span>
+          <span class="text-slate-900" id="drawer-cost">$0.00</span>
+        </div>
+        <div class="flex justify-between font-bold">
+          <span class="text-slate-500 font-sans">Current Price on Tag:</span>
+          <span class="text-slate-900" id="drawer-price">$0.00</span>
+        </div>
+        <div class="flex justify-between font-black text-sm pt-2 border-t-2 border-slate-200">
+          <span class="font-sans">Profit Per Unit:</span>
+          <span id="drawer-base-margin">$0.00</span>
+        </div>
+        <div class="flex justify-between font-black text-sm">
+          <span class="font-sans">Total Cash Made / Lost:</span>
+          <span id="drawer-total-gp">$0.00</span>
+        </div>
+      </div>
+
+      <!-- Forensics Diagnosis -->
+      <div>
+        <h4 class="text-xs font-black uppercase tracking-wider mb-2">The Diagnosis in Plain English:</h4>
+        <div id="drawer-diagnosis" class="neo-box p-4 bg-neo-pink/30 border-3 border-neo-black text-xs font-bold leading-relaxed">
+          Loading diagnosis...
+        </div>
+      </div>
+
+      <!-- Quick Metrics Grid -->
+      <div class="grid grid-cols-2 gap-3 text-xs font-bold">
+        <div class="neo-box-sm p-3 bg-white">
+          <span class="text-slate-500 block text-[10px] uppercase">Orders Sold</span>
+          <span class="text-base font-black text-neo-black" id="drawer-orders">0</span>
+        </div>
+        <div class="neo-box-sm p-3 bg-white">
+          <span class="text-slate-500 block text-[10px] uppercase">Units Quantity</span>
+          <span class="text-base font-black text-neo-black" id="drawer-units">0</span>
+        </div>
+        <div class="neo-box-sm p-3 bg-white">
+          <span class="text-slate-500 block text-[10px] uppercase">Return Rate</span>
+          <span class="text-base font-black text-neo-black" id="drawer-return-rate">0%</span>
+        </div>
+        <div class="neo-box-sm p-3 bg-white">
+          <span class="text-slate-500 block text-[10px] uppercase">Empty Shelf Days</span>
+          <span class="text-base font-black text-neo-black" id="drawer-stockout-days">0 days</span>
+        </div>
+      </div>
+
+      <!-- Prescribed Remedies -->
+      <div>
+        <h4 class="text-xs font-black uppercase tracking-wider mb-2">What The Manager Should Do:</h4>
+        <div class="neo-box p-4 bg-neo-green/30 border-3 border-neo-black text-xs font-bold leading-relaxed" id="drawer-remedy">
+          Action plan...
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- NEO-BRUTALIST FOOTER -->
+  <footer class="border-t-4 border-neo-black bg-neo-yellow py-4 px-6 text-center text-xs font-black text-neo-black mt-auto">
+    <span>THE MONEY LEAK &bull; Decision Support Engine &bull; Neo-Brutalist Edition &bull; Made for Real Business Decision Makers</span>
+  </footer>
+
+  <!-- App Script -->
+  <script src="/static/app.js"></script>
+  <script>
+    if (window.lucide) lucide.createIcons();
+  </script>
+</body>
+</html>

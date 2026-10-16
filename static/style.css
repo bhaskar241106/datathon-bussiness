@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700;800&display=swap');
+
+:root {
+  --bg-canvas: #FFFDF8;
+  --neo-black: #121212;
+  --neo-yellow: #FEF08A;
+  --neo-yellow-dark: #FDE047;
+  --neo-green: #86EFAC;
+  --neo-green-dark: #4ADE80;
+  --neo-pink: #FDA4AF;
+  --neo-pink-dark: #FB7185;
+  --neo-blue: #BAE6FD;
+  --neo-blue-dark: #38BDF8;
+  --neo-purple: #E9D5FF;
+  --neo-purple-dark: #C084FC;
+  --neo-orange: #FED7AA;
+  --neo-orange-dark: #FB923C;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--bg-canvas);
+  background-image: radial-gradient(#CBD5E1 1px, transparent 1px);
+  background-size: 24px 24px;
+  color: var(--neo-black);
+  overflow-x: hidden;
+}
+
+code, .font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Authentic Neo-Brutalism Card Shadows & Borders */
+.neo-box {
+  background-color: #FFFFFF;
+  border: 3px solid var(--neo-black);
+  box-shadow: 4px 4px 0px 0px var(--neo-black);
+  border-radius: 12px;
+  transition: all 0.15s ease-in-out;
+}
+
+.neo-box-sm {
+  background-color: #FFFFFF;
+  border: 2px solid var(--neo-black);
+  box-shadow: 3px 3px 0px 0px var(--neo-black);
+  border-radius: 8px;
+}
+
+.neo-box-hover:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px 0px var(--neo-black);
+}
+
+/* Neo-Brutalist Buttons */
+.neo-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  border: 3px solid var(--neo-black);
+  box-shadow: 3px 3px 0px 0px var(--neo-black);
+  border-radius: 10px;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+.neo-btn:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0px 0px var(--neo-black);
+}
+
+.neo-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px 0px var(--neo-black);
+}
+
+.neo-btn-primary {
+  background-color: var(--neo-yellow);
+  color: var(--neo-black);
+}
+.neo-btn-primary:hover {
+  background-color: var(--neo-yellow-dark);
+}
+
+.neo-btn-success {
+  background-color: var(--neo-green);
+  color: var(--neo-black);
+}
+.neo-btn-success:hover {
+  background-color: var(--neo-green-dark);
+}
+
+.neo-btn-danger {
+  background-color: var(--neo-pink);
+  color: var(--neo-black);
+}
+.neo-btn-danger:hover {
+  background-color: var(--neo-pink-dark);
+}
+
+.neo-btn-dark {
+  background-color: var(--neo-black);
+  color: #FFFFFF;
+}
+.neo-btn-dark:hover {
+  background-color: #262626;
+}
+
+/* Neo-Brutalist Badges */
+.neo-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 8px;
+  font-weight: 800;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  border: 2px solid var(--neo-black);
+  border-radius: 6px;
+  box-shadow: 2px 2px 0px 0px var(--neo-black);
+}
+
+/* Neo-Brutalist Switches */
+.neo-switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 28px;
+}
+.neo-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.neo-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #E2E8F0;
+  border: 2px solid var(--neo-black);
+  box-shadow: 2px 2px 0px 0px var(--neo-black);
+  border-radius: 28px;
+  transition: .2s;
+}
+.neo-slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: var(--neo-black);
+  border-radius: 50%;
+  transition: .2s;
+}
+input:checked + .neo-slider {
+  background-color: var(--neo-green);
+}
+input:checked + .neo-slider:before {
+  transform: translateX(22px);
+  background-color: var(--neo-black);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+  border-left: 2px solid var(--neo-black);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--neo-black);
+  border-radius: 0px;
+}
+
+/* Animations */
+@keyframes popIn {
+  from { opacity: 0; transform: scale(0.98); }
+  to { opacity: 1; transform: scale(1); }
+}
+.animate-pop {
+  animation: popIn 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
