@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0075",
+  "category": "Grocery",
+  "unit_cost": 99.12,
+  "list_price": 367.01,
+  "base_unit_margin": 267.89,
+  "is_negative_margin": false,
+  "supplier_lead_days": 22,
+  "total_orders": 61,
+  "completed_orders": 45,
+  "returned_orders": 10,
+  "cancelled_orders": 2,
+  "return_rate": 16.39,
+  "total_units_sold": 119,
+  "net_revenue": 36903.86,
+  "gross_profit": 25108.58,
+  "stockout_days": 3,
+  "avg_supplier_delay": 10.4
+}

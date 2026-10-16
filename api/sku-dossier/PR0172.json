@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0172",
+  "category": "Home",
+  "unit_cost": 207.02,
+  "list_price": 195.09,
+  "base_unit_margin": -11.930000000000007,
+  "is_negative_margin": true,
+  "supplier_lead_days": 24,
+  "total_orders": 65,
+  "completed_orders": 51,
+  "returned_orders": 4,
+  "cancelled_orders": 6,
+  "return_rate": 6.15,
+  "total_units_sold": 164,
+  "net_revenue": 27685.81,
+  "gross_profit": -6265.47,
+  "stockout_days": 2,
+  "avg_supplier_delay": 11.4
+}

@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0246",
+  "category": "Fashion",
+  "unit_cost": 27.79,
+  "list_price": 13.45,
+  "base_unit_margin": -14.34,
+  "is_negative_margin": true,
+  "supplier_lead_days": 22,
+  "total_orders": 65,
+  "completed_orders": 49,
+  "returned_orders": 5,
+  "cancelled_orders": 6,
+  "return_rate": 7.69,
+  "total_units_sold": 140,
+  "net_revenue": 1521.16,
+  "gross_profit": -2369.44,
+  "stockout_days": 2,
+  "avg_supplier_delay": 7.9
+}

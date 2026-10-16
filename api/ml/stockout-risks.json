@@ -1,0 +1,182 @@
+[
+  {
+    "product_id": "PR0002",
+    "category": "Home",
+    "stock_on_hand": 40,
+    "lead_time_days": 24,
+    "expected_demand": 77.0,
+    "stockout_probability": 100.0,
+    "list_price": 261.5
+  },
+  {
+    "product_id": "PR0010",
+    "category": "Beauty",
+    "stock_on_hand": 5,
+    "lead_time_days": 11,
+    "expected_demand": 38.4,
+    "stockout_probability": 100.0,
+    "list_price": 381.92
+  },
+  {
+    "product_id": "PR0025",
+    "category": "Sports",
+    "stock_on_hand": 36,
+    "lead_time_days": 26,
+    "expected_demand": 85.7,
+    "stockout_probability": 100.0,
+    "list_price": 346.93
+  },
+  {
+    "product_id": "PR0015",
+    "category": "Grocery",
+    "stock_on_hand": 22,
+    "lead_time_days": 16,
+    "expected_demand": 47.7,
+    "stockout_probability": 100.0,
+    "list_price": 251.86
+  },
+  {
+    "product_id": "PR0033",
+    "category": "Electronics",
+    "stock_on_hand": 118,
+    "lead_time_days": 44,
+    "expected_demand": 165.6,
+    "stockout_probability": 100.0,
+    "list_price": 123.09
+  },
+  {
+    "product_id": "PR0027",
+    "category": "Electronics",
+    "stock_on_hand": 25,
+    "lead_time_days": 27,
+    "expected_demand": 89.4,
+    "stockout_probability": 100.0,
+    "list_price": 66.51
+  },
+  {
+    "product_id": "PR0042",
+    "category": "Beauty",
+    "stock_on_hand": 47,
+    "lead_time_days": 23,
+    "expected_demand": 81.7,
+    "stockout_probability": 100.0,
+    "list_price": 310.07
+  },
+  {
+    "product_id": "PR0039",
+    "category": "Grocery",
+    "stock_on_hand": 2,
+    "lead_time_days": 18,
+    "expected_demand": 52.2,
+    "stockout_probability": 100.0,
+    "list_price": 294.08
+  },
+  {
+    "product_id": "PR0062",
+    "category": "Fashion",
+    "stock_on_hand": 71,
+    "lead_time_days": 29,
+    "expected_demand": 101.5,
+    "stockout_probability": 100.0,
+    "list_price": 89.84
+  },
+  {
+    "product_id": "PR0059",
+    "category": "Fashion",
+    "stock_on_hand": 65,
+    "lead_time_days": 31,
+    "expected_demand": 101.6,
+    "stockout_probability": 100.0,
+    "list_price": 393.05
+  },
+  {
+    "product_id": "PR0085",
+    "category": "Beauty",
+    "stock_on_hand": 25,
+    "lead_time_days": 42,
+    "expected_demand": 121.1,
+    "stockout_probability": 100.0,
+    "list_price": 220.96
+  },
+  {
+    "product_id": "PR0090",
+    "category": "Sports",
+    "stock_on_hand": 29,
+    "lead_time_days": 17,
+    "expected_demand": 59.2,
+    "stockout_probability": 100.0,
+    "list_price": 163.43
+  },
+  {
+    "product_id": "PR0086",
+    "category": "Fashion",
+    "stock_on_hand": 31,
+    "lead_time_days": 28,
+    "expected_demand": 97.7,
+    "stockout_probability": 100.0,
+    "list_price": 58.74
+  },
+  {
+    "product_id": "PR0071",
+    "category": "Electronics",
+    "stock_on_hand": 3,
+    "lead_time_days": 32,
+    "expected_demand": 107.9,
+    "stockout_probability": 100.0,
+    "list_price": 261.31
+  },
+  {
+    "product_id": "PR0072",
+    "category": "Sports",
+    "stock_on_hand": 12,
+    "lead_time_days": 11,
+    "expected_demand": 36.8,
+    "stockout_probability": 100.0,
+    "list_price": 35.47
+  },
+  {
+    "product_id": "PR0066",
+    "category": "Electronics",
+    "stock_on_hand": 77,
+    "lead_time_days": 30,
+    "expected_demand": 101.7,
+    "stockout_probability": 100.0,
+    "list_price": 85.1
+  },
+  {
+    "product_id": "PR0092",
+    "category": "Grocery",
+    "stock_on_hand": 33,
+    "lead_time_days": 31,
+    "expected_demand": 110.1,
+    "stockout_probability": 100.0,
+    "list_price": 305.12
+  },
+  {
+    "product_id": "PR0117",
+    "category": "Home",
+    "stock_on_hand": 15,
+    "lead_time_days": 24,
+    "expected_demand": 83.2,
+    "stockout_probability": 100.0,
+    "list_price": 301.95
+  },
+  {
+    "product_id": "PR0161",
+    "category": "Home",
+    "stock_on_hand": 19,
+    "lead_time_days": 11,
+    "expected_demand": 38.1,
+    "stockout_probability": 100.0,
+    "list_price": 241.44
+  },
+  {
+    "product_id": "PR0168",
+    "category": "Beauty",
+    "stock_on_hand": 30,
+    "lead_time_days": 18,
+    "expected_demand": 56.1,
+    "stockout_probability": 100.0,
+    "list_price": 26.0
+  }
+]

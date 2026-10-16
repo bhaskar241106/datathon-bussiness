@@ -1,0 +1,325 @@
+{
+  "cancelled_count": 1689,
+  "cancelled_rev": 861849.61,
+  "returned_count": 1431,
+  "returned_rev": 760322.3,
+  "reverse_logistics_cost": 51672.0,
+  "by_category": [
+    {
+      "category": "Beauty",
+      "total_orders": 2784,
+      "completed": 2164,
+      "cancelled": 246,
+      "returned": 223,
+      "pending": 151,
+      "cancelled_val": 99626.64349999999,
+      "returned_val": 101254.12049999999,
+      "cancel_rate": 8.836206896551724,
+      "return_rate": 8.010057471264368
+    },
+    {
+      "category": "Electronics",
+      "total_orders": 3286,
+      "completed": 2535,
+      "cancelled": 303,
+      "returned": 271,
+      "pending": 177,
+      "cancelled_val": 159463.8605,
+      "returned_val": 126524.23199999999,
+      "cancel_rate": 9.220937309799147,
+      "return_rate": 8.247108947048083
+    },
+    {
+      "category": "Fashion",
+      "total_orders": 2598,
+      "completed": 2016,
+      "cancelled": 245,
+      "returned": 203,
+      "pending": 134,
+      "cancelled_val": 118996.7005,
+      "returned_val": 115272.64899999998,
+      "cancel_rate": 9.430331023864511,
+      "return_rate": 7.813702848344881
+    },
+    {
+      "category": "Grocery",
+      "total_orders": 3150,
+      "completed": 2437,
+      "cancelled": 301,
+      "returned": 251,
+      "pending": 161,
+      "cancelled_val": 157381.47999999998,
+      "returned_val": 130036.548,
+      "cancel_rate": 9.555555555555555,
+      "return_rate": 7.968253968253968
+    },
+    {
+      "category": "Home",
+      "total_orders": 3141,
+      "completed": 2436,
+      "cancelled": 313,
+      "returned": 245,
+      "pending": 147,
+      "cancelled_val": 180880.27850000001,
+      "returned_val": 148901.2885,
+      "cancel_rate": 9.964979305953518,
+      "return_rate": 7.800063673989175
+    },
+    {
+      "category": "Sports",
+      "total_orders": 3041,
+      "completed": 2374,
+      "cancelled": 281,
+      "returned": 238,
+      "pending": 148,
+      "cancelled_val": 145500.6425,
+      "returned_val": 138333.46649999998,
+      "cancel_rate": 9.240381453469254,
+      "return_rate": 7.826372903650116
+    }
+  ],
+  "by_channel": [
+    {
+      "channel": "App",
+      "total_orders": 7115,
+      "cancelled": 695,
+      "returned": 579,
+      "net_revenue": 3671332.6945,
+      "cancel_rate": 9.76809557273366,
+      "return_rate": 8.137737174982432
+    },
+    {
+      "channel": "Store",
+      "total_orders": 2793,
+      "cancelled": 245,
+      "returned": 231,
+      "net_revenue": 1479261.1575,
+      "cancel_rate": 8.771929824561402,
+      "return_rate": 8.270676691729323
+    },
+    {
+      "channel": "Web",
+      "total_orders": 8092,
+      "cancelled": 749,
+      "returned": 621,
+      "net_revenue": 4240209.2435,
+      "cancel_rate": 9.2560553633218,
+      "return_rate": 7.674246169055858
+    }
+  ],
+  "by_payment": [
+    {
+      "payment_method": "Card",
+      "total_orders": 3627,
+      "cancelled": 360,
+      "returned": 302,
+      "cancel_rate": 9.925558312655088,
+      "return_rate": 8.3264405845051
+    },
+    {
+      "payment_method": "Cash",
+      "total_orders": 3578,
+      "cancelled": 324,
+      "returned": 284,
+      "cancel_rate": 9.055338177752935,
+      "return_rate": 7.937395192845164
+    },
+    {
+      "payment_method": "NetBanking",
+      "total_orders": 3615,
+      "cancelled": 343,
+      "returned": 288,
+      "cancel_rate": 9.488243430152144,
+      "return_rate": 7.966804979253111
+    },
+    {
+      "payment_method": "UPI",
+      "total_orders": 3506,
+      "cancelled": 313,
+      "returned": 265,
+      "cancel_rate": 8.92755276668568,
+      "return_rate": 7.558471192241871
+    },
+    {
+      "payment_method": "Wallet",
+      "total_orders": 3674,
+      "cancelled": 349,
+      "returned": 292,
+      "cancel_rate": 9.49918345127926,
+      "return_rate": 7.947740881872618
+    }
+  ],
+  "high_return_skus": [
+    {
+      "product_id": "PR0184",
+      "category": "Electronics",
+      "total_orders": 87,
+      "returned_orders": 13,
+      "return_rate": 14.94,
+      "return_zscore": 2.16,
+      "returned_value": 3163.78
+    },
+    {
+      "product_id": "PR0198",
+      "category": "Sports",
+      "total_orders": 81,
+      "returned_orders": 13,
+      "return_rate": 16.05,
+      "return_zscore": 2.5,
+      "returned_value": 10891.23
+    },
+    {
+      "product_id": "PR0013",
+      "category": "Home",
+      "total_orders": 89,
+      "returned_orders": 12,
+      "return_rate": 13.48,
+      "return_zscore": 1.71,
+      "returned_value": 6527.5
+    },
+    {
+      "product_id": "PR0138",
+      "category": "Electronics",
+      "total_orders": 69,
+      "returned_orders": 11,
+      "return_rate": 15.94,
+      "return_zscore": 2.47,
+      "returned_value": 5236.71
+    },
+    {
+      "product_id": "PR0082",
+      "category": "Beauty",
+      "total_orders": 74,
+      "returned_orders": 11,
+      "return_rate": 14.86,
+      "return_zscore": 2.14,
+      "returned_value": 12499.96
+    },
+    {
+      "product_id": "PR0044",
+      "category": "Sports",
+      "total_orders": 78,
+      "returned_orders": 10,
+      "return_rate": 12.82,
+      "return_zscore": 1.51,
+      "returned_value": 5798.58
+    },
+    {
+      "product_id": "PR0014",
+      "category": "Grocery",
+      "total_orders": 70,
+      "returned_orders": 10,
+      "return_rate": 14.29,
+      "return_zscore": 1.96,
+      "returned_value": 1872.58
+    },
+    {
+      "product_id": "PR0114",
+      "category": "Electronics",
+      "total_orders": 72,
+      "returned_orders": 10,
+      "return_rate": 13.89,
+      "return_zscore": 1.84,
+      "returned_value": 5232.36
+    },
+    {
+      "product_id": "PR0075",
+      "category": "Grocery",
+      "total_orders": 61,
+      "returned_orders": 10,
+      "return_rate": 16.39,
+      "return_zscore": 2.61,
+      "returned_value": 8774.31
+    },
+    {
+      "product_id": "PR0085",
+      "category": "Beauty",
+      "total_orders": 78,
+      "returned_orders": 10,
+      "return_rate": 12.82,
+      "return_zscore": 1.51,
+      "returned_value": 5301.35
+    },
+    {
+      "product_id": "PR0066",
+      "category": "Electronics",
+      "total_orders": 62,
+      "returned_orders": 10,
+      "return_rate": 16.13,
+      "return_zscore": 2.53,
+      "returned_value": 1827.48
+    },
+    {
+      "product_id": "PR0249",
+      "category": "Beauty",
+      "total_orders": 78,
+      "returned_orders": 10,
+      "return_rate": 12.82,
+      "return_zscore": 1.51,
+      "returned_value": 6391.83
+    },
+    {
+      "product_id": "PR0208",
+      "category": "Sports",
+      "total_orders": 57,
+      "returned_orders": 10,
+      "return_rate": 17.54,
+      "return_zscore": 2.97,
+      "returned_value": 10581.14
+    },
+    {
+      "product_id": "PR0232",
+      "category": "Electronics",
+      "total_orders": 70,
+      "returned_orders": 10,
+      "return_rate": 14.29,
+      "return_zscore": 1.96,
+      "returned_value": 4694.41
+    },
+    {
+      "product_id": "PR0063",
+      "category": "Fashion",
+      "total_orders": 70,
+      "returned_orders": 9,
+      "return_rate": 12.86,
+      "return_zscore": 1.52,
+      "returned_value": 1788.41
+    },
+    {
+      "product_id": "PR0221",
+      "category": "Fashion",
+      "total_orders": 66,
+      "returned_orders": 9,
+      "return_rate": 13.64,
+      "return_zscore": 1.76,
+      "returned_value": 6175.06
+    },
+    {
+      "product_id": "PR0188",
+      "category": "Grocery",
+      "total_orders": 62,
+      "returned_orders": 8,
+      "return_rate": 12.9,
+      "return_zscore": 1.53,
+      "returned_value": 2749.21
+    },
+    {
+      "product_id": "PR0241",
+      "category": "Home",
+      "total_orders": 60,
+      "returned_orders": 8,
+      "return_rate": 13.33,
+      "return_zscore": 1.67,
+      "returned_value": 7319.61
+    },
+    {
+      "product_id": "PR0233",
+      "category": "Sports",
+      "total_orders": 54,
+      "returned_orders": 7,
+      "return_rate": 12.96,
+      "return_zscore": 1.55,
+      "returned_value": 5134.26
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/api/overview", "destination": "/api/overview.json" },
+    { "source": "/api/margins", "destination": "/api/margins.json" },
+    { "source": "/api/returns", "destination": "/api/returns.json" },
+    { "source": "/api/inventory", "destination": "/api/inventory.json" },
+    { "source": "/api/marketing", "destination": "/api/marketing.json" },
+    { "source": "/api/customers", "destination": "/api/customers.json" },
+    { "source": "/api/action-cards", "destination": "/api/action-cards.json" },
+    { "source": "/api/simulate", "destination": "/api/simulate.json" },
+    { "source": "/api/ml/feature-importance", "destination": "/api/ml/feature-importance.json" },
+    { "source": "/api/ml/stockout-risks", "destination": "/api/ml/stockout-risks.json" },
+    { "source": "/api/ml/anomalies", "destination": "/api/ml/anomalies.json" },
+    { "source": "/api/sku-dossier/:sku", "destination": "/api/sku-dossier/:sku.json" },
+    { "source": "/static/(.*)", "destination": "/static/$1" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}

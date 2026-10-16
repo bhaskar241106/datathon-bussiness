@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0102",
+  "category": "Sports",
+  "unit_cost": 137.36,
+  "list_price": 272.88,
+  "base_unit_margin": 135.51999999999998,
+  "is_negative_margin": false,
+  "supplier_lead_days": 12,
+  "total_orders": 76,
+  "completed_orders": 61,
+  "returned_orders": 5,
+  "cancelled_orders": 6,
+  "return_rate": 6.58,
+  "total_units_sold": 176,
+  "net_revenue": 40236.99,
+  "gross_profit": 16061.63,
+  "stockout_days": 1,
+  "avg_supplier_delay": 9.5
+}

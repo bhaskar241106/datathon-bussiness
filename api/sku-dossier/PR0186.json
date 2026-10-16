@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0186",
+  "category": "Fashion",
+  "unit_cost": 71.19,
+  "list_price": 77.64,
+  "base_unit_margin": 6.450000000000003,
+  "is_negative_margin": false,
+  "supplier_lead_days": 15,
+  "total_orders": 73,
+  "completed_orders": 59,
+  "returned_orders": 4,
+  "cancelled_orders": 5,
+  "return_rate": 5.48,
+  "total_units_sold": 197,
+  "net_revenue": 12988.44,
+  "gross_profit": -1035.99,
+  "stockout_days": 5,
+  "avg_supplier_delay": 10.4
+}

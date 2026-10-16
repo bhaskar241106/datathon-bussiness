@@ -1,0 +1,316 @@
+{
+  "total_spend": 4805016.08,
+  "bleeding_spend": 297245.04,
+  "category_pnl": [
+    {
+      "category": "Beauty",
+      "net_revenue": 933734.2605,
+      "cogs": 866998.55,
+      "gross_profit": 66735.71050000002,
+      "ad_spend": 870069.67,
+      "impressions": 10301844,
+      "clicks": 970967,
+      "conversions": 152756,
+      "net_contribution": -803333.9595,
+      "roas": 1.0731718305960487,
+      "overall_cpa": 5.695813388672131
+    },
+    {
+      "category": "Electronics",
+      "net_revenue": 1316100.722,
+      "cogs": 903837.05,
+      "gross_profit": 412263.672,
+      "ad_spend": 820672.69,
+      "impressions": 10514296,
+      "clicks": 1073059,
+      "conversions": 154962,
+      "net_contribution": -408409.0179999999,
+      "roas": 1.6036852913918704,
+      "overall_cpa": 5.29596088073205
+    },
+    {
+      "category": "Fashion",
+      "net_revenue": 1076686.4665,
+      "cogs": 697549.61,
+      "gross_profit": 379136.8565,
+      "ad_spend": 801837.79,
+      "impressions": 9250662,
+      "clicks": 1015438,
+      "conversions": 150801,
+      "net_contribution": -422700.93350000004,
+      "roas": 1.3427734136850797,
+      "overall_cpa": 5.317191464247585
+    },
+    {
+      "category": "Grocery",
+      "net_revenue": 1282925.5605,
+      "cogs": 982593.12,
+      "gross_profit": 300332.4405,
+      "ad_spend": 800272.54,
+      "impressions": 10413599,
+      "clicks": 1120445,
+      "conversions": 156739,
+      "net_contribution": -499940.0995,
+      "roas": 1.6031108108495136,
+      "overall_cpa": 5.105765253064011
+    },
+    {
+      "category": "Home",
+      "net_revenue": 1390889.3244999999,
+      "cogs": 959229.84,
+      "gross_profit": 431659.48449999996,
+      "ad_spend": 776488.27,
+      "impressions": 9955304,
+      "clicks": 949539,
+      "conversions": 153135,
+      "net_contribution": -344828.78550000006,
+      "roas": 1.7912560668817312,
+      "overall_cpa": 5.070612662030235
+    },
+    {
+      "category": "Sports",
+      "net_revenue": 1301361.915,
+      "cogs": 922501.68,
+      "gross_profit": 378860.235,
+      "ad_spend": 735675.12,
+      "impressions": 9034182,
+      "clicks": 916246,
+      "conversions": 127018,
+      "net_contribution": -356814.885,
+      "roas": 1.768935607065249,
+      "overall_cpa": 5.791896581586862
+    }
+  ],
+  "tier_summary": [
+    {
+      "efficiency_tier": "Ultra-Efficient (<$10)",
+      "campaign_count": 885,
+      "total_spend": 3097240.85,
+      "total_conversions": 806346,
+      "avg_cpa": 4.1153368913173
+    },
+    {
+      "efficiency_tier": "Standard ($10-$25)",
+      "campaign_count": 196,
+      "total_spend": 1063536.26,
+      "total_conversions": 76142,
+      "avg_cpa": 14.938518628519711
+    },
+    {
+      "efficiency_tier": "Caution ($25-$50)",
+      "campaign_count": 60,
+      "total_spend": 339533.96,
+      "total_conversions": 9970,
+      "avg_cpa": 35.20511328340893
+    },
+    {
+      "efficiency_tier": "Bleeding (>$50)",
+      "campaign_count": 56,
+      "total_spend": 297245.04,
+      "total_conversions": 2953,
+      "avg_cpa": 194.11245087721952
+    }
+  ],
+  "bleeding_campaigns": [
+    {
+      "campaign_id": "CA0453",
+      "date": "2025-10-07",
+      "channel": "Store",
+      "category": "Fashion",
+      "spend": 5938.64,
+      "clicks": 3941,
+      "conversions": 3,
+      "cpa": 1979.55
+    },
+    {
+      "campaign_id": "CA0235",
+      "date": "2025-05-03",
+      "channel": "Store",
+      "category": "Grocery",
+      "spend": 4224.98,
+      "clicks": 9918,
+      "conversions": 4,
+      "cpa": 1056.24
+    },
+    {
+      "campaign_id": "CA0782",
+      "date": "2025-10-17",
+      "channel": "Web",
+      "category": "Sports",
+      "spend": 7238.42,
+      "clicks": 8137,
+      "conversions": 8,
+      "cpa": 904.8
+    },
+    {
+      "campaign_id": "CA0157",
+      "date": "2025-02-16",
+      "channel": "Social",
+      "category": "Fashion",
+      "spend": 7616.79,
+      "clicks": 9030,
+      "conversions": 21,
+      "cpa": 362.7
+    },
+    {
+      "campaign_id": "CA0409",
+      "date": "2025-05-01",
+      "channel": "Web",
+      "category": "Grocery",
+      "spend": 7928.93,
+      "clicks": 5265,
+      "conversions": 22,
+      "cpa": 360.41
+    },
+    {
+      "campaign_id": "CA0386",
+      "date": "2025-01-18",
+      "channel": "Web",
+      "category": "Fashion",
+      "spend": 5758.21,
+      "clicks": 2145,
+      "conversions": 16,
+      "cpa": 359.89
+    },
+    {
+      "campaign_id": "CA0633",
+      "date": "2025-07-22",
+      "channel": "App",
+      "category": "Electronics",
+      "spend": 5634.59,
+      "clicks": 4953,
+      "conversions": 16,
+      "cpa": 352.16
+    },
+    {
+      "campaign_id": "CA0804",
+      "date": "2025-04-22",
+      "channel": "Email",
+      "category": "Home",
+      "spend": 2161.07,
+      "clicks": 3934,
+      "conversions": 7,
+      "cpa": 308.72
+    },
+    {
+      "campaign_id": "CA0986",
+      "date": "2025-08-06",
+      "channel": "Social",
+      "category": "Home",
+      "spend": 3949.42,
+      "clicks": 537,
+      "conversions": 16,
+      "cpa": 246.84
+    },
+    {
+      "campaign_id": "CA0303",
+      "date": "2025-07-19",
+      "channel": "Email",
+      "category": "Home",
+      "spend": 7334.86,
+      "clicks": 5778,
+      "conversions": 32,
+      "cpa": 229.21
+    },
+    {
+      "campaign_id": "CA1161",
+      "date": "2025-06-11",
+      "channel": "Social",
+      "category": "Grocery",
+      "spend": 5017.48,
+      "clicks": 9086,
+      "conversions": 22,
+      "cpa": 228.07
+    },
+    {
+      "campaign_id": "CA1067",
+      "date": "2025-02-08",
+      "channel": "Store",
+      "category": "Home",
+      "spend": 4301.28,
+      "clicks": 7596,
+      "conversions": 19,
+      "cpa": 226.38
+    },
+    {
+      "campaign_id": "CA0509",
+      "date": "2025-04-24",
+      "channel": "App",
+      "category": "Beauty",
+      "spend": 4652.92,
+      "clicks": 423,
+      "conversions": 21,
+      "cpa": 221.57
+    },
+    {
+      "campaign_id": "CA0072",
+      "date": "2025-03-02",
+      "channel": "App",
+      "category": "Beauty",
+      "spend": 7676.25,
+      "clicks": 5283,
+      "conversions": 41,
+      "cpa": 187.23
+    },
+    {
+      "campaign_id": "CA0484",
+      "date": "2025-12-24",
+      "channel": "Web",
+      "category": "Sports",
+      "spend": 5837.51,
+      "clicks": 9876,
+      "conversions": 32,
+      "cpa": 182.42
+    },
+    {
+      "campaign_id": "CA0009",
+      "date": "2025-01-10",
+      "channel": "Store",
+      "category": "Sports",
+      "spend": 7456.45,
+      "clicks": 8343,
+      "conversions": 44,
+      "cpa": 169.46
+    },
+    {
+      "campaign_id": "CA0661",
+      "date": "2025-08-29",
+      "channel": "Store",
+      "category": "Fashion",
+      "spend": 759.38,
+      "clicks": 1096,
+      "conversions": 5,
+      "cpa": 151.88
+    },
+    {
+      "campaign_id": "CA0297",
+      "date": "2025-04-10",
+      "channel": "Social",
+      "category": "Beauty",
+      "spend": 7325.34,
+      "clicks": 576,
+      "conversions": 54,
+      "cpa": 135.65
+    },
+    {
+      "campaign_id": "CA0529",
+      "date": "2025-12-13",
+      "channel": "App",
+      "category": "Home",
+      "spend": 6231.82,
+      "clicks": 2587,
+      "conversions": 46,
+      "cpa": 135.47
+    },
+    {
+      "campaign_id": "CA1013",
+      "date": "2025-05-20",
+      "channel": "App",
+      "category": "Sports",
+      "spend": 7383.96,
+      "clicks": 415,
+      "conversions": 56,
+      "cpa": 131.86
+    }
+  ]
+}

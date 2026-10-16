@@ -1,0 +1,42 @@
+[
+  {
+    "feature": "unit_price",
+    "importance": 23.32
+  },
+  {
+    "feature": "supplier_lead_days",
+    "importance": 16.06
+  },
+  {
+    "feature": "discount_pct",
+    "importance": 9.62
+  },
+  {
+    "feature": "quantity",
+    "importance": 9.1
+  },
+  {
+    "feature": "payment_method_UPI",
+    "importance": 2.66
+  },
+  {
+    "feature": "channel_App",
+    "importance": 2.62
+  },
+  {
+    "feature": "channel_Web",
+    "importance": 2.6
+  },
+  {
+    "feature": "region_North",
+    "importance": 2.4
+  },
+  {
+    "feature": "region_East",
+    "importance": 2.37
+  },
+  {
+    "feature": "payment_method_Cash",
+    "importance": 2.32
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0223",
+  "category": "Grocery",
+  "unit_cost": 56.36,
+  "list_price": 222.98,
+  "base_unit_margin": 166.62,
+  "is_negative_margin": false,
+  "supplier_lead_days": 9,
+  "total_orders": 64,
+  "completed_orders": 52,
+  "returned_orders": 1,
+  "cancelled_orders": 9,
+  "return_rate": 1.56,
+  "total_units_sold": 133,
+  "net_revenue": 25362.77,
+  "gross_profit": 17866.9,
+  "stockout_days": 4,
+  "avg_supplier_delay": 9.7
+}

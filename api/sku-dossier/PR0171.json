@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0171",
+  "category": "Sports",
+  "unit_cost": 174.47,
+  "list_price": 293.01,
+  "base_unit_margin": 118.53999999999999,
+  "is_negative_margin": false,
+  "supplier_lead_days": 21,
+  "total_orders": 71,
+  "completed_orders": 55,
+  "returned_orders": 6,
+  "cancelled_orders": 6,
+  "return_rate": 8.45,
+  "total_units_sold": 164,
+  "net_revenue": 39615.82,
+  "gross_profit": 11002.74,
+  "stockout_days": 5,
+  "avg_supplier_delay": 11.4
+}

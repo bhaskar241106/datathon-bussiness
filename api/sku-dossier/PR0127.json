@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0127",
+  "category": "Fashion",
+  "unit_cost": 245.5,
+  "list_price": 363.14,
+  "base_unit_margin": 117.63999999999999,
+  "is_negative_margin": false,
+  "supplier_lead_days": 22,
+  "total_orders": 98,
+  "completed_orders": 73,
+  "returned_orders": 12,
+  "cancelled_orders": 7,
+  "return_rate": 12.24,
+  "total_units_sold": 209,
+  "net_revenue": 64380.19,
+  "gross_profit": 13070.69,
+  "stockout_days": 4,
+  "avg_supplier_delay": 11.5
+}

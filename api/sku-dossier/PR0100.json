@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0100",
+  "category": "Sports",
+  "unit_cost": 71.69,
+  "list_price": 32.08,
+  "base_unit_margin": -39.61,
+  "is_negative_margin": true,
+  "supplier_lead_days": 2,
+  "total_orders": 77,
+  "completed_orders": 68,
+  "returned_orders": 5,
+  "cancelled_orders": 4,
+  "return_rate": 6.49,
+  "total_units_sold": 231,
+  "net_revenue": 6085.23,
+  "gross_profit": -10475.16,
+  "stockout_days": 4,
+  "avg_supplier_delay": 11.8
+}

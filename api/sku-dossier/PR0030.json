@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0030",
+  "category": "Grocery",
+  "unit_cost": 136.88,
+  "list_price": 16.28,
+  "base_unit_margin": -120.6,
+  "is_negative_margin": true,
+  "supplier_lead_days": 8,
+  "total_orders": 74,
+  "completed_orders": 58,
+  "returned_orders": 5,
+  "cancelled_orders": 7,
+  "return_rate": 6.76,
+  "total_units_sold": 173,
+  "net_revenue": 2341.58,
+  "gross_profit": -21338.66,
+  "stockout_days": 1,
+  "avg_supplier_delay": 10.0
+}

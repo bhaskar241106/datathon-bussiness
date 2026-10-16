@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0199",
+  "category": "Beauty",
+  "unit_cost": 23.15,
+  "list_price": 246.38,
+  "base_unit_margin": 223.23,
+  "is_negative_margin": false,
+  "supplier_lead_days": 23,
+  "total_orders": 73,
+  "completed_orders": 60,
+  "returned_orders": 5,
+  "cancelled_orders": 4,
+  "return_rate": 6.85,
+  "total_units_sold": 179,
+  "net_revenue": 36587.15,
+  "gross_profit": 32443.3,
+  "stockout_days": 0,
+  "avg_supplier_delay": 11.4
+}

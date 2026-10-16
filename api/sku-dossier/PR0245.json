@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0245",
+  "category": "Home",
+  "unit_cost": 24.54,
+  "list_price": 242.94,
+  "base_unit_margin": 218.4,
+  "is_negative_margin": false,
+  "supplier_lead_days": 2,
+  "total_orders": 72,
+  "completed_orders": 57,
+  "returned_orders": 7,
+  "cancelled_orders": 7,
+  "return_rate": 9.72,
+  "total_units_sold": 183,
+  "net_revenue": 37704.27,
+  "gross_profit": 33213.45,
+  "stockout_days": 3,
+  "avg_supplier_delay": 9.3
+}

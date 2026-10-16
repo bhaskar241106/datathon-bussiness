@@ -1,0 +1,12 @@
+{
+  "baseline_net_contrib": -2887699.68,
+  "simulated_net_contrib": -331123.44,
+  "total_recovered": 2556576.24,
+  "breakdown": {
+    "Pricing Optimization": 1802830.58,
+    "Discount Rationalization": 295946.92,
+    "Ad Spend Pruning": 398053.02,
+    "Inventory Availability": 39397.04,
+    "Return Rate Mitigation": 20348.68
+  }
+}

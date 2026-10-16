@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0055",
+  "category": "Beauty",
+  "unit_cost": 173.95,
+  "list_price": 382.1,
+  "base_unit_margin": 208.15000000000003,
+  "is_negative_margin": false,
+  "supplier_lead_days": 18,
+  "total_orders": 62,
+  "completed_orders": 51,
+  "returned_orders": 4,
+  "cancelled_orders": 5,
+  "return_rate": 6.45,
+  "total_units_sold": 151,
+  "net_revenue": 50248.27,
+  "gross_profit": 23981.82,
+  "stockout_days": 1,
+  "avg_supplier_delay": 12.0
+}

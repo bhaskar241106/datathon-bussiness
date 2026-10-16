@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0019",
+  "category": "Electronics",
+  "unit_cost": 15.58,
+  "list_price": 97.9,
+  "base_unit_margin": 82.32000000000001,
+  "is_negative_margin": false,
+  "supplier_lead_days": 21,
+  "total_orders": 66,
+  "completed_orders": 48,
+  "returned_orders": 5,
+  "cancelled_orders": 8,
+  "return_rate": 7.58,
+  "total_units_sold": 144,
+  "net_revenue": 12200.24,
+  "gross_profit": 9956.72,
+  "stockout_days": 2,
+  "avg_supplier_delay": 9.0
+}

@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0149",
+  "category": "Home",
+  "unit_cost": 160.53,
+  "list_price": 180.53,
+  "base_unit_margin": 20.0,
+  "is_negative_margin": false,
+  "supplier_lead_days": 27,
+  "total_orders": 72,
+  "completed_orders": 54,
+  "returned_orders": 7,
+  "cancelled_orders": 6,
+  "return_rate": 9.72,
+  "total_units_sold": 187,
+  "net_revenue": 28034.45,
+  "gross_profit": -1984.66,
+  "stockout_days": 4,
+  "avg_supplier_delay": 11.0
+}

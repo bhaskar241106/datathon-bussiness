@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0071",
+  "category": "Electronics",
+  "unit_cost": 243.88,
+  "list_price": 261.31,
+  "base_unit_margin": 17.430000000000007,
+  "is_negative_margin": false,
+  "supplier_lead_days": 27,
+  "total_orders": 75,
+  "completed_orders": 56,
+  "returned_orders": 9,
+  "cancelled_orders": 6,
+  "return_rate": 12.0,
+  "total_units_sold": 182,
+  "net_revenue": 37729.78,
+  "gross_profit": -6656.38,
+  "stockout_days": 3,
+  "avg_supplier_delay": 10.8
+}

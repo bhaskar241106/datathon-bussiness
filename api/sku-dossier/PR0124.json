@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0124",
+  "category": "Sports",
+  "unit_cost": 223.58,
+  "list_price": 247.98,
+  "base_unit_margin": 24.399999999999977,
+  "is_negative_margin": false,
+  "supplier_lead_days": 2,
+  "total_orders": 77,
+  "completed_orders": 63,
+  "returned_orders": 4,
+  "cancelled_orders": 8,
+  "return_rate": 5.19,
+  "total_units_sold": 189,
+  "net_revenue": 39371.51,
+  "gross_profit": -2885.11,
+  "stockout_days": 4,
+  "avg_supplier_delay": 9.0
+}

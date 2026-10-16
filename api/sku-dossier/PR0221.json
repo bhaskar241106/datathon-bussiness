@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0221",
+  "category": "Fashion",
+  "unit_cost": 238.69,
+  "list_price": 218.2,
+  "base_unit_margin": -20.49000000000001,
+  "is_negative_margin": true,
+  "supplier_lead_days": 4,
+  "total_orders": 66,
+  "completed_orders": 47,
+  "returned_orders": 9,
+  "cancelled_orders": 8,
+  "return_rate": 13.64,
+  "total_units_sold": 153,
+  "net_revenue": 27626.3,
+  "gross_profit": -8893.27,
+  "stockout_days": 3,
+  "avg_supplier_delay": 10.8
+}

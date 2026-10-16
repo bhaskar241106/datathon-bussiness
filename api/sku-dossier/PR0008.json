@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0008",
+  "category": "Beauty",
+  "unit_cost": 81.3,
+  "list_price": 35.94,
+  "base_unit_margin": -45.36,
+  "is_negative_margin": true,
+  "supplier_lead_days": 17,
+  "total_orders": 67,
+  "completed_orders": 55,
+  "returned_orders": 5,
+  "cancelled_orders": 4,
+  "return_rate": 7.46,
+  "total_units_sold": 183,
+  "net_revenue": 5540.95,
+  "gross_profit": -9336.95,
+  "stockout_days": 3,
+  "avg_supplier_delay": 5.7
+}

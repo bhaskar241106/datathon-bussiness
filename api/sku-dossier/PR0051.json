@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0051",
+  "category": "Fashion",
+  "unit_cost": 74.21,
+  "list_price": 205.22,
+  "base_unit_margin": 131.01,
+  "is_negative_margin": false,
+  "supplier_lead_days": 7,
+  "total_orders": 70,
+  "completed_orders": 54,
+  "returned_orders": 5,
+  "cancelled_orders": 7,
+  "return_rate": 7.14,
+  "total_units_sold": 147,
+  "net_revenue": 26241.66,
+  "gross_profit": 15332.79,
+  "stockout_days": 6,
+  "avg_supplier_delay": 9.1
+}

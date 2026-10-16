@@ -1,0 +1,17 @@
+{
+  "tier_counts": {
+    "Profitable Champion": 917,
+    "Margin Drainer (Negative Margin)": 705,
+    "At-Risk / Dormant": 670,
+    "General Regular": 381,
+    "Discount Seeker / Low Margin": 298
+  },
+  "profit_by_tier": {
+    "At-Risk / Dormant": 493389.57,
+    "Discount Seeker / Low Margin": 82564.91,
+    "General Regular": 289288.45,
+    "Margin Drainer (Negative Margin)": -293206.58,
+    "Profitable Champion": 1396952.06
+  },
+  "total_customers": 2971
+}

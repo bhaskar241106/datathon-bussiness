@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0114",
+  "category": "Electronics",
+  "unit_cost": 27.45,
+  "list_price": 194.06,
+  "base_unit_margin": 166.61,
+  "is_negative_margin": false,
+  "supplier_lead_days": 17,
+  "total_orders": 72,
+  "completed_orders": 51,
+  "returned_orders": 10,
+  "cancelled_orders": 8,
+  "return_rate": 13.89,
+  "total_units_sold": 132,
+  "net_revenue": 21538.21,
+  "gross_profit": 17914.81,
+  "stockout_days": 3,
+  "avg_supplier_delay": 9.5
+}

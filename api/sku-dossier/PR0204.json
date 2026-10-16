@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0204",
+  "category": "Fashion",
+  "unit_cost": 225.39,
+  "list_price": 270.58,
+  "base_unit_margin": 45.19,
+  "is_negative_margin": false,
+  "supplier_lead_days": 9,
+  "total_orders": 60,
+  "completed_orders": 49,
+  "returned_orders": 5,
+  "cancelled_orders": 2,
+  "return_rate": 8.33,
+  "total_units_sold": 138,
+  "net_revenue": 30858.78,
+  "gross_profit": -245.04,
+  "stockout_days": 1,
+  "avg_supplier_delay": 10.5
+}

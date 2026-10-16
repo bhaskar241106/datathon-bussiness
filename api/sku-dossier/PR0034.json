@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0034",
+  "category": "Grocery",
+  "unit_cost": 244.98,
+  "list_price": 273.67,
+  "base_unit_margin": 28.690000000000026,
+  "is_negative_margin": false,
+  "supplier_lead_days": 5,
+  "total_orders": 81,
+  "completed_orders": 64,
+  "returned_orders": 7,
+  "cancelled_orders": 6,
+  "return_rate": 8.64,
+  "total_units_sold": 164,
+  "net_revenue": 38441.05,
+  "gross_profit": -1735.67,
+  "stockout_days": 2,
+  "avg_supplier_delay": 7.8
+}

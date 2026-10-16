@@ -1,0 +1,285 @@
+{
+  "stockout_incidents": 760,
+  "lost_revenue": 508202.45,
+  "lost_margin": 249848.79,
+  "top_stockouts": [
+    {
+      "product_id": "PR0080",
+      "category": "Home",
+      "stockout_days": 11,
+      "stockout_pct": 33.3,
+      "avg_stock": 140.0,
+      "threshold": 46.0,
+      "recommended_rop": 95.0,
+      "rop_deficit": 49.0,
+      "lost_revenue": 1793.62,
+      "lost_margin": -5671.56
+    },
+    {
+      "product_id": "PR0009",
+      "category": "Electronics",
+      "stockout_days": 8,
+      "stockout_pct": 38.1,
+      "avg_stock": 151.0,
+      "threshold": 46.0,
+      "recommended_rop": 50.0,
+      "rop_deficit": 4.0,
+      "lost_revenue": 8096.25,
+      "lost_margin": 5744.13
+    },
+    {
+      "product_id": "PR0047",
+      "category": "Electronics",
+      "stockout_days": 8,
+      "stockout_pct": 29.6,
+      "avg_stock": 152.0,
+      "threshold": 42.0,
+      "recommended_rop": 50.0,
+      "rop_deficit": 8.0,
+      "lost_revenue": 6055.49,
+      "lost_margin": 1454.54
+    },
+    {
+      "product_id": "PR0121",
+      "category": "Home",
+      "stockout_days": 7,
+      "stockout_pct": 22.6,
+      "avg_stock": 153.0,
+      "threshold": 50.0,
+      "recommended_rop": 135.0,
+      "rop_deficit": 85.0,
+      "lost_revenue": 1869.93,
+      "lost_margin": -1191.34
+    },
+    {
+      "product_id": "PR0109",
+      "category": "Grocery",
+      "stockout_days": 7,
+      "stockout_pct": 30.4,
+      "avg_stock": 106.0,
+      "threshold": 47.0,
+      "recommended_rop": 116.0,
+      "rop_deficit": 69.0,
+      "lost_revenue": 2883.99,
+      "lost_margin": 1435.47
+    },
+    {
+      "product_id": "PR0175",
+      "category": "Electronics",
+      "stockout_days": 7,
+      "stockout_pct": 29.2,
+      "avg_stock": 129.0,
+      "threshold": 55.0,
+      "recommended_rop": 87.0,
+      "rop_deficit": 32.0,
+      "lost_revenue": 4923.35,
+      "lost_margin": 4581.97
+    },
+    {
+      "product_id": "PR0234",
+      "category": "Grocery",
+      "stockout_days": 7,
+      "stockout_pct": 33.3,
+      "avg_stock": 149.0,
+      "threshold": 44.0,
+      "recommended_rop": 126.0,
+      "rop_deficit": 82.0,
+      "lost_revenue": 7092.76,
+      "lost_margin": 4633.2
+    },
+    {
+      "product_id": "PR0043",
+      "category": "Home",
+      "stockout_days": 6,
+      "stockout_pct": 27.3,
+      "avg_stock": 131.0,
+      "threshold": 51.0,
+      "recommended_rop": 79.0,
+      "rop_deficit": 28.0,
+      "lost_revenue": 6097.18,
+      "lost_margin": 4131.37
+    },
+    {
+      "product_id": "PR0072",
+      "category": "Sports",
+      "stockout_days": 6,
+      "stockout_pct": 30.0,
+      "avg_stock": 141.0,
+      "threshold": 49.0,
+      "recommended_rop": 66.0,
+      "rop_deficit": 17.0,
+      "lost_revenue": 712.95,
+      "lost_margin": -84.82
+    },
+    {
+      "product_id": "PR0051",
+      "category": "Fashion",
+      "stockout_days": 6,
+      "stockout_pct": 31.6,
+      "avg_stock": 140.0,
+      "threshold": 45.0,
+      "recommended_rop": 55.0,
+      "rop_deficit": 10.0,
+      "lost_revenue": 3488.74,
+      "lost_margin": 2227.17
+    },
+    {
+      "product_id": "PR0092",
+      "category": "Grocery",
+      "stockout_days": 6,
+      "stockout_pct": 28.6,
+      "avg_stock": 161.0,
+      "threshold": 43.0,
+      "recommended_rop": 144.0,
+      "rop_deficit": 101.0,
+      "lost_revenue": 6499.06,
+      "lost_margin": 1919.34
+    },
+    {
+      "product_id": "PR0068",
+      "category": "Fashion",
+      "stockout_days": 6,
+      "stockout_pct": 25.0,
+      "avg_stock": 134.0,
+      "threshold": 42.0,
+      "recommended_rop": 122.0,
+      "rop_deficit": 80.0,
+      "lost_revenue": 6913.88,
+      "lost_margin": 6136.01
+    },
+    {
+      "product_id": "PR0220",
+      "category": "Home",
+      "stockout_days": 6,
+      "stockout_pct": 27.3,
+      "avg_stock": 167.0,
+      "threshold": 46.0,
+      "recommended_rop": 94.0,
+      "rop_deficit": 48.0,
+      "lost_revenue": 7493.34,
+      "lost_margin": 2549.59
+    },
+    {
+      "product_id": "PR0218",
+      "category": "Grocery",
+      "stockout_days": 6,
+      "stockout_pct": 27.3,
+      "avg_stock": 171.0,
+      "threshold": 34.0,
+      "recommended_rop": 50.0,
+      "rop_deficit": 16.0,
+      "lost_revenue": 5886.6,
+      "lost_margin": 848.64
+    },
+    {
+      "product_id": "PR0146",
+      "category": "Electronics",
+      "stockout_days": 6,
+      "stockout_pct": 28.6,
+      "avg_stock": 134.0,
+      "threshold": 38.0,
+      "recommended_rop": 51.0,
+      "rop_deficit": 13.0,
+      "lost_revenue": 6127.58,
+      "lost_margin": 5545.96
+    },
+    {
+      "product_id": "PR0167",
+      "category": "Beauty",
+      "stockout_days": 6,
+      "stockout_pct": 24.0,
+      "avg_stock": 161.0,
+      "threshold": 47.0,
+      "recommended_rop": 123.0,
+      "rop_deficit": 76.0,
+      "lost_revenue": 1138.99,
+      "lost_margin": -1051.34
+    },
+    {
+      "product_id": "PR0036",
+      "category": "Beauty",
+      "stockout_days": 6,
+      "stockout_pct": 31.6,
+      "avg_stock": 174.0,
+      "threshold": 45.0,
+      "recommended_rop": 135.0,
+      "rop_deficit": 90.0,
+      "lost_revenue": 6484.4,
+      "lost_margin": 3616.88
+    },
+    {
+      "product_id": "PR0087",
+      "category": "Electronics",
+      "stockout_days": 6,
+      "stockout_pct": 27.3,
+      "avg_stock": 151.0,
+      "threshold": 43.0,
+      "recommended_rop": 51.0,
+      "rop_deficit": 8.0,
+      "lost_revenue": 292.09,
+      "lost_margin": -1595.19
+    },
+    {
+      "product_id": "PR0226",
+      "category": "Sports",
+      "stockout_days": 6,
+      "stockout_pct": 27.3,
+      "avg_stock": 137.0,
+      "threshold": 50.0,
+      "recommended_rop": 110.0,
+      "rop_deficit": 60.0,
+      "lost_revenue": 1138.59,
+      "lost_margin": 856.52
+    },
+    {
+      "product_id": "PR0193",
+      "category": "Grocery",
+      "stockout_days": 6,
+      "stockout_pct": 25.0,
+      "avg_stock": 146.0,
+      "threshold": 47.0,
+      "recommended_rop": 119.0,
+      "rop_deficit": 72.0,
+      "lost_revenue": 7423.74,
+      "lost_margin": 3582.08
+    }
+  ],
+  "category_loss": [
+    {
+      "category": "Beauty",
+      "stockouts": 105,
+      "lost_rev": 62215.462,
+      "lost_margin": 16108.069
+    },
+    {
+      "category": "Electronics",
+      "stockouts": 149,
+      "lost_rev": 100426.857,
+      "lost_margin": 46781.253
+    },
+    {
+      "category": "Fashion",
+      "stockouts": 119,
+      "lost_rev": 82809.01400000001,
+      "lost_margin": 39321.528000000006
+    },
+    {
+      "category": "Grocery",
+      "stockouts": 129,
+      "lost_rev": 91080.462,
+      "lost_margin": 33930.07
+    },
+    {
+      "category": "Home",
+      "stockouts": 138,
+      "lost_rev": 90519.292,
+      "lost_margin": 26990.140999999996
+    },
+    {
+      "category": "Sports",
+      "stockouts": 120,
+      "lost_rev": 81151.361,
+      "lost_margin": 31886.457
+    }
+  ]
+}

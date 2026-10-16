@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0007",
+  "category": "Fashion",
+  "unit_cost": 135.66,
+  "list_price": 224.5,
+  "base_unit_margin": 88.84,
+  "is_negative_margin": false,
+  "supplier_lead_days": 4,
+  "total_orders": 80,
+  "completed_orders": 63,
+  "returned_orders": 5,
+  "cancelled_orders": 5,
+  "return_rate": 6.25,
+  "total_units_sold": 190,
+  "net_revenue": 36205.97,
+  "gross_profit": 10430.57,
+  "stockout_days": 3,
+  "avg_supplier_delay": 8.3
+}

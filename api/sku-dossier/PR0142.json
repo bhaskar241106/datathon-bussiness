@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0142",
+  "category": "Fashion",
+  "unit_cost": 132.18,
+  "list_price": 316.82,
+  "base_unit_margin": 184.64,
+  "is_negative_margin": false,
+  "supplier_lead_days": 17,
+  "total_orders": 63,
+  "completed_orders": 57,
+  "returned_orders": 4,
+  "cancelled_orders": 1,
+  "return_rate": 6.35,
+  "total_units_sold": 175,
+  "net_revenue": 47637.28,
+  "gross_profit": 24505.78,
+  "stockout_days": 3,
+  "avg_supplier_delay": 9.1
+}

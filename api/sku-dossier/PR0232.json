@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0232",
+  "category": "Electronics",
+  "unit_cost": 210.37,
+  "list_price": 231.48,
+  "base_unit_margin": 21.109999999999985,
+  "is_negative_margin": false,
+  "supplier_lead_days": 27,
+  "total_orders": 70,
+  "completed_orders": 51,
+  "returned_orders": 10,
+  "cancelled_orders": 6,
+  "return_rate": 14.29,
+  "total_units_sold": 159,
+  "net_revenue": 31944.91,
+  "gross_profit": -1503.92,
+  "stockout_days": 1,
+  "avg_supplier_delay": 12.5
+}

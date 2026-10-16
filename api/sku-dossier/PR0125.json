@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0125",
+  "category": "Home",
+  "unit_cost": 21.7,
+  "list_price": 69.83,
+  "base_unit_margin": 48.129999999999995,
+  "is_negative_margin": false,
+  "supplier_lead_days": 22,
+  "total_orders": 70,
+  "completed_orders": 64,
+  "returned_orders": 1,
+  "cancelled_orders": 4,
+  "return_rate": 1.43,
+  "total_units_sold": 191,
+  "net_revenue": 11003.33,
+  "gross_profit": 6858.63,
+  "stockout_days": 3,
+  "avg_supplier_delay": 8.4
+}

@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0160",
+  "category": "Electronics",
+  "unit_cost": 60.16,
+  "list_price": 54.06,
+  "base_unit_margin": -6.099999999999994,
+  "is_negative_margin": true,
+  "supplier_lead_days": 2,
+  "total_orders": 67,
+  "completed_orders": 56,
+  "returned_orders": 6,
+  "cancelled_orders": 4,
+  "return_rate": 8.96,
+  "total_units_sold": 177,
+  "net_revenue": 7988.12,
+  "gross_profit": -2660.2,
+  "stockout_days": 4,
+  "avg_supplier_delay": 7.8
+}

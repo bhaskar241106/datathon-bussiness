@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0077",
+  "category": "Sports",
+  "unit_cost": 83.66,
+  "list_price": 326.5,
+  "base_unit_margin": 242.84,
+  "is_negative_margin": false,
+  "supplier_lead_days": 9,
+  "total_orders": 57,
+  "completed_orders": 47,
+  "returned_orders": 2,
+  "cancelled_orders": 7,
+  "return_rate": 3.51,
+  "total_units_sold": 139,
+  "net_revenue": 37531.96,
+  "gross_profit": 25903.22,
+  "stockout_days": 4,
+  "avg_supplier_delay": 9.3
+}

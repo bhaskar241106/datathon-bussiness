@@ -1,0 +1,2584 @@
+{
+  "total_skus": 250,
+  "negative_margin_count": 76,
+  "negative_margin_loss": 1170655.2,
+  "scatter": [
+    {
+      "product_id": "PR0001",
+      "category": "Sports",
+      "unit_cost": 24.3,
+      "list_price": 105.77,
+      "is_negative": false,
+      "gross_profit": 9686.79,
+      "orders": 53
+    },
+    {
+      "product_id": "PR0002",
+      "category": "Home",
+      "unit_cost": 108.31,
+      "list_price": 261.5,
+      "is_negative": false,
+      "gross_profit": 19604.83,
+      "orders": 57
+    },
+    {
+      "product_id": "PR0003",
+      "category": "Sports",
+      "unit_cost": 223.15,
+      "list_price": 186.62,
+      "is_negative": true,
+      "gross_profit": -12434.07,
+      "orders": 58
+    },
+    {
+      "product_id": "PR0004",
+      "category": "Sports",
+      "unit_cost": 88.98,
+      "list_price": 43.1,
+      "is_negative": true,
+      "gross_profit": -7333.33,
+      "orders": 43
+    },
+    {
+      "product_id": "PR0005",
+      "category": "Home",
+      "unit_cost": 64.4,
+      "list_price": 312.23,
+      "is_negative": false,
+      "gross_profit": 29535.61,
+      "orders": 47
+    },
+    {
+      "product_id": "PR0006",
+      "category": "Sports",
+      "unit_cost": 125.69,
+      "list_price": 176.34,
+      "is_negative": false,
+      "gross_profit": 5577.79,
+      "orders": 59
+    },
+    {
+      "product_id": "PR0007",
+      "category": "Fashion",
+      "unit_cost": 135.66,
+      "list_price": 224.5,
+      "is_negative": false,
+      "gross_profit": 10430.57,
+      "orders": 63
+    },
+    {
+      "product_id": "PR0008",
+      "category": "Beauty",
+      "unit_cost": 81.3,
+      "list_price": 35.94,
+      "is_negative": true,
+      "gross_profit": -9336.95,
+      "orders": 55
+    },
+    {
+      "product_id": "PR0009",
+      "category": "Electronics",
+      "unit_cost": 92.24,
+      "list_price": 317.5,
+      "is_negative": false,
+      "gross_profit": 29616.19,
+      "orders": 58
+    },
+    {
+      "product_id": "PR0010",
+      "category": "Beauty",
+      "unit_cost": 99.91,
+      "list_price": 381.92,
+      "is_negative": false,
+      "gross_profit": 41972.22,
+      "orders": 62
+    },
+    {
+      "product_id": "PR0011",
+      "category": "Fashion",
+      "unit_cost": 102.02,
+      "list_price": 302.33,
+      "is_negative": false,
+      "gross_profit": 21383.88,
+      "orders": 49
+    },
+    {
+      "product_id": "PR0012",
+      "category": "Beauty",
+      "unit_cost": 117.83,
+      "list_price": 12.6,
+      "is_negative": true,
+      "gross_profit": -21650.68,
+      "orders": 63
+    },
+    {
+      "product_id": "PR0013",
+      "category": "Home",
+      "unit_cost": 191.21,
+      "list_price": 205.51,
+      "is_negative": false,
+      "gross_profit": -4104.7,
+      "orders": 62
+    },
+    {
+      "product_id": "PR0014",
+      "category": "Grocery",
+      "unit_cost": 197.73,
+      "list_price": 80.41,
+      "is_negative": true,
+      "gross_profit": -18934.9,
+      "orders": 54
+    },
+    {
+      "product_id": "PR0015",
+      "category": "Grocery",
+      "unit_cost": 26.69,
+      "list_price": 251.86,
+      "is_negative": false,
+      "gross_profit": 28907.21,
+      "orders": 53
+    },
+    {
+      "product_id": "PR0016",
+      "category": "Grocery",
+      "unit_cost": 60.05,
+      "list_price": 367.96,
+      "is_negative": false,
+      "gross_profit": 46207.12,
+      "orders": 62
+    },
+    {
+      "product_id": "PR0017",
+      "category": "Grocery",
+      "unit_cost": 200.79,
+      "list_price": 180.9,
+      "is_negative": true,
+      "gross_profit": -7408.89,
+      "orders": 58
+    },
+    {
+      "product_id": "PR0018",
+      "category": "Beauty",
+      "unit_cost": 25.96,
+      "list_price": 236.14,
+      "is_negative": false,
+      "gross_profit": 27267.06,
+      "orders": 52
+    },
+    {
+      "product_id": "PR0019",
+      "category": "Electronics",
+      "unit_cost": 15.58,
+      "list_price": 97.9,
+      "is_negative": false,
+      "gross_profit": 9956.72,
+      "orders": 48
+    },
+    {
+      "product_id": "PR0020",
+      "category": "Fashion",
+      "unit_cost": 215.65,
+      "list_price": 78.29,
+      "is_negative": true,
+      "gross_profit": -27984.91,
+      "orders": 62
+    },
+    {
+      "product_id": "PR0021",
+      "category": "Beauty",
+      "unit_cost": 236.46,
+      "list_price": 64.48,
+      "is_negative": true,
+      "gross_profit": -29846.8,
+      "orders": 54
+    },
+    {
+      "product_id": "PR0022",
+      "category": "Home",
+      "unit_cost": 104.19,
+      "list_price": 380.59,
+      "is_negative": false,
+      "gross_profit": 46170.83,
+      "orders": 69
+    },
+    {
+      "product_id": "PR0023",
+      "category": "Fashion",
+      "unit_cost": 153.89,
+      "list_price": 397.33,
+      "is_negative": false,
+      "gross_profit": 30091.23,
+      "orders": 54
+    },
+    {
+      "product_id": "PR0024",
+      "category": "Electronics",
+      "unit_cost": 19.06,
+      "list_price": 366.57,
+      "is_negative": false,
+      "gross_profit": 52961.23,
+      "orders": 59
+    },
+    {
+      "product_id": "PR0025",
+      "category": "Sports",
+      "unit_cost": 249.29,
+      "list_price": 346.93,
+      "is_negative": false,
+      "gross_profit": 7528.87,
+      "orders": 58
+    },
+    {
+      "product_id": "PR0026",
+      "category": "Electronics",
+      "unit_cost": 187.66,
+      "list_price": 239.01,
+      "is_negative": false,
+      "gross_profit": 2946.57,
+      "orders": 64
+    },
+    {
+      "product_id": "PR0027",
+      "category": "Electronics",
+      "unit_cost": 79.36,
+      "list_price": 66.51,
+      "is_negative": true,
+      "gross_profit": -3553.47,
+      "orders": 50
+    },
+    {
+      "product_id": "PR0028",
+      "category": "Grocery",
+      "unit_cost": 195.92,
+      "list_price": 11.42,
+      "is_negative": true,
+      "gross_profit": -26599.4,
+      "orders": 49
+    },
+    {
+      "product_id": "PR0029",
+      "category": "Electronics",
+      "unit_cost": 70.9,
+      "list_price": 349.78,
+      "is_negative": false,
+      "gross_profit": 34140.55,
+      "orders": 56
+    },
+    {
+      "product_id": "PR0030",
+      "category": "Grocery",
+      "unit_cost": 136.88,
+      "list_price": 16.28,
+      "is_negative": true,
+      "gross_profit": -21338.66,
+      "orders": 58
+    },
+    {
+      "product_id": "PR0031",
+      "category": "Grocery",
+      "unit_cost": 152.94,
+      "list_price": 363.33,
+      "is_negative": false,
+      "gross_profit": 28796.05,
+      "orders": 64
+    },
+    {
+      "product_id": "PR0032",
+      "category": "Home",
+      "unit_cost": 94.16,
+      "list_price": 26.95,
+      "is_negative": true,
+      "gross_profit": -11135.81,
+      "orders": 48
+    },
+    {
+      "product_id": "PR0033",
+      "category": "Electronics",
+      "unit_cost": 193.88,
+      "list_price": 123.09,
+      "is_negative": true,
+      "gross_profit": -19443.08,
+      "orders": 62
+    },
+    {
+      "product_id": "PR0034",
+      "category": "Grocery",
+      "unit_cost": 244.98,
+      "list_price": 273.67,
+      "is_negative": false,
+      "gross_profit": -1735.67,
+      "orders": 64
+    },
+    {
+      "product_id": "PR0035",
+      "category": "Sports",
+      "unit_cost": 17.72,
+      "list_price": 198.91,
+      "is_negative": false,
+      "gross_profit": 27216.39,
+      "orders": 64
+    },
+    {
+      "product_id": "PR0036",
+      "category": "Beauty",
+      "unit_cost": 123.6,
+      "list_price": 279.5,
+      "is_negative": false,
+      "gross_profit": 20179.66,
+      "orders": 52
+    },
+    {
+      "product_id": "PR0037",
+      "category": "Beauty",
+      "unit_cost": 218.49,
+      "list_price": 25.43,
+      "is_negative": true,
+      "gross_profit": -28904.42,
+      "orders": 51
+    },
+    {
+      "product_id": "PR0038",
+      "category": "Sports",
+      "unit_cost": 29.35,
+      "list_price": 225.72,
+      "is_negative": false,
+      "gross_profit": 26968.47,
+      "orders": 55
+    },
+    {
+      "product_id": "PR0039",
+      "category": "Grocery",
+      "unit_cost": 37.16,
+      "list_price": 294.08,
+      "is_negative": false,
+      "gross_profit": 36946.05,
+      "orders": 65
+    },
+    {
+      "product_id": "PR0040",
+      "category": "Fashion",
+      "unit_cost": 5.27,
+      "list_price": 175.87,
+      "is_negative": false,
+      "gross_profit": 14793.88,
+      "orders": 36
+    },
+    {
+      "product_id": "PR0041",
+      "category": "Fashion",
+      "unit_cost": 73.65,
+      "list_price": 173.56,
+      "is_negative": false,
+      "gross_profit": 12970.51,
+      "orders": 62
+    },
+    {
+      "product_id": "PR0042",
+      "category": "Beauty",
+      "unit_cost": 180.73,
+      "list_price": 310.07,
+      "is_negative": false,
+      "gross_profit": 14532.1,
+      "orders": 61
+    },
+    {
+      "product_id": "PR0043",
+      "category": "Home",
+      "unit_cost": 116.32,
+      "list_price": 360.78,
+      "is_negative": false,
+      "gross_profit": 30005.51,
+      "orders": 62
+    },
+    {
+      "product_id": "PR0044",
+      "category": "Sports",
+      "unit_cost": 73.02,
+      "list_price": 265.32,
+      "is_negative": false,
+      "gross_profit": 23445.96,
+      "orders": 58
+    },
+    {
+      "product_id": "PR0045",
+      "category": "Home",
+      "unit_cost": 216.38,
+      "list_price": 379.21,
+      "is_negative": false,
+      "gross_profit": 16289.17,
+      "orders": 56
+    },
+    {
+      "product_id": "PR0046",
+      "category": "Electronics",
+      "unit_cost": 48.66,
+      "list_price": 284.88,
+      "is_negative": false,
+      "gross_profit": 21582.57,
+      "orders": 41
+    },
+    {
+      "product_id": "PR0047",
+      "category": "Electronics",
+      "unit_cost": 207.25,
+      "list_price": 272.77,
+      "is_negative": false,
+      "gross_profit": 3388.26,
+      "orders": 41
+    },
+    {
+      "product_id": "PR0048",
+      "category": "Grocery",
+      "unit_cost": 172.91,
+      "list_price": 114.92,
+      "is_negative": true,
+      "gross_profit": -9440.61,
+      "orders": 44
+    },
+    {
+      "product_id": "PR0049",
+      "category": "Fashion",
+      "unit_cost": 215.81,
+      "list_price": 381.82,
+      "is_negative": false,
+      "gross_profit": 17472.6,
+      "orders": 53
+    },
+    {
+      "product_id": "PR0050",
+      "category": "Home",
+      "unit_cost": 116.96,
+      "list_price": 215.14,
+      "is_negative": false,
+      "gross_profit": 9748.31,
+      "orders": 50
+    },
+    {
+      "product_id": "PR0051",
+      "category": "Fashion",
+      "unit_cost": 74.21,
+      "list_price": 205.22,
+      "is_negative": false,
+      "gross_profit": 15332.79,
+      "orders": 54
+    },
+    {
+      "product_id": "PR0052",
+      "category": "Grocery",
+      "unit_cost": 155.43,
+      "list_price": 112.97,
+      "is_negative": true,
+      "gross_profit": -9084.56,
+      "orders": 53
+    },
+    {
+      "product_id": "PR0053",
+      "category": "Beauty",
+      "unit_cost": 149.06,
+      "list_price": 17.6,
+      "is_negative": true,
+      "gross_profit": -23838.66,
+      "orders": 58
+    },
+    {
+      "product_id": "PR0054",
+      "category": "Fashion",
+      "unit_cost": 118.7,
+      "list_price": 167.71,
+      "is_negative": false,
+      "gross_profit": 4958.22,
+      "orders": 62
+    },
+    {
+      "product_id": "PR0055",
+      "category": "Beauty",
+      "unit_cost": 173.95,
+      "list_price": 382.1,
+      "is_negative": false,
+      "gross_profit": 23981.82,
+      "orders": 51
+    },
+    {
+      "product_id": "PR0056",
+      "category": "Beauty",
+      "unit_cost": 66.65,
+      "list_price": 260.66,
+      "is_negative": false,
+      "gross_profit": 29572.59,
+      "orders": 65
+    },
+    {
+      "product_id": "PR0057",
+      "category": "Beauty",
+      "unit_cost": 129.07,
+      "list_price": 79.48,
+      "is_negative": true,
+      "gross_profit": -10356.35,
+      "orders": 52
+    },
+    {
+      "product_id": "PR0058",
+      "category": "Beauty",
+      "unit_cost": 184.15,
+      "list_price": 21.15,
+      "is_negative": true,
+      "gross_profit": -26648.57,
+      "orders": 52
+    },
+    {
+      "product_id": "PR0059",
+      "category": "Fashion",
+      "unit_cost": 79.75,
+      "list_price": 393.05,
+      "is_negative": false,
+      "gross_profit": 46001.16,
+      "orders": 56
+    },
+    {
+      "product_id": "PR0060",
+      "category": "Home",
+      "unit_cost": 206.85,
+      "list_price": 146.04,
+      "is_negative": true,
+      "gross_profit": -11713.96,
+      "orders": 42
+    },
+    {
+      "product_id": "PR0061",
+      "category": "Grocery",
+      "unit_cost": 82.04,
+      "list_price": 375.16,
+      "is_negative": false,
+      "gross_profit": 34789.51,
+      "orders": 50
+    },
+    {
+      "product_id": "PR0062",
+      "category": "Fashion",
+      "unit_cost": 28.54,
+      "list_price": 89.84,
+      "is_negative": false,
+      "gross_profit": 6322.66,
+      "orders": 44
+    },
+    {
+      "product_id": "PR0063",
+      "category": "Fashion",
+      "unit_cost": 169.67,
+      "list_price": 68.66,
+      "is_negative": true,
+      "gross_profit": -14730.28,
+      "orders": 49
+    },
+    {
+      "product_id": "PR0064",
+      "category": "Electronics",
+      "unit_cost": 129.87,
+      "list_price": 113.41,
+      "is_negative": true,
+      "gross_profit": -6823.79,
+      "orders": 69
+    },
+    {
+      "product_id": "PR0065",
+      "category": "Sports",
+      "unit_cost": 124.5,
+      "list_price": 335.42,
+      "is_negative": false,
+      "gross_profit": 33789.52,
+      "orders": 69
+    },
+    {
+      "product_id": "PR0066",
+      "category": "Electronics",
+      "unit_cost": 31.94,
+      "list_price": 85.1,
+      "is_negative": false,
+      "gross_profit": 4932.44,
+      "orders": 36
+    },
+    {
+      "product_id": "PR0067",
+      "category": "Grocery",
+      "unit_cost": 244.17,
+      "list_price": 309.11,
+      "is_negative": false,
+      "gross_profit": 2129.37,
+      "orders": 48
+    },
+    {
+      "product_id": "PR0068",
+      "category": "Fashion",
+      "unit_cost": 30.15,
+      "list_price": 267.98,
+      "is_negative": false,
+      "gross_profit": 39465.96,
+      "orders": 56
+    },
+    {
+      "product_id": "PR0069",
+      "category": "Home",
+      "unit_cost": 211.05,
+      "list_price": 83.94,
+      "is_negative": true,
+      "gross_profit": -20245.11,
+      "orders": 50
+    },
+    {
+      "product_id": "PR0070",
+      "category": "Home",
+      "unit_cost": 205.71,
+      "list_price": 144.14,
+      "is_negative": true,
+      "gross_profit": -12461.23,
+      "orders": 50
+    },
+    {
+      "product_id": "PR0071",
+      "category": "Electronics",
+      "unit_cost": 243.88,
+      "list_price": 261.31,
+      "is_negative": false,
+      "gross_profit": -6656.38,
+      "orders": 56
+    },
+    {
+      "product_id": "PR0072",
+      "category": "Sports",
+      "unit_cost": 39.69,
+      "list_price": 35.47,
+      "is_negative": true,
+      "gross_profit": -1720.81,
+      "orders": 54
+    },
+    {
+      "product_id": "PR0073",
+      "category": "Sports",
+      "unit_cost": 227.2,
+      "list_price": 297.45,
+      "is_negative": false,
+      "gross_profit": 5751.95,
+      "orders": 73
+    },
+    {
+      "product_id": "PR0074",
+      "category": "Sports",
+      "unit_cost": 134.71,
+      "list_price": 291.08,
+      "is_negative": false,
+      "gross_profit": 16544.74,
+      "orders": 52
+    },
+    {
+      "product_id": "PR0075",
+      "category": "Grocery",
+      "unit_cost": 99.12,
+      "list_price": 367.01,
+      "is_negative": false,
+      "gross_profit": 25108.58,
+      "orders": 45
+    },
+    {
+      "product_id": "PR0076",
+      "category": "Electronics",
+      "unit_cost": 86.57,
+      "list_price": 279.35,
+      "is_negative": false,
+      "gross_profit": 27445.71,
+      "orders": 59
+    },
+    {
+      "product_id": "PR0077",
+      "category": "Sports",
+      "unit_cost": 83.66,
+      "list_price": 326.5,
+      "is_negative": false,
+      "gross_profit": 25903.22,
+      "orders": 47
+    },
+    {
+      "product_id": "PR0078",
+      "category": "Fashion",
+      "unit_cost": 4.17,
+      "list_price": 375.47,
+      "is_negative": false,
+      "gross_profit": 53033.83,
+      "orders": 52
+    },
+    {
+      "product_id": "PR0079",
+      "category": "Beauty",
+      "unit_cost": 91.51,
+      "list_price": 25.1,
+      "is_negative": true,
+      "gross_profit": -11158.08,
+      "orders": 51
+    },
+    {
+      "product_id": "PR0080",
+      "category": "Home",
+      "unit_cost": 231.12,
+      "list_price": 55.53,
+      "is_negative": true,
+      "gross_profit": -26759.37,
+      "orders": 52
+    },
+    {
+      "product_id": "PR0081",
+      "category": "Sports",
+      "unit_cost": 122.9,
+      "list_price": 133.09,
+      "is_negative": false,
+      "gross_profit": -1634.3,
+      "orders": 61
+    },
+    {
+      "product_id": "PR0082",
+      "category": "Beauty",
+      "unit_cost": 159.55,
+      "list_price": 394.88,
+      "is_negative": false,
+      "gross_profit": 26901.23,
+      "orders": 51
+    },
+    {
+      "product_id": "PR0083",
+      "category": "Grocery",
+      "unit_cost": 43.59,
+      "list_price": 364.59,
+      "is_negative": false,
+      "gross_profit": 42465.09,
+      "orders": 48
+    },
+    {
+      "product_id": "PR0084",
+      "category": "Sports",
+      "unit_cost": 176.38,
+      "list_price": 338.39,
+      "is_negative": false,
+      "gross_profit": 20135.14,
+      "orders": 58
+    },
+    {
+      "product_id": "PR0085",
+      "category": "Beauty",
+      "unit_cost": 126.84,
+      "list_price": 220.96,
+      "is_negative": false,
+      "gross_profit": 11400.62,
+      "orders": 62
+    },
+    {
+      "product_id": "PR0086",
+      "category": "Fashion",
+      "unit_cost": 70.01,
+      "list_price": 58.74,
+      "is_negative": true,
+      "gross_profit": -3529.76,
+      "orders": 52
+    },
+    {
+      "product_id": "PR0087",
+      "category": "Electronics",
+      "unit_cost": 93.43,
+      "list_price": 14.46,
+      "is_negative": true,
+      "gross_profit": -15554.63,
+      "orders": 62
+    },
+    {
+      "product_id": "PR0088",
+      "category": "Fashion",
+      "unit_cost": 101.54,
+      "list_price": 364.17,
+      "is_negative": false,
+      "gross_profit": 32503.93,
+      "orders": 58
+    },
+    {
+      "product_id": "PR0089",
+      "category": "Electronics",
+      "unit_cost": 222.09,
+      "list_price": 302.92,
+      "is_negative": false,
+      "gross_profit": 8137.28,
+      "orders": 68
+    },
+    {
+      "product_id": "PR0090",
+      "category": "Sports",
+      "unit_cost": 152.48,
+      "list_price": 163.43,
+      "is_negative": false,
+      "gross_profit": -2257.24,
+      "orders": 66
+    },
+    {
+      "product_id": "PR0091",
+      "category": "Beauty",
+      "unit_cost": 110.14,
+      "list_price": 28.55,
+      "is_negative": true,
+      "gross_profit": -11693.6,
+      "orders": 49
+    },
+    {
+      "product_id": "PR0092",
+      "category": "Grocery",
+      "unit_cost": 215.01,
+      "list_price": 305.12,
+      "is_negative": false,
+      "gross_profit": 5843.5,
+      "orders": 52
+    },
+    {
+      "product_id": "PR0093",
+      "category": "Sports",
+      "unit_cost": 49.15,
+      "list_price": 122.11,
+      "is_negative": false,
+      "gross_profit": 6967.12,
+      "orders": 46
+    },
+    {
+      "product_id": "PR0094",
+      "category": "Beauty",
+      "unit_cost": 111.25,
+      "list_price": 160.46,
+      "is_negative": false,
+      "gross_profit": 3656.78,
+      "orders": 56
+    },
+    {
+      "product_id": "PR0095",
+      "category": "Electronics",
+      "unit_cost": 143.39,
+      "list_price": 18.66,
+      "is_negative": true,
+      "gross_profit": -23329.51,
+      "orders": 61
+    },
+    {
+      "product_id": "PR0096",
+      "category": "Electronics",
+      "unit_cost": 128.25,
+      "list_price": 173.93,
+      "is_negative": false,
+      "gross_profit": 3029.82,
+      "orders": 48
+    },
+    {
+      "product_id": "PR0097",
+      "category": "Fashion",
+      "unit_cost": 107.46,
+      "list_price": 399.42,
+      "is_negative": false,
+      "gross_profit": 40281.91,
+      "orders": 52
+    },
+    {
+      "product_id": "PR0098",
+      "category": "Home",
+      "unit_cost": 86.48,
+      "list_price": 108.91,
+      "is_negative": false,
+      "gross_profit": 1231.77,
+      "orders": 58
+    },
+    {
+      "product_id": "PR0099",
+      "category": "Home",
+      "unit_cost": 143.14,
+      "list_price": 28.42,
+      "is_negative": true,
+      "gross_profit": -15314.82,
+      "orders": 46
+    },
+    {
+      "product_id": "PR0100",
+      "category": "Sports",
+      "unit_cost": 71.69,
+      "list_price": 32.08,
+      "is_negative": true,
+      "gross_profit": -10475.16,
+      "orders": 68
+    },
+    {
+      "product_id": "PR0101",
+      "category": "Home",
+      "unit_cost": 15.38,
+      "list_price": 346.98,
+      "is_negative": false,
+      "gross_profit": 57947.52,
+      "orders": 70
+    },
+    {
+      "product_id": "PR0102",
+      "category": "Sports",
+      "unit_cost": 137.36,
+      "list_price": 272.88,
+      "is_negative": false,
+      "gross_profit": 16061.63,
+      "orders": 61
+    },
+    {
+      "product_id": "PR0103",
+      "category": "Electronics",
+      "unit_cost": 63.55,
+      "list_price": 384.62,
+      "is_negative": false,
+      "gross_profit": 42377.8,
+      "orders": 54
+    },
+    {
+      "product_id": "PR0104",
+      "category": "Beauty",
+      "unit_cost": 136.64,
+      "list_price": 143.85,
+      "is_negative": false,
+      "gross_profit": -2065.2,
+      "orders": 57
+    },
+    {
+      "product_id": "PR0105",
+      "category": "Sports",
+      "unit_cost": 104.39,
+      "list_price": 252.04,
+      "is_negative": false,
+      "gross_profit": 20776.87,
+      "orders": 64
+    },
+    {
+      "product_id": "PR0106",
+      "category": "Home",
+      "unit_cost": 49.45,
+      "list_price": 367.3,
+      "is_negative": false,
+      "gross_profit": 36495.11,
+      "orders": 48
+    },
+    {
+      "product_id": "PR0107",
+      "category": "Home",
+      "unit_cost": 181.66,
+      "list_price": 345.67,
+      "is_negative": false,
+      "gross_profit": 19555.83,
+      "orders": 55
+    },
+    {
+      "product_id": "PR0108",
+      "category": "Electronics",
+      "unit_cost": 87.02,
+      "list_price": 354.32,
+      "is_negative": false,
+      "gross_profit": 43495.14,
+      "orders": 65
+    },
+    {
+      "product_id": "PR0109",
+      "category": "Grocery",
+      "unit_cost": 57.71,
+      "list_price": 114.9,
+      "is_negative": false,
+      "gross_profit": 6175.22,
+      "orders": 50
+    },
+    {
+      "product_id": "PR0110",
+      "category": "Electronics",
+      "unit_cost": 130.25,
+      "list_price": 295.47,
+      "is_negative": false,
+      "gross_profit": 26957.43,
+      "orders": 67
+    },
+    {
+      "product_id": "PR0111",
+      "category": "Sports",
+      "unit_cost": 60.64,
+      "list_price": 170.22,
+      "is_negative": false,
+      "gross_profit": 15141.16,
+      "orders": 60
+    },
+    {
+      "product_id": "PR0112",
+      "category": "Home",
+      "unit_cost": 124.14,
+      "list_price": 193.55,
+      "is_negative": false,
+      "gross_profit": 4530.1,
+      "orders": 47
+    },
+    {
+      "product_id": "PR0113",
+      "category": "Home",
+      "unit_cost": 10.42,
+      "list_price": 14.06,
+      "is_negative": false,
+      "gross_profit": 214.82,
+      "orders": 53
+    },
+    {
+      "product_id": "PR0114",
+      "category": "Electronics",
+      "unit_cost": 27.45,
+      "list_price": 194.06,
+      "is_negative": false,
+      "gross_profit": 17914.81,
+      "orders": 51
+    },
+    {
+      "product_id": "PR0115",
+      "category": "Home",
+      "unit_cost": 214.37,
+      "list_price": 273.08,
+      "is_negative": false,
+      "gross_profit": 4994.87,
+      "orders": 67
+    },
+    {
+      "product_id": "PR0116",
+      "category": "Grocery",
+      "unit_cost": 124.9,
+      "list_price": 174.94,
+      "is_negative": false,
+      "gross_profit": 3850.08,
+      "orders": 47
+    },
+    {
+      "product_id": "PR0117",
+      "category": "Home",
+      "unit_cost": 127.87,
+      "list_price": 301.95,
+      "is_negative": false,
+      "gross_profit": 21065.98,
+      "orders": 46
+    },
+    {
+      "product_id": "PR0118",
+      "category": "Beauty",
+      "unit_cost": 224.83,
+      "list_price": 227.63,
+      "is_negative": false,
+      "gross_profit": -5933.25,
+      "orders": 59
+    },
+    {
+      "product_id": "PR0119",
+      "category": "Grocery",
+      "unit_cost": 62.35,
+      "list_price": 58.8,
+      "is_negative": true,
+      "gross_profit": -2923.54,
+      "orders": 68
+    },
+    {
+      "product_id": "PR0120",
+      "category": "Grocery",
+      "unit_cost": 116.14,
+      "list_price": 360.19,
+      "is_negative": false,
+      "gross_profit": 43232.9,
+      "orders": 73
+    },
+    {
+      "product_id": "PR0121",
+      "category": "Home",
+      "unit_cost": 143.05,
+      "list_price": 87.38,
+      "is_negative": true,
+      "gross_profit": -12024.67,
+      "orders": 61
+    },
+    {
+      "product_id": "PR0122",
+      "category": "Electronics",
+      "unit_cost": 176.99,
+      "list_price": 298.52,
+      "is_negative": false,
+      "gross_profit": 12243.62,
+      "orders": 52
+    },
+    {
+      "product_id": "PR0123",
+      "category": "Grocery",
+      "unit_cost": 45.69,
+      "list_price": 267.59,
+      "is_negative": false,
+      "gross_profit": 25973.73,
+      "orders": 50
+    },
+    {
+      "product_id": "PR0124",
+      "category": "Sports",
+      "unit_cost": 223.58,
+      "list_price": 247.98,
+      "is_negative": false,
+      "gross_profit": -2885.11,
+      "orders": 63
+    },
+    {
+      "product_id": "PR0125",
+      "category": "Home",
+      "unit_cost": 21.7,
+      "list_price": 69.83,
+      "is_negative": false,
+      "gross_profit": 6858.63,
+      "orders": 64
+    },
+    {
+      "product_id": "PR0126",
+      "category": "Electronics",
+      "unit_cost": 199.89,
+      "list_price": 251.75,
+      "is_negative": false,
+      "gross_profit": 2961.76,
+      "orders": 56
+    },
+    {
+      "product_id": "PR0127",
+      "category": "Fashion",
+      "unit_cost": 245.5,
+      "list_price": 363.14,
+      "is_negative": false,
+      "gross_profit": 13070.69,
+      "orders": 73
+    },
+    {
+      "product_id": "PR0128",
+      "category": "Fashion",
+      "unit_cost": 75.1,
+      "list_price": 148.82,
+      "is_negative": false,
+      "gross_profit": 9868.96,
+      "orders": 64
+    },
+    {
+      "product_id": "PR0129",
+      "category": "Grocery",
+      "unit_cost": 192.05,
+      "list_price": 76.54,
+      "is_negative": true,
+      "gross_profit": -24747.84,
+      "orders": 64
+    },
+    {
+      "product_id": "PR0130",
+      "category": "Fashion",
+      "unit_cost": 190.67,
+      "list_price": 97.11,
+      "is_negative": true,
+      "gross_profit": -21233.99,
+      "orders": 64
+    },
+    {
+      "product_id": "PR0131",
+      "category": "Grocery",
+      "unit_cost": 57.54,
+      "list_price": 9.32,
+      "is_negative": true,
+      "gross_profit": -8205.03,
+      "orders": 55
+    },
+    {
+      "product_id": "PR0132",
+      "category": "Electronics",
+      "unit_cost": 39.96,
+      "list_price": 107.82,
+      "is_negative": false,
+      "gross_profit": 8271.72,
+      "orders": 54
+    },
+    {
+      "product_id": "PR0133",
+      "category": "Fashion",
+      "unit_cost": 7.83,
+      "list_price": 110.4,
+      "is_negative": false,
+      "gross_profit": 14119.27,
+      "orders": 52
+    },
+    {
+      "product_id": "PR0134",
+      "category": "Grocery",
+      "unit_cost": 72.78,
+      "list_price": 233.56,
+      "is_negative": false,
+      "gross_profit": 17101.62,
+      "orders": 48
+    },
+    {
+      "product_id": "PR0135",
+      "category": "Grocery",
+      "unit_cost": 180.57,
+      "list_price": 290.99,
+      "is_negative": false,
+      "gross_profit": 14987.62,
+      "orders": 70
+    },
+    {
+      "product_id": "PR0136",
+      "category": "Electronics",
+      "unit_cost": 95.96,
+      "list_price": 374.99,
+      "is_negative": false,
+      "gross_profit": 33924.39,
+      "orders": 54
+    },
+    {
+      "product_id": "PR0137",
+      "category": "Home",
+      "unit_cost": 210.92,
+      "list_price": 275.44,
+      "is_negative": false,
+      "gross_profit": 3301.02,
+      "orders": 61
+    },
+    {
+      "product_id": "PR0138",
+      "category": "Electronics",
+      "unit_cost": 194.23,
+      "list_price": 259.82,
+      "is_negative": false,
+      "gross_profit": 3399.84,
+      "orders": 47
+    },
+    {
+      "product_id": "PR0139",
+      "category": "Home",
+      "unit_cost": 18.73,
+      "list_price": 299.52,
+      "is_negative": false,
+      "gross_profit": 31350.16,
+      "orders": 46
+    },
+    {
+      "product_id": "PR0140",
+      "category": "Home",
+      "unit_cost": 243.6,
+      "list_price": 195.01,
+      "is_negative": true,
+      "gross_profit": -10597.07,
+      "orders": 45
+    },
+    {
+      "product_id": "PR0141",
+      "category": "Fashion",
+      "unit_cost": 56.52,
+      "list_price": 114.98,
+      "is_negative": false,
+      "gross_profit": 9132.25,
+      "orders": 64
+    },
+    {
+      "product_id": "PR0142",
+      "category": "Fashion",
+      "unit_cost": 132.18,
+      "list_price": 316.82,
+      "is_negative": false,
+      "gross_profit": 24505.78,
+      "orders": 57
+    },
+    {
+      "product_id": "PR0143",
+      "category": "Beauty",
+      "unit_cost": 99.57,
+      "list_price": 223.64,
+      "is_negative": false,
+      "gross_profit": 16391.98,
+      "orders": 57
+    },
+    {
+      "product_id": "PR0144",
+      "category": "Sports",
+      "unit_cost": 84.98,
+      "list_price": 275.52,
+      "is_negative": false,
+      "gross_profit": 24784.79,
+      "orders": 53
+    },
+    {
+      "product_id": "PR0145",
+      "category": "Grocery",
+      "unit_cost": 72.08,
+      "list_price": 41.83,
+      "is_negative": true,
+      "gross_profit": -5225.26,
+      "orders": 44
+    },
+    {
+      "product_id": "PR0146",
+      "category": "Electronics",
+      "unit_cost": 31.27,
+      "list_price": 329.44,
+      "is_negative": false,
+      "gross_profit": 48250.89,
+      "orders": 68
+    },
+    {
+      "product_id": "PR0147",
+      "category": "Grocery",
+      "unit_cost": 134.56,
+      "list_price": 275.64,
+      "is_negative": false,
+      "gross_profit": 11854.44,
+      "orders": 39
+    },
+    {
+      "product_id": "PR0148",
+      "category": "Electronics",
+      "unit_cost": 47.79,
+      "list_price": 173.75,
+      "is_negative": false,
+      "gross_profit": 15998.87,
+      "orders": 52
+    },
+    {
+      "product_id": "PR0149",
+      "category": "Home",
+      "unit_cost": 160.53,
+      "list_price": 180.53,
+      "is_negative": false,
+      "gross_profit": -1984.66,
+      "orders": 54
+    },
+    {
+      "product_id": "PR0150",
+      "category": "Fashion",
+      "unit_cost": 72.38,
+      "list_price": 38.38,
+      "is_negative": true,
+      "gross_profit": -7657.29,
+      "orders": 66
+    },
+    {
+      "product_id": "PR0151",
+      "category": "Electronics",
+      "unit_cost": 121.61,
+      "list_price": 119.43,
+      "is_negative": true,
+      "gross_profit": -4456.29,
+      "orders": 62
+    },
+    {
+      "product_id": "PR0152",
+      "category": "Beauty",
+      "unit_cost": 195.87,
+      "list_price": 183.12,
+      "is_negative": true,
+      "gross_profit": -8067.56,
+      "orders": 63
+    },
+    {
+      "product_id": "PR0153",
+      "category": "Beauty",
+      "unit_cost": 216.12,
+      "list_price": 130.2,
+      "is_negative": true,
+      "gross_profit": -18437.8,
+      "orders": 54
+    },
+    {
+      "product_id": "PR0154",
+      "category": "Beauty",
+      "unit_cost": 112.14,
+      "list_price": 227.02,
+      "is_negative": false,
+      "gross_profit": 13381.33,
+      "orders": 57
+    },
+    {
+      "product_id": "PR0155",
+      "category": "Grocery",
+      "unit_cost": 82.64,
+      "list_price": 107.11,
+      "is_negative": false,
+      "gross_profit": 1557.93,
+      "orders": 56
+    },
+    {
+      "product_id": "PR0156",
+      "category": "Home",
+      "unit_cost": 157.31,
+      "list_price": 287.55,
+      "is_negative": false,
+      "gross_profit": 16382.26,
+      "orders": 65
+    },
+    {
+      "product_id": "PR0157",
+      "category": "Home",
+      "unit_cost": 163.43,
+      "list_price": 337.3,
+      "is_negative": false,
+      "gross_profit": 18102.0,
+      "orders": 55
+    },
+    {
+      "product_id": "PR0158",
+      "category": "Electronics",
+      "unit_cost": 196.78,
+      "list_price": 60.98,
+      "is_negative": true,
+      "gross_profit": -22202.43,
+      "orders": 55
+    },
+    {
+      "product_id": "PR0159",
+      "category": "Home",
+      "unit_cost": 81.67,
+      "list_price": 313.12,
+      "is_negative": false,
+      "gross_profit": 28736.92,
+      "orders": 52
+    },
+    {
+      "product_id": "PR0160",
+      "category": "Electronics",
+      "unit_cost": 60.16,
+      "list_price": 54.06,
+      "is_negative": true,
+      "gross_profit": -2660.2,
+      "orders": 56
+    },
+    {
+      "product_id": "PR0161",
+      "category": "Home",
+      "unit_cost": 164.23,
+      "list_price": 241.44,
+      "is_negative": false,
+      "gross_profit": 7843.83,
+      "orders": 58
+    },
+    {
+      "product_id": "PR0162",
+      "category": "Fashion",
+      "unit_cost": 219.62,
+      "list_price": 149.02,
+      "is_negative": true,
+      "gross_profit": -15669.28,
+      "orders": 53
+    },
+    {
+      "product_id": "PR0163",
+      "category": "Electronics",
+      "unit_cost": 238.49,
+      "list_price": 71.06,
+      "is_negative": true,
+      "gross_profit": -32633.35,
+      "orders": 55
+    },
+    {
+      "product_id": "PR0164",
+      "category": "Grocery",
+      "unit_cost": 87.13,
+      "list_price": 319.57,
+      "is_negative": false,
+      "gross_profit": 32103.8,
+      "orders": 65
+    },
+    {
+      "product_id": "PR0165",
+      "category": "Electronics",
+      "unit_cost": 46.54,
+      "list_price": 136.89,
+      "is_negative": false,
+      "gross_profit": 12375.2,
+      "orders": 64
+    },
+    {
+      "product_id": "PR0166",
+      "category": "Beauty",
+      "unit_cost": 232.03,
+      "list_price": 130.37,
+      "is_negative": true,
+      "gross_profit": -22884.89,
+      "orders": 64
+    },
+    {
+      "product_id": "PR0167",
+      "category": "Beauty",
+      "unit_cost": 119.69,
+      "list_price": 62.24,
+      "is_negative": true,
+      "gross_profit": -11286.61,
+      "orders": 56
+    },
+    {
+      "product_id": "PR0168",
+      "category": "Beauty",
+      "unit_cost": 58.58,
+      "list_price": 26.0,
+      "is_negative": true,
+      "gross_profit": -6621.71,
+      "orders": 62
+    },
+    {
+      "product_id": "PR0169",
+      "category": "Electronics",
+      "unit_cost": 162.33,
+      "list_price": 168.42,
+      "is_negative": false,
+      "gross_profit": -3462.94,
+      "orders": 58
+    },
+    {
+      "product_id": "PR0170",
+      "category": "Fashion",
+      "unit_cost": 219.57,
+      "list_price": 309.6,
+      "is_negative": false,
+      "gross_profit": 7122.4,
+      "orders": 63
+    },
+    {
+      "product_id": "PR0171",
+      "category": "Sports",
+      "unit_cost": 174.47,
+      "list_price": 293.01,
+      "is_negative": false,
+      "gross_profit": 11002.74,
+      "orders": 55
+    },
+    {
+      "product_id": "PR0172",
+      "category": "Home",
+      "unit_cost": 207.02,
+      "list_price": 195.09,
+      "is_negative": true,
+      "gross_profit": -6265.47,
+      "orders": 51
+    },
+    {
+      "product_id": "PR0173",
+      "category": "Home",
+      "unit_cost": 123.05,
+      "list_price": 40.69,
+      "is_negative": true,
+      "gross_profit": -15518.05,
+      "orders": 54
+    },
+    {
+      "product_id": "PR0174",
+      "category": "Electronics",
+      "unit_cost": 94.97,
+      "list_price": 38.79,
+      "is_negative": true,
+      "gross_profit": -12063.92,
+      "orders": 60
+    },
+    {
+      "product_id": "PR0175",
+      "category": "Electronics",
+      "unit_cost": 16.9,
+      "list_price": 243.73,
+      "is_negative": false,
+      "gross_profit": 33567.34,
+      "orders": 65
+    },
+    {
+      "product_id": "PR0176",
+      "category": "Grocery",
+      "unit_cost": 162.77,
+      "list_price": 37.63,
+      "is_negative": true,
+      "gross_profit": -22731.39,
+      "orders": 64
+    },
+    {
+      "product_id": "PR0177",
+      "category": "Sports",
+      "unit_cost": 169.48,
+      "list_price": 370.99,
+      "is_negative": false,
+      "gross_profit": 24040.57,
+      "orders": 54
+    },
+    {
+      "product_id": "PR0178",
+      "category": "Beauty",
+      "unit_cost": 102.88,
+      "list_price": 383.49,
+      "is_negative": false,
+      "gross_profit": 35740.62,
+      "orders": 57
+    },
+    {
+      "product_id": "PR0179",
+      "category": "Electronics",
+      "unit_cost": 141.45,
+      "list_price": 368.48,
+      "is_negative": false,
+      "gross_profit": 28328.36,
+      "orders": 55
+    },
+    {
+      "product_id": "PR0180",
+      "category": "Sports",
+      "unit_cost": 157.14,
+      "list_price": 188.65,
+      "is_negative": false,
+      "gross_profit": 154.48,
+      "orders": 57
+    },
+    {
+      "product_id": "PR0181",
+      "category": "Electronics",
+      "unit_cost": 113.45,
+      "list_price": 129.27,
+      "is_negative": false,
+      "gross_profit": -561.93,
+      "orders": 42
+    },
+    {
+      "product_id": "PR0182",
+      "category": "Beauty",
+      "unit_cost": 140.12,
+      "list_price": 95.81,
+      "is_negative": true,
+      "gross_profit": -10443.75,
+      "orders": 62
+    },
+    {
+      "product_id": "PR0183",
+      "category": "Home",
+      "unit_cost": 184.94,
+      "list_price": 113.21,
+      "is_negative": true,
+      "gross_profit": -15504.81,
+      "orders": 55
+    },
+    {
+      "product_id": "PR0184",
+      "category": "Electronics",
+      "unit_cost": 138.8,
+      "list_price": 108.46,
+      "is_negative": true,
+      "gross_profit": -9254.29,
+      "orders": 62
+    },
+    {
+      "product_id": "PR0185",
+      "category": "Home",
+      "unit_cost": 191.94,
+      "list_price": 388.34,
+      "is_negative": false,
+      "gross_profit": 25884.77,
+      "orders": 62
+    },
+    {
+      "product_id": "PR0186",
+      "category": "Fashion",
+      "unit_cost": 71.19,
+      "list_price": 77.64,
+      "is_negative": false,
+      "gross_profit": -1035.99,
+      "orders": 59
+    },
+    {
+      "product_id": "PR0187",
+      "category": "Home",
+      "unit_cost": 79.23,
+      "list_price": 268.34,
+      "is_negative": false,
+      "gross_profit": 24831.68,
+      "orders": 57
+    },
+    {
+      "product_id": "PR0188",
+      "category": "Grocery",
+      "unit_cost": 108.88,
+      "list_price": 127.96,
+      "is_negative": false,
+      "gross_profit": -230.4,
+      "orders": 47
+    },
+    {
+      "product_id": "PR0189",
+      "category": "Sports",
+      "unit_cost": 172.44,
+      "list_price": 8.37,
+      "is_negative": true,
+      "gross_profit": -25230.81,
+      "orders": 52
+    },
+    {
+      "product_id": "PR0190",
+      "category": "Beauty",
+      "unit_cost": 163.08,
+      "list_price": 143.33,
+      "is_negative": true,
+      "gross_profit": -6825.6,
+      "orders": 57
+    },
+    {
+      "product_id": "PR0191",
+      "category": "Sports",
+      "unit_cost": 182.61,
+      "list_price": 386.91,
+      "is_negative": false,
+      "gross_profit": 23995.47,
+      "orders": 57
+    },
+    {
+      "product_id": "PR0192",
+      "category": "Grocery",
+      "unit_cost": 165.76,
+      "list_price": 31.41,
+      "is_negative": true,
+      "gross_profit": -33514.73,
+      "orders": 68
+    },
+    {
+      "product_id": "PR0193",
+      "category": "Grocery",
+      "unit_cost": 199.05,
+      "list_price": 384.65,
+      "is_negative": false,
+      "gross_profit": 23642.59,
+      "orders": 62
+    },
+    {
+      "product_id": "PR0194",
+      "category": "Home",
+      "unit_cost": 103.93,
+      "list_price": 195.17,
+      "is_negative": false,
+      "gross_profit": 9701.02,
+      "orders": 55
+    },
+    {
+      "product_id": "PR0195",
+      "category": "Fashion",
+      "unit_cost": 64.26,
+      "list_price": 375.6,
+      "is_negative": false,
+      "gross_profit": 35899.19,
+      "orders": 44
+    },
+    {
+      "product_id": "PR0196",
+      "category": "Home",
+      "unit_cost": 16.02,
+      "list_price": 153.27,
+      "is_negative": false,
+      "gross_profit": 23331.71,
+      "orders": 63
+    },
+    {
+      "product_id": "PR0197",
+      "category": "Grocery",
+      "unit_cost": 55.17,
+      "list_price": 236.38,
+      "is_negative": false,
+      "gross_profit": 23630.8,
+      "orders": 48
+    },
+    {
+      "product_id": "PR0198",
+      "category": "Sports",
+      "unit_cost": 144.24,
+      "list_price": 356.62,
+      "is_negative": false,
+      "gross_profit": 24459.38,
+      "orders": 57
+    },
+    {
+      "product_id": "PR0199",
+      "category": "Beauty",
+      "unit_cost": 23.15,
+      "list_price": 246.38,
+      "is_negative": false,
+      "gross_profit": 32443.3,
+      "orders": 60
+    },
+    {
+      "product_id": "PR0200",
+      "category": "Sports",
+      "unit_cost": 83.05,
+      "list_price": 21.23,
+      "is_negative": true,
+      "gross_profit": -10169.49,
+      "orders": 50
+    },
+    {
+      "product_id": "PR0201",
+      "category": "Sports",
+      "unit_cost": 235.05,
+      "list_price": 105.3,
+      "is_negative": true,
+      "gross_profit": -25893.0,
+      "orders": 59
+    },
+    {
+      "product_id": "PR0202",
+      "category": "Fashion",
+      "unit_cost": 78.81,
+      "list_price": 257.65,
+      "is_negative": false,
+      "gross_profit": 25934.28,
+      "orders": 59
+    },
+    {
+      "product_id": "PR0203",
+      "category": "Beauty",
+      "unit_cost": 121.65,
+      "list_price": 122.84,
+      "is_negative": false,
+      "gross_profit": -3873.8,
+      "orders": 64
+    },
+    {
+      "product_id": "PR0204",
+      "category": "Fashion",
+      "unit_cost": 225.39,
+      "list_price": 270.58,
+      "is_negative": false,
+      "gross_profit": -245.04,
+      "orders": 49
+    },
+    {
+      "product_id": "PR0205",
+      "category": "Sports",
+      "unit_cost": 50.04,
+      "list_price": 225.4,
+      "is_negative": false,
+      "gross_profit": 26534.0,
+      "orders": 51
+    },
+    {
+      "product_id": "PR0206",
+      "category": "Electronics",
+      "unit_cost": 230.42,
+      "list_price": 194.23,
+      "is_negative": true,
+      "gross_profit": -9410.67,
+      "orders": 46
+    },
+    {
+      "product_id": "PR0207",
+      "category": "Grocery",
+      "unit_cost": 250.0,
+      "list_price": 385.37,
+      "is_negative": false,
+      "gross_profit": 12212.7,
+      "orders": 57
+    },
+    {
+      "product_id": "PR0208",
+      "category": "Sports",
+      "unit_cost": 176.68,
+      "list_price": 354.3,
+      "is_negative": false,
+      "gross_profit": 16362.45,
+      "orders": 44
+    },
+    {
+      "product_id": "PR0209",
+      "category": "Grocery",
+      "unit_cost": 181.77,
+      "list_price": 142.93,
+      "is_negative": true,
+      "gross_profit": -10810.8,
+      "orders": 54
+    },
+    {
+      "product_id": "PR0210",
+      "category": "Sports",
+      "unit_cost": 169.9,
+      "list_price": 9.08,
+      "is_negative": true,
+      "gross_profit": -29971.14,
+      "orders": 58
+    },
+    {
+      "product_id": "PR0211",
+      "category": "Fashion",
+      "unit_cost": 125.04,
+      "list_price": 32.69,
+      "is_negative": true,
+      "gross_profit": -20679.95,
+      "orders": 72
+    },
+    {
+      "product_id": "PR0212",
+      "category": "Sports",
+      "unit_cost": 244.33,
+      "list_price": 166.54,
+      "is_negative": true,
+      "gross_profit": -17399.78,
+      "orders": 58
+    },
+    {
+      "product_id": "PR0213",
+      "category": "Grocery",
+      "unit_cost": 76.83,
+      "list_price": 123.53,
+      "is_negative": false,
+      "gross_profit": 5392.93,
+      "orders": 66
+    },
+    {
+      "product_id": "PR0214",
+      "category": "Home",
+      "unit_cost": 16.04,
+      "list_price": 263.78,
+      "is_negative": false,
+      "gross_profit": 33932.42,
+      "orders": 56
+    },
+    {
+      "product_id": "PR0215",
+      "category": "Grocery",
+      "unit_cost": 145.09,
+      "list_price": 227.67,
+      "is_negative": false,
+      "gross_profit": 7921.87,
+      "orders": 58
+    },
+    {
+      "product_id": "PR0216",
+      "category": "Beauty",
+      "unit_cost": 36.46,
+      "list_price": 280.16,
+      "is_negative": false,
+      "gross_profit": 37060.24,
+      "orders": 56
+    },
+    {
+      "product_id": "PR0217",
+      "category": "Sports",
+      "unit_cost": 30.73,
+      "list_price": 48.99,
+      "is_negative": false,
+      "gross_profit": 2211.82,
+      "orders": 64
+    },
+    {
+      "product_id": "PR0218",
+      "category": "Grocery",
+      "unit_cost": 237.64,
+      "list_price": 277.67,
+      "is_negative": false,
+      "gross_profit": -85.51,
+      "orders": 67
+    },
+    {
+      "product_id": "PR0219",
+      "category": "Sports",
+      "unit_cost": 112.12,
+      "list_price": 291.57,
+      "is_negative": false,
+      "gross_profit": 26699.51,
+      "orders": 58
+    },
+    {
+      "product_id": "PR0220",
+      "category": "Home",
+      "unit_cost": 248.43,
+      "list_price": 376.55,
+      "is_negative": false,
+      "gross_profit": 14394.09,
+      "orders": 65
+    },
+    {
+      "product_id": "PR0221",
+      "category": "Fashion",
+      "unit_cost": 238.69,
+      "list_price": 218.2,
+      "is_negative": true,
+      "gross_profit": -8893.27,
+      "orders": 47
+    },
+    {
+      "product_id": "PR0222",
+      "category": "Fashion",
+      "unit_cost": 208.59,
+      "list_price": 177.19,
+      "is_negative": true,
+      "gross_profit": -9554.27,
+      "orders": 53
+    },
+    {
+      "product_id": "PR0223",
+      "category": "Grocery",
+      "unit_cost": 56.36,
+      "list_price": 222.98,
+      "is_negative": false,
+      "gross_profit": 17866.9,
+      "orders": 52
+    },
+    {
+      "product_id": "PR0224",
+      "category": "Home",
+      "unit_cost": 85.26,
+      "list_price": 146.27,
+      "is_negative": false,
+      "gross_profit": 5624.45,
+      "orders": 49
+    },
+    {
+      "product_id": "PR0225",
+      "category": "Electronics",
+      "unit_cost": 10.91,
+      "list_price": 230.46,
+      "is_negative": false,
+      "gross_profit": 21865.59,
+      "orders": 38
+    },
+    {
+      "product_id": "PR0226",
+      "category": "Sports",
+      "unit_cost": 15.33,
+      "list_price": 61.88,
+      "is_negative": false,
+      "gross_profit": 6249.52,
+      "orders": 62
+    },
+    {
+      "product_id": "PR0227",
+      "category": "Home",
+      "unit_cost": 148.84,
+      "list_price": 126.28,
+      "is_negative": true,
+      "gross_profit": -9857.94,
+      "orders": 71
+    },
+    {
+      "product_id": "PR0228",
+      "category": "Beauty",
+      "unit_cost": 167.1,
+      "list_price": 135.48,
+      "is_negative": true,
+      "gross_profit": -8136.21,
+      "orders": 47
+    },
+    {
+      "product_id": "PR0229",
+      "category": "Fashion",
+      "unit_cost": 26.5,
+      "list_price": 236.77,
+      "is_negative": false,
+      "gross_profit": 26495.86,
+      "orders": 56
+    },
+    {
+      "product_id": "PR0230",
+      "category": "Grocery",
+      "unit_cost": 126.07,
+      "list_price": 283.28,
+      "is_negative": false,
+      "gross_profit": 13892.27,
+      "orders": 42
+    },
+    {
+      "product_id": "PR0231",
+      "category": "Grocery",
+      "unit_cost": 233.83,
+      "list_price": 223.89,
+      "is_negative": true,
+      "gross_profit": -6201.31,
+      "orders": 54
+    },
+    {
+      "product_id": "PR0232",
+      "category": "Electronics",
+      "unit_cost": 210.37,
+      "list_price": 231.48,
+      "is_negative": false,
+      "gross_profit": -1503.92,
+      "orders": 51
+    },
+    {
+      "product_id": "PR0233",
+      "category": "Sports",
+      "unit_cost": 143.58,
+      "list_price": 299.46,
+      "is_negative": false,
+      "gross_profit": 13300.73,
+      "orders": 44
+    },
+    {
+      "product_id": "PR0234",
+      "category": "Grocery",
+      "unit_cost": 124.22,
+      "list_price": 358.22,
+      "is_negative": false,
+      "gross_profit": 22886.83,
+      "orders": 49
+    },
+    {
+      "product_id": "PR0235",
+      "category": "Electronics",
+      "unit_cost": 38.64,
+      "list_price": 125.98,
+      "is_negative": false,
+      "gross_profit": 12463.97,
+      "orders": 57
+    },
+    {
+      "product_id": "PR0236",
+      "category": "Beauty",
+      "unit_cost": 60.93,
+      "list_price": 205.97,
+      "is_negative": false,
+      "gross_profit": 17531.95,
+      "orders": 54
+    },
+    {
+      "product_id": "PR0237",
+      "category": "Electronics",
+      "unit_cost": 158.62,
+      "list_price": 202.77,
+      "is_negative": false,
+      "gross_profit": 2617.71,
+      "orders": 57
+    },
+    {
+      "product_id": "PR0238",
+      "category": "Beauty",
+      "unit_cost": 93.91,
+      "list_price": 97.79,
+      "is_negative": false,
+      "gross_profit": -1521.86,
+      "orders": 58
+    },
+    {
+      "product_id": "PR0239",
+      "category": "Grocery",
+      "unit_cost": 203.05,
+      "list_price": 72.68,
+      "is_negative": true,
+      "gross_profit": -25925.75,
+      "orders": 53
+    },
+    {
+      "product_id": "PR0240",
+      "category": "Sports",
+      "unit_cost": 52.84,
+      "list_price": 388.06,
+      "is_negative": false,
+      "gross_profit": 42984.13,
+      "orders": 49
+    },
+    {
+      "product_id": "PR0241",
+      "category": "Home",
+      "unit_cost": 112.8,
+      "list_price": 371.65,
+      "is_negative": false,
+      "gross_profit": 24268.49,
+      "orders": 45
+    },
+    {
+      "product_id": "PR0242",
+      "category": "Beauty",
+      "unit_cost": 233.47,
+      "list_price": 94.29,
+      "is_negative": true,
+      "gross_profit": -27932.41,
+      "orders": 61
+    },
+    {
+      "product_id": "PR0243",
+      "category": "Sports",
+      "unit_cost": 208.13,
+      "list_price": 354.12,
+      "is_negative": false,
+      "gross_profit": 14712.05,
+      "orders": 53
+    },
+    {
+      "product_id": "PR0244",
+      "category": "Electronics",
+      "unit_cost": 204.93,
+      "list_price": 285.78,
+      "is_negative": false,
+      "gross_profit": 5453.86,
+      "orders": 45
+    },
+    {
+      "product_id": "PR0245",
+      "category": "Home",
+      "unit_cost": 24.54,
+      "list_price": 242.94,
+      "is_negative": false,
+      "gross_profit": 33213.45,
+      "orders": 57
+    },
+    {
+      "product_id": "PR0246",
+      "category": "Fashion",
+      "unit_cost": 27.79,
+      "list_price": 13.45,
+      "is_negative": true,
+      "gross_profit": -2369.44,
+      "orders": 49
+    },
+    {
+      "product_id": "PR0247",
+      "category": "Sports",
+      "unit_cost": 243.07,
+      "list_price": 355.48,
+      "is_negative": false,
+      "gross_profit": 7277.24,
+      "orders": 49
+    },
+    {
+      "product_id": "PR0248",
+      "category": "Fashion",
+      "unit_cost": 55.46,
+      "list_price": 75.02,
+      "is_negative": false,
+      "gross_profit": 1528.51,
+      "orders": 58
+    },
+    {
+      "product_id": "PR0249",
+      "category": "Beauty",
+      "unit_cost": 129.32,
+      "list_price": 302.0,
+      "is_negative": false,
+      "gross_profit": 22186.99,
+      "orders": 62
+    },
+    {
+      "product_id": "PR0250",
+      "category": "Electronics",
+      "unit_cost": 75.48,
+      "list_price": 211.18,
+      "is_negative": false,
+      "gross_profit": 15228.86,
+      "orders": 49
+    }
+  ],
+  "loss_table": [
+    {
+      "product_id": "PR0192",
+      "category": "Grocery",
+      "unit_cost": 165.76,
+      "list_price": 31.41,
+      "orders": 68,
+      "units_sold": 239,
+      "net_revenue": 6101.91,
+      "cogs": 39616.64,
+      "gross_profit": -33514.73,
+      "recommended_list_price": 236.8,
+      "price_hike": 205.39
+    },
+    {
+      "product_id": "PR0163",
+      "category": "Electronics",
+      "unit_cost": 238.49,
+      "list_price": 71.06,
+      "orders": 55,
+      "units_sold": 179,
+      "net_revenue": 10056.36,
+      "cogs": 42689.71,
+      "gross_profit": -32633.35,
+      "recommended_list_price": 340.7,
+      "price_hike": 269.64
+    },
+    {
+      "product_id": "PR0210",
+      "category": "Sports",
+      "unit_cost": 169.9,
+      "list_price": 9.08,
+      "orders": 58,
+      "units_sold": 185,
+      "net_revenue": 1460.36,
+      "cogs": 31431.5,
+      "gross_profit": -29971.14,
+      "recommended_list_price": 242.71,
+      "price_hike": 233.63
+    },
+    {
+      "product_id": "PR0021",
+      "category": "Beauty",
+      "unit_cost": 236.46,
+      "list_price": 64.48,
+      "orders": 54,
+      "units_sold": 162,
+      "net_revenue": 8459.72,
+      "cogs": 38306.52,
+      "gross_profit": -29846.8,
+      "recommended_list_price": 337.8,
+      "price_hike": 273.32
+    },
+    {
+      "product_id": "PR0037",
+      "category": "Beauty",
+      "unit_cost": 218.49,
+      "list_price": 25.43,
+      "orders": 51,
+      "units_sold": 148,
+      "net_revenue": 3432.1,
+      "cogs": 32336.52,
+      "gross_profit": -28904.42,
+      "recommended_list_price": 312.13,
+      "price_hike": 286.7
+    },
+    {
+      "product_id": "PR0020",
+      "category": "Fashion",
+      "unit_cost": 215.65,
+      "list_price": 78.29,
+      "orders": 62,
+      "units_sold": 190,
+      "net_revenue": 12988.59,
+      "cogs": 40973.5,
+      "gross_profit": -27984.91,
+      "recommended_list_price": 308.07,
+      "price_hike": 229.78
+    },
+    {
+      "product_id": "PR0242",
+      "category": "Beauty",
+      "unit_cost": 233.47,
+      "list_price": 94.29,
+      "orders": 61,
+      "units_sold": 183,
+      "net_revenue": 14792.6,
+      "cogs": 42725.01,
+      "gross_profit": -27932.41,
+      "recommended_list_price": 333.53,
+      "price_hike": 239.24
+    },
+    {
+      "product_id": "PR0080",
+      "category": "Home",
+      "unit_cost": 231.12,
+      "list_price": 55.53,
+      "orders": 52,
+      "units_sold": 147,
+      "net_revenue": 7215.27,
+      "cogs": 33974.64,
+      "gross_profit": -26759.37,
+      "recommended_list_price": 330.17,
+      "price_hike": 274.64
+    },
+    {
+      "product_id": "PR0058",
+      "category": "Beauty",
+      "unit_cost": 184.15,
+      "list_price": 21.15,
+      "orders": 52,
+      "units_sold": 161,
+      "net_revenue": 2999.58,
+      "cogs": 29648.15,
+      "gross_profit": -26648.57,
+      "recommended_list_price": 263.07,
+      "price_hike": 241.92
+    },
+    {
+      "product_id": "PR0028",
+      "category": "Grocery",
+      "unit_cost": 195.92,
+      "list_price": 11.42,
+      "orders": 49,
+      "units_sold": 143,
+      "net_revenue": 1417.16,
+      "cogs": 28016.56,
+      "gross_profit": -26599.4,
+      "recommended_list_price": 279.89,
+      "price_hike": 268.47
+    },
+    {
+      "product_id": "PR0239",
+      "category": "Grocery",
+      "unit_cost": 203.05,
+      "list_price": 72.68,
+      "orders": 53,
+      "units_sold": 181,
+      "net_revenue": 10826.3,
+      "cogs": 36752.05,
+      "gross_profit": -25925.75,
+      "recommended_list_price": 290.07,
+      "price_hike": 217.39
+    },
+    {
+      "product_id": "PR0201",
+      "category": "Sports",
+      "unit_cost": 235.05,
+      "list_price": 105.3,
+      "orders": 59,
+      "units_sold": 180,
+      "net_revenue": 16416.0,
+      "cogs": 42309.0,
+      "gross_profit": -25893.0,
+      "recommended_list_price": 335.79,
+      "price_hike": 230.49
+    },
+    {
+      "product_id": "PR0189",
+      "category": "Sports",
+      "unit_cost": 172.44,
+      "list_price": 8.37,
+      "orders": 52,
+      "units_sold": 153,
+      "net_revenue": 1152.51,
+      "cogs": 26383.32,
+      "gross_profit": -25230.81,
+      "recommended_list_price": 246.34,
+      "price_hike": 237.97
+    },
+    {
+      "product_id": "PR0129",
+      "category": "Grocery",
+      "unit_cost": 192.05,
+      "list_price": 76.54,
+      "orders": 64,
+      "units_sold": 194,
+      "net_revenue": 12509.86,
+      "cogs": 37257.7,
+      "gross_profit": -24747.84,
+      "recommended_list_price": 274.36,
+      "price_hike": 197.82
+    },
+    {
+      "product_id": "PR0053",
+      "category": "Beauty",
+      "unit_cost": 149.06,
+      "list_price": 17.6,
+      "orders": 58,
+      "units_sold": 177,
+      "net_revenue": 2544.96,
+      "cogs": 26383.62,
+      "gross_profit": -23838.66,
+      "recommended_list_price": 212.94,
+      "price_hike": 195.34
+    },
+    {
+      "product_id": "PR0095",
+      "category": "Electronics",
+      "unit_cost": 143.39,
+      "list_price": 18.66,
+      "orders": 61,
+      "units_sold": 183,
+      "net_revenue": 2910.86,
+      "cogs": 26240.37,
+      "gross_profit": -23329.51,
+      "recommended_list_price": 204.84,
+      "price_hike": 186.18
+    },
+    {
+      "product_id": "PR0166",
+      "category": "Beauty",
+      "unit_cost": 232.03,
+      "list_price": 130.37,
+      "orders": 64,
+      "units_sold": 188,
+      "net_revenue": 20736.75,
+      "cogs": 43621.64,
+      "gross_profit": -22884.89,
+      "recommended_list_price": 331.47,
+      "price_hike": 201.1
+    },
+    {
+      "product_id": "PR0176",
+      "category": "Grocery",
+      "unit_cost": 162.77,
+      "list_price": 37.63,
+      "orders": 64,
+      "units_sold": 174,
+      "net_revenue": 5590.59,
+      "cogs": 28321.98,
+      "gross_profit": -22731.39,
+      "recommended_list_price": 232.53,
+      "price_hike": 194.9
+    },
+    {
+      "product_id": "PR0158",
+      "category": "Electronics",
+      "unit_cost": 196.78,
+      "list_price": 60.98,
+      "orders": 55,
+      "units_sold": 152,
+      "net_revenue": 7708.13,
+      "cogs": 29910.56,
+      "gross_profit": -22202.43,
+      "recommended_list_price": 281.11,
+      "price_hike": 220.13
+    },
+    {
+      "product_id": "PR0012",
+      "category": "Beauty",
+      "unit_cost": 117.83,
+      "list_price": 12.6,
+      "orders": 63,
+      "units_sold": 202,
+      "net_revenue": 2150.98,
+      "cogs": 23801.66,
+      "gross_profit": -21650.68,
+      "recommended_list_price": 168.33,
+      "price_hike": 155.73
+    },
+    {
+      "product_id": "PR0030",
+      "category": "Grocery",
+      "unit_cost": 136.88,
+      "list_price": 16.28,
+      "orders": 58,
+      "units_sold": 173,
+      "net_revenue": 2341.58,
+      "cogs": 23680.24,
+      "gross_profit": -21338.66,
+      "recommended_list_price": 195.54,
+      "price_hike": 179.26
+    },
+    {
+      "product_id": "PR0130",
+      "category": "Fashion",
+      "unit_cost": 190.67,
+      "list_price": 97.11,
+      "orders": 64,
+      "units_sold": 197,
+      "net_revenue": 16328.0,
+      "cogs": 37561.99,
+      "gross_profit": -21233.99,
+      "recommended_list_price": 272.39,
+      "price_hike": 175.28
+    },
+    {
+      "product_id": "PR0211",
+      "category": "Fashion",
+      "unit_cost": 125.04,
+      "list_price": 32.69,
+      "orders": 72,
+      "units_sold": 209,
+      "net_revenue": 5453.41,
+      "cogs": 26133.36,
+      "gross_profit": -20679.95,
+      "recommended_list_price": 178.63,
+      "price_hike": 145.94
+    },
+    {
+      "product_id": "PR0069",
+      "category": "Home",
+      "unit_cost": 211.05,
+      "list_price": 83.94,
+      "orders": 50,
+      "units_sold": 143,
+      "net_revenue": 9935.04,
+      "cogs": 30180.15,
+      "gross_profit": -20245.11,
+      "recommended_list_price": 301.5,
+      "price_hike": 217.56
+    },
+    {
+      "product_id": "PR0033",
+      "category": "Electronics",
+      "unit_cost": 193.88,
+      "list_price": 123.09,
+      "orders": 62,
+      "units_sold": 207,
+      "net_revenue": 20690.08,
+      "cogs": 40133.16,
+      "gross_profit": -19443.08,
+      "recommended_list_price": 276.97,
+      "price_hike": 153.88
+    }
+  ]
+}

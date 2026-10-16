@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0026",
+  "category": "Electronics",
+  "unit_cost": 187.66,
+  "list_price": 239.01,
+  "base_unit_margin": 51.349999999999994,
+  "is_negative_margin": false,
+  "supplier_lead_days": 11,
+  "total_orders": 79,
+  "completed_orders": 64,
+  "returned_orders": 6,
+  "cancelled_orders": 6,
+  "return_rate": 7.59,
+  "total_units_sold": 192,
+  "net_revenue": 38977.29,
+  "gross_profit": 2946.57,
+  "stockout_days": 2,
+  "avg_supplier_delay": 7.9
+}

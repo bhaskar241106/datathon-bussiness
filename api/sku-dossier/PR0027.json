@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0027",
+  "category": "Electronics",
+  "unit_cost": 79.36,
+  "list_price": 66.51,
+  "base_unit_margin": -12.849999999999994,
+  "is_negative_margin": true,
+  "supplier_lead_days": 26,
+  "total_orders": 62,
+  "completed_orders": 50,
+  "returned_orders": 4,
+  "cancelled_orders": 4,
+  "return_rate": 6.45,
+  "total_units_sold": 149,
+  "net_revenue": 8271.17,
+  "gross_profit": -3553.47,
+  "stockout_days": 4,
+  "avg_supplier_delay": 6.9
+}

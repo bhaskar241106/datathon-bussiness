@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0174",
+  "category": "Electronics",
+  "unit_cost": 94.97,
+  "list_price": 38.79,
+  "base_unit_margin": -56.18,
+  "is_negative_margin": true,
+  "supplier_lead_days": 3,
+  "total_orders": 83,
+  "completed_orders": 60,
+  "returned_orders": 5,
+  "cancelled_orders": 8,
+  "return_rate": 6.02,
+  "total_units_sold": 198,
+  "net_revenue": 6740.14,
+  "gross_profit": -12063.92,
+  "stockout_days": 3,
+  "avg_supplier_delay": 9.2
+}

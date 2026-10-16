@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0059",
+  "category": "Fashion",
+  "unit_cost": 79.75,
+  "list_price": 393.05,
+  "base_unit_margin": 313.3,
+  "is_negative_margin": false,
+  "supplier_lead_days": 14,
+  "total_orders": 68,
+  "completed_orders": 56,
+  "returned_orders": 6,
+  "cancelled_orders": 5,
+  "return_rate": 8.82,
+  "total_units_sold": 177,
+  "net_revenue": 60116.91,
+  "gross_profit": 46001.16,
+  "stockout_days": 2,
+  "avg_supplier_delay": 10.4
+}

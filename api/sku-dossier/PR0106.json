@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0106",
+  "category": "Home",
+  "unit_cost": 49.45,
+  "list_price": 367.3,
+  "base_unit_margin": 317.85,
+  "is_negative_margin": false,
+  "supplier_lead_days": 2,
+  "total_orders": 68,
+  "completed_orders": 48,
+  "returned_orders": 5,
+  "cancelled_orders": 12,
+  "return_rate": 7.35,
+  "total_units_sold": 137,
+  "net_revenue": 43269.76,
+  "gross_profit": 36495.11,
+  "stockout_days": 0,
+  "avg_supplier_delay": 12.4
+}

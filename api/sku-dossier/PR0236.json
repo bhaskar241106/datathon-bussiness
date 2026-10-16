@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0236",
+  "category": "Beauty",
+  "unit_cost": 60.93,
+  "list_price": 205.97,
+  "base_unit_margin": 145.04,
+  "is_negative_margin": false,
+  "supplier_lead_days": 21,
+  "total_orders": 68,
+  "completed_orders": 54,
+  "returned_orders": 5,
+  "cancelled_orders": 6,
+  "return_rate": 7.35,
+  "total_units_sold": 144,
+  "net_revenue": 26305.87,
+  "gross_profit": 17531.95,
+  "stockout_days": 3,
+  "avg_supplier_delay": 11.5
+}

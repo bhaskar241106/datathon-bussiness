@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0176",
+  "category": "Grocery",
+  "unit_cost": 162.77,
+  "list_price": 37.63,
+  "base_unit_margin": -125.14000000000001,
+  "is_negative_margin": true,
+  "supplier_lead_days": 21,
+  "total_orders": 79,
+  "completed_orders": 64,
+  "returned_orders": 5,
+  "cancelled_orders": 5,
+  "return_rate": 6.33,
+  "total_units_sold": 174,
+  "net_revenue": 5590.59,
+  "gross_profit": -22731.39,
+  "stockout_days": 2,
+  "avg_supplier_delay": 9.8
+}

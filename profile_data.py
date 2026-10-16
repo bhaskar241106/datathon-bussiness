@@ -2,7 +2,8 @@ import os
 import pandas as pd
 import numpy as np
 
-DATA_DIR = r"C:\Users\bhaskar\Desktop\datathon\04_business_money_leak (2)\04_business_money_leak"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_DIR = os.path.join(BASE_DIR, "04_business_money_leak (2)", "04_business_money_leak")
 
 print("Loading datasets...")
 customers = pd.read_csv(os.path.join(DATA_DIR, "customers.csv"))

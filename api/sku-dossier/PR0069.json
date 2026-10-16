@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0069",
+  "category": "Home",
+  "unit_cost": 211.05,
+  "list_price": 83.94,
+  "base_unit_margin": -127.11000000000001,
+  "is_negative_margin": true,
+  "supplier_lead_days": 28,
+  "total_orders": 62,
+  "completed_orders": 50,
+  "returned_orders": 7,
+  "cancelled_orders": 4,
+  "return_rate": 11.29,
+  "total_units_sold": 143,
+  "net_revenue": 9935.04,
+  "gross_profit": -20245.11,
+  "stockout_days": 3,
+  "avg_supplier_delay": 8.9
+}

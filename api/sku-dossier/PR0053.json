@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0053",
+  "category": "Beauty",
+  "unit_cost": 149.06,
+  "list_price": 17.6,
+  "base_unit_margin": -131.46,
+  "is_negative_margin": true,
+  "supplier_lead_days": 6,
+  "total_orders": 71,
+  "completed_orders": 58,
+  "returned_orders": 3,
+  "cancelled_orders": 6,
+  "return_rate": 4.23,
+  "total_units_sold": 177,
+  "net_revenue": 2544.96,
+  "gross_profit": -23838.66,
+  "stockout_days": 3,
+  "avg_supplier_delay": 7.0
+}

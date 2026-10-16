@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0218",
+  "category": "Grocery",
+  "unit_cost": 237.64,
+  "list_price": 277.67,
+  "base_unit_margin": 40.03000000000003,
+  "is_negative_margin": false,
+  "supplier_lead_days": 4,
+  "total_orders": 81,
+  "completed_orders": 67,
+  "returned_orders": 7,
+  "cancelled_orders": 3,
+  "return_rate": 8.64,
+  "total_units_sold": 216,
+  "net_revenue": 51244.73,
+  "gross_profit": -85.51,
+  "stockout_days": 6,
+  "avg_supplier_delay": 8.0
+}

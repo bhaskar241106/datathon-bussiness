@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0248",
+  "category": "Fashion",
+  "unit_cost": 55.46,
+  "list_price": 75.02,
+  "base_unit_margin": 19.559999999999995,
+  "is_negative_margin": false,
+  "supplier_lead_days": 13,
+  "total_orders": 79,
+  "completed_orders": 58,
+  "returned_orders": 9,
+  "cancelled_orders": 6,
+  "return_rate": 11.39,
+  "total_units_sold": 171,
+  "net_revenue": 11012.17,
+  "gross_profit": 1528.51,
+  "stockout_days": 3,
+  "avg_supplier_delay": 10.5
+}

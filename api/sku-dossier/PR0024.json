@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0024",
+  "category": "Electronics",
+  "unit_cost": 19.06,
+  "list_price": 366.57,
+  "base_unit_margin": 347.51,
+  "is_negative_margin": false,
+  "supplier_lead_days": 1,
+  "total_orders": 69,
+  "completed_orders": 59,
+  "returned_orders": 2,
+  "cancelled_orders": 6,
+  "return_rate": 2.9,
+  "total_units_sold": 180,
+  "net_revenue": 56392.03,
+  "gross_profit": 52961.23,
+  "stockout_days": 1,
+  "avg_supplier_delay": 11.6
+}

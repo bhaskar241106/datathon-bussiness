@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0028",
+  "category": "Grocery",
+  "unit_cost": 195.92,
+  "list_price": 11.42,
+  "base_unit_margin": -184.5,
+  "is_negative_margin": true,
+  "supplier_lead_days": 8,
+  "total_orders": 66,
+  "completed_orders": 49,
+  "returned_orders": 8,
+  "cancelled_orders": 6,
+  "return_rate": 12.12,
+  "total_units_sold": 143,
+  "net_revenue": 1417.16,
+  "gross_profit": -26599.4,
+  "stockout_days": 3,
+  "avg_supplier_delay": 10.9
+}

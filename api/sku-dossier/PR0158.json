@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0158",
+  "category": "Electronics",
+  "unit_cost": 196.78,
+  "list_price": 60.98,
+  "base_unit_margin": -135.8,
+  "is_negative_margin": true,
+  "supplier_lead_days": 16,
+  "total_orders": 83,
+  "completed_orders": 55,
+  "returned_orders": 10,
+  "cancelled_orders": 11,
+  "return_rate": 12.05,
+  "total_units_sold": 152,
+  "net_revenue": 7708.13,
+  "gross_profit": -22202.43,
+  "stockout_days": 2,
+  "avg_supplier_delay": 12.2
+}

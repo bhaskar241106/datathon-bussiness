@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0095",
+  "category": "Electronics",
+  "unit_cost": 143.39,
+  "list_price": 18.66,
+  "base_unit_margin": -124.72999999999999,
+  "is_negative_margin": true,
+  "supplier_lead_days": 16,
+  "total_orders": 73,
+  "completed_orders": 61,
+  "returned_orders": 4,
+  "cancelled_orders": 5,
+  "return_rate": 5.48,
+  "total_units_sold": 183,
+  "net_revenue": 2910.86,
+  "gross_profit": -23329.51,
+  "stockout_days": 0,
+  "avg_supplier_delay": 7.6
+}

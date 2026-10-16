@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0021",
+  "category": "Beauty",
+  "unit_cost": 236.46,
+  "list_price": 64.48,
+  "base_unit_margin": -171.98000000000002,
+  "is_negative_margin": true,
+  "supplier_lead_days": 23,
+  "total_orders": 80,
+  "completed_orders": 54,
+  "returned_orders": 8,
+  "cancelled_orders": 11,
+  "return_rate": 10.0,
+  "total_units_sold": 162,
+  "net_revenue": 8459.72,
+  "gross_profit": -29846.8,
+  "stockout_days": 3,
+  "avg_supplier_delay": 8.3
+}

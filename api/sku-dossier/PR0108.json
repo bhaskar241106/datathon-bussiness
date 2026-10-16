@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0108",
+  "category": "Electronics",
+  "unit_cost": 87.02,
+  "list_price": 354.32,
+  "base_unit_margin": 267.3,
+  "is_negative_margin": false,
+  "supplier_lead_days": 27,
+  "total_orders": 78,
+  "completed_orders": 65,
+  "returned_orders": 4,
+  "cancelled_orders": 7,
+  "return_rate": 5.13,
+  "total_units_sold": 198,
+  "net_revenue": 60725.1,
+  "gross_profit": 43495.14,
+  "stockout_days": 2,
+  "avg_supplier_delay": 7.9
+}

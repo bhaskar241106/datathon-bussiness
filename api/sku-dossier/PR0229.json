@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0229",
+  "category": "Fashion",
+  "unit_cost": 26.5,
+  "list_price": 236.77,
+  "base_unit_margin": 210.27,
+  "is_negative_margin": false,
+  "supplier_lead_days": 20,
+  "total_orders": 72,
+  "completed_orders": 56,
+  "returned_orders": 6,
+  "cancelled_orders": 7,
+  "return_rate": 8.33,
+  "total_units_sold": 153,
+  "net_revenue": 30550.36,
+  "gross_profit": 26495.86,
+  "stockout_days": 2,
+  "avg_supplier_delay": 7.2
+}

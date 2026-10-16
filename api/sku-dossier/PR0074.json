@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0074",
+  "category": "Sports",
+  "unit_cost": 134.71,
+  "list_price": 291.08,
+  "base_unit_margin": 156.36999999999998,
+  "is_negative_margin": false,
+  "supplier_lead_days": 18,
+  "total_orders": 66,
+  "completed_orders": 52,
+  "returned_orders": 1,
+  "cancelled_orders": 9,
+  "return_rate": 1.52,
+  "total_units_sold": 147,
+  "net_revenue": 36347.11,
+  "gross_profit": 16544.74,
+  "stockout_days": 2,
+  "avg_supplier_delay": 12.1
+}

@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0220",
+  "category": "Home",
+  "unit_cost": 248.43,
+  "list_price": 376.55,
+  "base_unit_margin": 128.12,
+  "is_negative_margin": false,
+  "supplier_lead_days": 14,
+  "total_orders": 82,
+  "completed_orders": 65,
+  "returned_orders": 3,
+  "cancelled_orders": 6,
+  "return_rate": 3.66,
+  "total_units_sold": 206,
+  "net_revenue": 65570.67,
+  "gross_profit": 14394.09,
+  "stockout_days": 6,
+  "avg_supplier_delay": 10.0
+}

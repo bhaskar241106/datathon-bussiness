@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0088",
+  "category": "Fashion",
+  "unit_cost": 101.54,
+  "list_price": 364.17,
+  "base_unit_margin": 262.63,
+  "is_negative_margin": false,
+  "supplier_lead_days": 19,
+  "total_orders": 70,
+  "completed_orders": 58,
+  "returned_orders": 8,
+  "cancelled_orders": 3,
+  "return_rate": 11.43,
+  "total_units_sold": 158,
+  "net_revenue": 48547.25,
+  "gross_profit": 32503.93,
+  "stockout_days": 2,
+  "avg_supplier_delay": 9.8
+}

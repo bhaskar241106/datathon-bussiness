@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0033",
+  "category": "Electronics",
+  "unit_cost": 193.88,
+  "list_price": 123.09,
+  "base_unit_margin": -70.78999999999999,
+  "is_negative_margin": true,
+  "supplier_lead_days": 27,
+  "total_orders": 77,
+  "completed_orders": 62,
+  "returned_orders": 5,
+  "cancelled_orders": 8,
+  "return_rate": 6.49,
+  "total_units_sold": 207,
+  "net_revenue": 20690.08,
+  "gross_profit": -19443.08,
+  "stockout_days": 4,
+  "avg_supplier_delay": 9.9
+}

@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0065",
+  "category": "Sports",
+  "unit_cost": 124.5,
+  "list_price": 335.42,
+  "base_unit_margin": 210.92000000000002,
+  "is_negative_margin": false,
+  "supplier_lead_days": 8,
+  "total_orders": 91,
+  "completed_orders": 69,
+  "returned_orders": 8,
+  "cancelled_orders": 10,
+  "return_rate": 8.79,
+  "total_units_sold": 204,
+  "net_revenue": 59187.52,
+  "gross_profit": 33789.52,
+  "stockout_days": 3,
+  "avg_supplier_delay": 10.4
+}

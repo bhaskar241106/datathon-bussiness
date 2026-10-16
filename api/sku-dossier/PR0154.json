@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0154",
+  "category": "Beauty",
+  "unit_cost": 112.14,
+  "list_price": 227.02,
+  "base_unit_margin": 114.88000000000001,
+  "is_negative_margin": false,
+  "supplier_lead_days": 9,
+  "total_orders": 73,
+  "completed_orders": 57,
+  "returned_orders": 6,
+  "cancelled_orders": 7,
+  "return_rate": 8.22,
+  "total_units_sold": 169,
+  "net_revenue": 32332.99,
+  "gross_profit": 13381.33,
+  "stockout_days": 4,
+  "avg_supplier_delay": 9.1
+}

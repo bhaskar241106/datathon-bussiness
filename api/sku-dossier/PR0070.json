@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0070",
+  "category": "Home",
+  "unit_cost": 205.71,
+  "list_price": 144.14,
+  "base_unit_margin": -61.57000000000002,
+  "is_negative_margin": true,
+  "supplier_lead_days": 8,
+  "total_orders": 62,
+  "completed_orders": 50,
+  "returned_orders": 6,
+  "cancelled_orders": 5,
+  "return_rate": 9.68,
+  "total_units_sold": 147,
+  "net_revenue": 17778.14,
+  "gross_profit": -12461.23,
+  "stockout_days": 3,
+  "avg_supplier_delay": 9.9
+}

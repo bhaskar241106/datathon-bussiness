@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0110",
+  "category": "Electronics",
+  "unit_cost": 130.25,
+  "list_price": 295.47,
+  "base_unit_margin": 165.22000000000003,
+  "is_negative_margin": false,
+  "supplier_lead_days": 21,
+  "total_orders": 86,
+  "completed_orders": 67,
+  "returned_orders": 4,
+  "cancelled_orders": 14,
+  "return_rate": 4.65,
+  "total_units_sold": 215,
+  "net_revenue": 54961.18,
+  "gross_profit": 26957.43,
+  "stockout_days": 3,
+  "avg_supplier_delay": 9.5
+}

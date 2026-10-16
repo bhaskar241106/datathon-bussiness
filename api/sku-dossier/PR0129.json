@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0129",
+  "category": "Grocery",
+  "unit_cost": 192.05,
+  "list_price": 76.54,
+  "base_unit_margin": -115.51,
+  "is_negative_margin": true,
+  "supplier_lead_days": 27,
+  "total_orders": 75,
+  "completed_orders": 64,
+  "returned_orders": 1,
+  "cancelled_orders": 6,
+  "return_rate": 1.33,
+  "total_units_sold": 194,
+  "net_revenue": 12509.86,
+  "gross_profit": -24747.83,
+  "stockout_days": 3,
+  "avg_supplier_delay": 8.0
+}

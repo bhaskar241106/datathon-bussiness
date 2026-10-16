@@ -1,0 +1,65 @@
+{
+  "kpis": {
+    "total_gross_rev": 10164223.760000002,
+    "total_discounts": 773420.6645000001,
+    "total_net_rev": 9390803.0955,
+    "completed_net_rev": 7301698.249,
+    "completed_cogs": 5332709.85,
+    "completed_gp": 1968988.399,
+    "completed_margin_pct": 27.0,
+    "total_ad_spend": 4805016.08,
+    "total_return_handling": 51672.0,
+    "net_contribution": -2887699.681,
+    "negative_margin_loss": 1214115.5015,
+    "negative_margin_order_count": 5315,
+    "cancelled_rev": 861849.6055000001,
+    "returned_rev": 760322.3045000001,
+    "friction_lost_rev": 1622171.9100000001,
+    "inefficient_ad_spend": 398053.02,
+    "estimated_stockout_lost_rev": 508052.5272200365,
+    "estimated_stockout_lost_gp": 249766.3662701125,
+    "total_quantified_leak": 4257527.462270113
+  },
+  "waterfall": [
+    {
+      "step": "Gross Revenue",
+      "amount": 10164223.760000002,
+      "type": "positive"
+    },
+    {
+      "step": "Promotional Discounts",
+      "amount": -773420.6645000001,
+      "type": "negative"
+    },
+    {
+      "step": "Cancelled Orders",
+      "amount": -861849.6055000001,
+      "type": "negative"
+    },
+    {
+      "step": "Returned Orders",
+      "amount": -760322.3045000001,
+      "type": "negative"
+    },
+    {
+      "step": "Standard Product COGS",
+      "amount": -4118594.3484999994,
+      "type": "negative"
+    },
+    {
+      "step": "Upside-Down Pricing Loss",
+      "amount": -1214115.5015,
+      "type": "negative"
+    },
+    {
+      "step": "Marketing Ad Spend",
+      "amount": -4805016.08,
+      "type": "negative"
+    },
+    {
+      "step": "Net Operating Deficit",
+      "amount": -2887699.681,
+      "type": "total"
+    }
+  ]
+}

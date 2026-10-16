@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0133",
+  "category": "Fashion",
+  "unit_cost": 7.83,
+  "list_price": 110.4,
+  "base_unit_margin": 102.57000000000001,
+  "is_negative_margin": false,
+  "supplier_lead_days": 16,
+  "total_orders": 68,
+  "completed_orders": 52,
+  "returned_orders": 6,
+  "cancelled_orders": 6,
+  "return_rate": 8.82,
+  "total_units_sold": 163,
+  "net_revenue": 15395.56,
+  "gross_profit": 14119.27,
+  "stockout_days": 2,
+  "avg_supplier_delay": 8.7
+}

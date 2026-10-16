@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0101",
+  "category": "Home",
+  "unit_cost": 15.38,
+  "list_price": 346.98,
+  "base_unit_margin": 331.6,
+  "is_negative_margin": false,
+  "supplier_lead_days": 18,
+  "total_orders": 83,
+  "completed_orders": 70,
+  "returned_orders": 7,
+  "cancelled_orders": 3,
+  "return_rate": 8.43,
+  "total_units_sold": 209,
+  "net_revenue": 61161.94,
+  "gross_profit": 57947.52,
+  "stockout_days": 1,
+  "avg_supplier_delay": 6.2
+}

@@ -1,0 +1,19 @@
+{
+  "product_id": "PR0195",
+  "category": "Fashion",
+  "unit_cost": 64.26,
+  "list_price": 375.6,
+  "base_unit_margin": 311.34000000000003,
+  "is_negative_margin": false,
+  "supplier_lead_days": 18,
+  "total_orders": 57,
+  "completed_orders": 44,
+  "returned_orders": 3,
+  "cancelled_orders": 6,
+  "return_rate": 5.26,
+  "total_units_sold": 142,
+  "net_revenue": 45024.11,
+  "gross_profit": 35899.19,
+  "stockout_days": 3,
+  "avg_supplier_delay": 9.5
+}
