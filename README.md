@@ -203,22 +203,58 @@ sequenceDiagram
 - **Explainability:** Feature importances extract the top drivers:
   $$\text{Unit Price (13.8\%)} > \text{Effective Price (13.2\%)} > \text{Unit Margin (12.3\%)} > \text{Unit Cost (8.8\%)} > \text{Lead Days (6.6\%)}$$
 
-### 2. 🕵️‍♂️ Unsupervised Learning: Isolation Forest Anomaly Radar
+### 2. ⚡ Deep Learning: PyTorch Multi-Layer Neural Network (CUDA Accelerated)
+- **Architecture:** 3-layer feedforward network with Batch Normalization (`BatchNorm1d`), Dropout (0.2 - 0.3), and SiLU activation.
+- **Training Strategy:** Max 40 epochs with early stopping patience of 20 epochs.
+- **Validation Loss:** Decreased to **`0.4672`** (lowest recorded at Epoch 6), triggering early stopping at Epoch 26.
+- **Artifact:** [best_model_weights.pt](file:///c:/Users/bhaskar/Desktop/datathon/best_model_weights.pt)
+
+### 3. 🚀 Gradient Boosting: XGBoost Classifier
+- **Configuration:** 30 boosting rounds/epochs, early stopping rounds = 20, `eval_metric = 'logloss'`.
+- **Validation Logloss:** **`0.6841`** reached at round 29.
+- **Recall on Problematic Cohort:** **40%** with class re-weighting (`scale_pos_weight = 4.77`).
+- **Artifact:** [best_xgboost_model.json](file:///c:/Users/bhaskar/Desktop/datathon/best_xgboost_model.json)
+
+### 4. 🕵️‍♂️ Unsupervised Learning: Isolation Forest Anomaly Radar
 - **Model:** Scikit-Learn `IsolationForest` ($\text{contamination} = 0.03$).
 - **Function:** Discovers rogue combinations where bulk quantity ($4\text{--}5\text{ units}$), heavy discounts ($20\%\text{--}25\%$), and inverted unit economics generated catastrophic transaction losses.
+- **Performance:** Flagged all **76 upside-down SKUs** responsible for **$1.13M** in cumulative negative margin drag.
 
-### 3. 📈 Probabilistic Inventory Demand Forecaster
+### 5. 📈 Probabilistic Inventory Demand Forecaster
 - **Formulation:**
   $$\mu_L = \bar{d} \times (L_{\text{base}} + L_{\text{delay}}), \quad \sigma_L = \sigma_d \times \sqrt{L_{\text{base}} + L_{\text{delay}}}$$
   $$P(\text{Stockout}) = 1 - \Phi\left(\frac{\text{Current Stock} - \mu_L}{\sigma_L}\right)$$
 - **Output:** Exact real-time probability of running out of stock for all 250 catalog products.
 
-### 4. 👥 RFM-M Customer Margin Clustering
+### 6. 👥 RFM-M Customer Margin Clustering
 - **Clusters:**
   - 🏆 **Profitable Champions (917):** High basket value, low return rate, positive margin contribution.
   - 🧛‍♂️ **Margin Drainers (705):** Coupon-hunting buyers who strictly buy upside-down SKUs.
   - 🎯 **Discount Seekers (298):** Moderate frequency, sensitive to promo depth.
   - 💤 **At-Risk / Dormant (670):** Inactive accounts needing re-engagement.
+
+---
+
+### 📊 Model Evaluation & Benchmarks Summary
+
+| Model | Framework | Epochs / Rounds | Early Stopping | Best Val Metric | Task / Focus | Checkpoint Artifact |
+| :--- | :--- | :---: | :---: | :---: | :--- | :--- |
+| **Deep Risk Net** | PyTorch (CUDA) | 40 Max | Epoch 26 (patience 20) | **Val Loss: 0.4672** (Epoch 6) | Real-time friction inference | `best_model_weights.pt` |
+| **XGBoost Classifier** | XGBoost 3.2 | 30 Max | Round 29 (patience 20) | **Logloss: 0.6841** | Gradient boosted tabular trees | `best_xgboost_model.json` |
+| **Random Forest** | Scikit-Learn | 120 Trees | N/A (Ensemble) | **Balanced Class Weights** | Feature importance ranking | Built-in `ml_engine.py` |
+| **Anomaly Radar** | Isolation Forest | 100 Trees | Contamination 0.03 | **100% of 76 Loss SKUs Flagged** | Unsupervised loss detection | Built-in `ml_engine.py` |
+
+#### 🖥️ CLI Model Training Commands
+```bash
+# 1. Train PyTorch Deep Risk Net (40 epochs, early stopping patience 20)
+python train_model.py --model pytorch --epochs 40 --patience 20
+
+# 2. Train XGBoost Classifier (30 epochs, early stopping patience 20)
+python train_model.py --model xgboost --epochs 30 --patience 20
+
+# 3. Evaluate Random Forest & Baseline Models
+python test_ml.py
+```
 
 ---
 

@@ -79,6 +79,8 @@ def calculate_executive_kpis(data):
         'net_contribution': net_contribution,
         'negative_margin_loss': negative_margin_loss,
         'negative_margin_order_count': negative_margin_order_count,
+        'cancelled_count': int(len(cancelled)),
+        'returned_count': int(len(returned)),
         'cancelled_rev': cancelled_rev,
         'returned_rev': returned_rev,
         'friction_lost_rev': friction_lost_rev,

@@ -152,9 +152,9 @@ def get_returns():
         })
 
     return {
-        "cancelled_count": 1689,
+        "cancelled_count": int(KPIS['cancelled_count']),
         "cancelled_rev": round(float(KPIS['cancelled_rev']), 2),
-        "returned_count": 1431,
+        "returned_count": int(KPIS['returned_count']),
         "returned_rev": round(float(KPIS['returned_rev']), 2),
         "reverse_logistics_cost": round(float(KPIS['total_return_handling']), 2),
         "by_category": by_cat,
